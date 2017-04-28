@@ -1,7 +1,12 @@
-es\deusto\remote\Messenger.class
 es\deusto\dao\IUserDAO.class
-es\deusto\data\Message.class
+es\deusto\data\Money.class
+es\deusto\remote\ITransferer.class
 es\deusto\dao\UserDAO.class
-es\deusto\remote\IMessenger.class
 es\deusto\Server.class
+es\deusto\data\ProductDTO.class
 es\deusto\data\User.class
+es\deusto\data\MoneyDTO.class
+es\deusto\remote\Transferer.class
+es\deusto\data\Product.class
+es\deusto\data\UserDTO.class
+es\deusto\data\Assembler.class

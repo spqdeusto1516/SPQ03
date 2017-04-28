@@ -3,12 +3,11 @@ package es.deusto;
 import java.rmi.Naming;
 import java.rmi.RMISecurityManager;
 
-import es.deusto.remote.IMessenger;
-import es.deusto.remote.Messenger;
+import es.deusto.remote.ITransferer;
+import es.deusto.remote.Transferer;
 
 @SuppressWarnings("deprecation")
 public class Server {
-
 
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
@@ -25,14 +24,14 @@ public class Server {
 
 		try {
 			
-			IMessenger objServer = new Messenger();
+			ITransferer objServer = new Transferer();
 			Naming.rebind(name, objServer);
-			System.out.println("Deusto Messaging Server '" + name + "' active and waiting...");
+			System.out.println("Money Transfering Server '" + name + "' active and waiting...");
 			java.io.InputStreamReader inputStreamReader = new java.io.InputStreamReader ( System.in );
 			java.io.BufferedReader stdin = new java.io.BufferedReader ( inputStreamReader );
 			String line  = stdin.readLine();
 		} catch (Exception e) {
-			System.err.println("Messager exception: " + e.getMessage());
+			System.err.println("Transferer exception: " + e.getMessage());
 			e.printStackTrace();
 		}
 	}

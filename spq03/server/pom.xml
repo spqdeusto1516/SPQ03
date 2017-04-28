@@ -12,7 +12,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <server.IP>127.0.0.1</server.IP>
         <server.port>1099</server.port>
-        <server.Name>MessengerRMIDAO</server.Name>
+        <server.Name>TransfererRMIDAO</server.Name>
         <policy.file>${basedir}/src/main/resources/security/java.policy</policy.file>
         <config.files.dir>${basedir}/src/main/resources</config.files.dir>
     </properties>
@@ -64,7 +64,7 @@
         <dependency>
             <groupId>org.datanucleus</groupId>
             <artifactId>javax.jdo</artifactId>
-            <version>3.2.0-m1</version>
+            <version>[3.2.0-m5, )</version>
         </dependency>
     </dependencies>
 
@@ -106,7 +106,7 @@
                         <artifactId>exec-maven-plugin</artifactId>
                         <version>1.2.1</version>
                         <configuration>
-                            <mainClass>es.deusto.server.Server</mainClass>
+                            <mainClass>es.deusto.Server</mainClass>
                             <systemProperties>
 
                                 <systemProperty>

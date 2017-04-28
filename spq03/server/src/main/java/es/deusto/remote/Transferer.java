@@ -5,21 +5,21 @@ import java.rmi.server.UnicastRemoteObject;
 
 import es.deusto.dao.IUserDAO;
 import es.deusto.dao.UserDAO;
-import es.deusto.data.Message;
+import es.deusto.data.Money;
 import es.deusto.data.User;
 
-public class Messenger extends UnicastRemoteObject implements IMessenger {
+public class Transferer extends UnicastRemoteObject implements ITransferer{
 
 	private static final long serialVersionUID = 1L;
 	private int cont = 0;
 	IUserDAO dao;
 	
-	public Messenger() throws RemoteException {
+	public Transferer() throws RemoteException {
 		super();
 		dao = new UserDAO();
 	
 	}
-	public Messenger(IUserDAO udao) throws RemoteException {
+	public Transferer(IUserDAO udao) throws RemoteException {
 		super();
 		dao = udao;
 	
@@ -49,7 +49,7 @@ public class Messenger extends UnicastRemoteObject implements IMessenger {
 	}
 	
 
-	public String sayMessage(String login, String password, String message) throws RemoteException {
+	public String sayMoney(String login, String password, int amount) throws RemoteException {
 
 			System.out.println("Retrieving the user: '" + login +"'");
 			User user = null;
@@ -61,36 +61,18 @@ public class Messenger extends UnicastRemoteObject implements IMessenger {
 			
 			System.out.println("User retrieved: " + user);
 			if (user != null)  {
-				Message message1 = new Message(message);
-				message1.setUser(user);
-				user.getMessages().add(message1);
-				dao.updateUser(user);	
+				Money m1 = new Money(amount, user);
+				m1.setUserSending(user);
+				user.addMoney(amount);
+				dao.updateUser(user);
 				cont++;
 				System.out.println(" * Client number: " + cont);
-				return message;
+				return "The amount of money sent was: " +  amount;
 			}
 			else {
 				System.out.println("Login details supplied for message delivery are not correct");
 				throw new RemoteException("Login details supplied for message delivery are not correct");
 			} 
 		}
-	
-	public User getUserMessages(String login) throws RemoteException {
-		
-		System.out.println("Checking whether the user already exits or not: '" + login +"'");
-		User user = null;
-		try {
-			user = dao.retrieveUser(login);
-		} catch (Exception  e) {
-			System.out.println("Exception launched: " + e.getMessage());
-		}
-		
-		if (user != null) {
-			System.out.println("Returning the User and its messages to the RMI Client: " + login);
-			return user;
-		} else {
-			System.out.println("The user does not exist, no possibility of retrieving messages ...: " + login);
-			throw new RemoteException("Login details supplied for message retrieval are not correct");
-		}
-	}
+
 }
