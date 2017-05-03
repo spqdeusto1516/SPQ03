@@ -48,25 +48,26 @@ public class Transferer extends UnicastRemoteObject implements ITransferer{
 	}
 	
 
-	public String sayMoney(String login, String password, int amount) throws RemoteException {
+	public void sendMoney(String loginR, int amount, String loginS) throws RemoteException {
 
-			System.out.println("Retrieving the user: '" + login +"'");
-			User user = null;
+			System.out.println("Retrieving the user: '" + loginR +"'");
+			User userR = null;
+			User userS = null;
 			try {
-				user = dao.retrieveUser(login);
+				userR = dao.retrieveUser(loginR);
+				userS = dao.retrieveUser(loginS);
 			} catch (Exception  e) {
 				System.out.println("Exception launched: " + e.getMessage());
 			}
 			
-			System.out.println("User retrieved: " + user);
-			if (user != null)  {
-				Money m1 = new Money(amount, user);
-				m1.setUserSending(user);
-				user.addMoney(amount);
-				dao.updateUser(user);
+			System.out.println("Users retrieved: " + userR + userS);
+			if (userR != null)  {
+				userR.addMoney(amount);
+				userS.removeMoney(amount);
+				dao.updateUser(userR);
+				dao.updateUser(userS);
 				cont++;
 				System.out.println(" * Client number: " + cont);
-				return "The amount of money sent was: " +  amount;
 			}
 			else {
 				System.out.println("Login details supplied for message delivery are not correct");

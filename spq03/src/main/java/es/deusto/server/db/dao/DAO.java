@@ -134,7 +134,7 @@ public class DAO implements IDAO {
         Transaction tx = pm.currentTransaction();
         try {
             tx.begin();
-            allProd = pm.getObjectById(Product.class, );
+            allProd = pm.get;
             tx.commit();
         } catch (javax.jdo.JDOObjectNotFoundException jonfe)
         {
