@@ -1,4 +1,4 @@
-package es.deusto.data;
+package es.deusto.server.db.data;
 
 import java.io.Serializable;
 import java.util.List;
