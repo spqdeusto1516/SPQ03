@@ -1,10 +1,9 @@
-package es.deusto;
+package es.deusto.server;
 
 import java.rmi.Naming;
 import java.rmi.RMISecurityManager;
 
-import es.deusto.remote.ITransferer;
-import es.deusto.remote.Transferer;
+import es.deusto.server.remote.*;
 
 @SuppressWarnings("deprecation")
 public class Server {

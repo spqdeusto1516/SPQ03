@@ -1,6 +1,7 @@
-package es.deusto.data;
+package es.deusto.server.db.data;
 
 import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.PrimaryKey;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -13,6 +14,7 @@ public class Product implements Serializable {
      */
     private static final long serialVersionUID = 1L;
     User owner=null;
+    @PrimaryKey
     String name=null;
     String characteristics=null;
     Money buyersPayment=null;

@@ -1,26 +1,24 @@
-package es.deusto.remote;
+package es.deusto.server.remote;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
-import es.deusto.dao.IUserDAO;
-import es.deusto.dao.UserDAO;
-import es.deusto.data.Money;
-import es.deusto.data.User;
+import es.deusto.server.db.dao.*;
+import es.deusto.server.db.data.*;
 
 public class Transferer extends UnicastRemoteObject implements ITransferer{
 
 	private static final long serialVersionUID = 1L;
 	private int cont = 0;
-	IUserDAO dao;
+	IDAO dao;
 	
 	public Transferer() throws RemoteException {
 		super();
-		dao = new UserDAO();
+		dao = new DAO();
 
 	}
 
-	public Transferer(IUserDAO udao) throws RemoteException {
+	public Transferer(IDAO udao) throws RemoteException {
 		super();
 		dao = udao;
 

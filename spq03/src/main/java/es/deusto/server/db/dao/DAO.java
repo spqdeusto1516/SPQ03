@@ -1,17 +1,20 @@
-package es.deusto.dao;
+package es.deusto.server.db.dao;
 import javax.jdo.JDOHelper;
 import javax.jdo.PersistenceManager;
 import javax.jdo.PersistenceManagerFactory;
 import javax.jdo.Transaction;
 
-import es.deusto.data.Product;
-import es.deusto.data.User;
+import es.deusto.server.db.data.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class DAO implements IDAO {
 
     private PersistenceManagerFactory pmf;
 
-    public UserDAO(){
+    public DAO(){
         pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
     }
 
@@ -118,6 +121,12 @@ public class DAO implements IDAO {
     }
 
     @Override
+    public void addProd(Product p) {
+
+    }
+
+
+    @Override
     public List<Product> getAllProd(){
         List<Product> allProd = null;
         PersistenceManager pm = pmf.getPersistenceManager();
@@ -125,7 +134,7 @@ public class DAO implements IDAO {
         Transaction tx = pm.currentTransaction();
         try {
             tx.begin();
-            allProd = pm.getObjectById(Product.class, name);
+            allProd = pm.getObjectById(Product.class, );
             tx.commit();
         } catch (javax.jdo.JDOObjectNotFoundException jonfe)
         {
@@ -149,7 +158,7 @@ public class DAO implements IDAO {
     //Searches Products by name
     public List<Product> searchProd(String name){
         List<Product> allProd = getAllProd();
-        List<Product> listProd = new ArrayList<Product>();
+        List<Product> listProd = new ArrayList<>();
 
         for(Product p: allProd){
             if(p.getName().equals(name)){
@@ -159,5 +168,7 @@ public class DAO implements IDAO {
         }
         return listProd;
     }
+
+
 
 }

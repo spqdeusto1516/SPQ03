@@ -1,4 +1,4 @@
-package es.deusto.data;
+package es.deusto.client.data;
 
 import java.io.Serializable;
 import java.util.Date;

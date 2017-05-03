@@ -1,8 +1,6 @@
-package es.deusto.dao;
+package es.deusto.server.db.dao;
 
-import es.deusto.data.Money;
-import es.deusto.data.User;
-import es.deusto.data.Product;
+import es.deusto.server.db.data.*;
 
 import java.util.List;
 
@@ -12,7 +10,7 @@ public interface IDAO {
     User retrieveUser(String login);
     void updateUser(User u);
 
-    void buyProd(Product p, Money m);
+    void buyProd(Product p, Money m, String name);
     void addProd(Product p);
     List<Product> getAllProd();
     List<Product> searchProd(String name);

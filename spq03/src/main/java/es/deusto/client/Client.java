@@ -1,4 +1,4 @@
-package es.deusto;
+package es.deusto.client;
 
         import java.rmi.RMISecurityManager;
         import es.deusto.data.MoneyDTO;

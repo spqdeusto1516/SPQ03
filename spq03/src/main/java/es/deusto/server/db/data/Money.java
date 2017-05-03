@@ -1,6 +1,7 @@
-package es.deusto.data;
+package es.deusto.server.db.data;
 
 import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.PrimaryKey;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -12,6 +13,7 @@ public class Money implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	User sender=null;
+    @PrimaryKey
     int amount=0;
 	long timestamp;
 	
