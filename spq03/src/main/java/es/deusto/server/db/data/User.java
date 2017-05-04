@@ -1,6 +1,7 @@
 package es.deusto.server.db.data;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.jdo.annotations.PersistenceCapable;
@@ -17,6 +18,9 @@ public class User implements Serializable {
 	@PrimaryKey
 	String login=null;
 	String password=null;
+	@Persistent(defaultFetchGroup="true", mappedBy="user", dependentElement="true")
+	@Join
+	List<Money> moneyList = new ArrayList<>();
 	int amount = 0;
 	
 	

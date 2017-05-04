@@ -4,7 +4,6 @@ import java.rmi.RMISecurityManager;
 import java.util.List;
 import java.util.Scanner;
 
-import es.deusto.client.data.*;
 import es.deusto.client.remote.ITransferer;
 import es.deusto.server.db.data.Product;
 import es.deusto.server.db.data.User;
@@ -24,6 +23,7 @@ public class Client {
 
         try {
             Scanner entradaEscaner = null;
+            String prodName = null;
             String name = "//" + args[0] + ":" + args[1] + "/" + args[2];
             ITransferer objHello = (ITransferer) java.rmi.Naming.lookup(name);
             // Register to be allowed to send messages
@@ -48,23 +48,23 @@ public class Client {
                         System.out.println("Set the amount of money");
                         entradaEscaner = new Scanner(System.in);
                         amount = Integer.parseInt(entradaEscaner.nextLine());
-                    }while (amount <= sender.getMoney());
+                    } while (amount <= sender.getMoney());
 
                     System.out.println("Now insert who you want to send it to");
                     entradaEscaner = new Scanner(System.in);
                     User receiver = objHello.getUser(entradaEscaner.nextLine());
-                    if(!receiver.equals(null)){
+                    if (!receiver.equals(null)) {
                         System.out.println("Sending money...");
-                        objHello.
+                        objHello.sendMoney(receiver.getLogin(), amount, sender.getLogin());
                     }
                     break;
                 case (2):
                     System.out.println("What's the name of the Product you are looking for?");
                     entradaEscaner = new Scanner(System.in);
-                    String prodName = entradaEscaner.nextLine();
+                    prodName = entradaEscaner.nextLine();
                     List<Product> search = objHello.searchProd(prodName);
                     if (search.equals(null)) {
-                        // Error, no existe ese producto.
+                        System.out.println("Error! No Product with such name");
                     } else {
                         for (Product p : search) {
                             System.out.println(p.toStringShort() + p.getOwner().toString());
@@ -73,7 +73,15 @@ public class Client {
                     break;
 
                 case (3):
-
+                    Product p = null;
+                    System.out.println("Insert the name of the product");
+                    entradaEscaner = new Scanner(System.in);
+                    prodName = entradaEscaner.nextLine();
+                    System.out.println("Insert the characteristics");
+                    entradaEscaner = new Scanner(System.in);
+                    String characteristics = entradaEscaner.nextLine();
+                    p = new Product(sender, prodName, characteristics);
+                    objHello.registerProduct(p);
                     break;
             }
 

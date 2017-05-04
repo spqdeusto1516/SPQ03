@@ -5,13 +5,14 @@ import es.deusto.server.db.data.*;
 import java.util.List;
 
 public interface IDAO {
-    void storeUser(User u);
-    void storeProduct(Product p);
-    User retrieveUser(String login);
-    void updateUser(User u);
 
-    void buyProd(Product p, Money m, String name);
-    void addProd(Product p);
+    boolean storeUser(User u);
+    User retrieveUser(String login);
+    boolean updateUser(User u);
+
+    boolean storeProd(Product p);
     List<Product> getAllProd();
-    List<Product> searchProd(String name);
+    Product retrieveProdSearch(String name);
+    boolean updateProd(Product p);
+
 }

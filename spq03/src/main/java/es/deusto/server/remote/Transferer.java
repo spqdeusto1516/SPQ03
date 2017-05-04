@@ -2,7 +2,11 @@ package es.deusto.server.remote;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import java.util.ArrayList;
+import java.util.List;
 
+import es.deusto.server.db.DB;
+import es.deusto.server.db.IDB;
 import es.deusto.server.db.dao.*;
 import es.deusto.server.db.data.*;
 
@@ -23,30 +27,103 @@ public class Transferer extends UnicastRemoteObject implements ITransferer{
 		dao = udao;
 
 	}
-	
-	public void registerUser(String login, String password) {
-			
-			System.out.println("Checking whether the user already exits or not: '" + login +"'");
-			User user = null;
-			try {
-				user = dao.retrieveUser(login);
-			} catch (Exception  e) {
-				System.out.println("Exception launched: " + e.getMessage());
-			}
-			
-			if (user != null) {
-				System.out.println("The user exists. So, setting new password for User: " + login);
-				user.setPassword(password);
-				System.out.println("Password set for User: " + login);
-				dao.updateUser(user);
-			} else {
-				System.out.println("Creating user: " + login);
-				user = new User(login, password);
-				dao.storeUser(user);				 
-				System.out.println("User created: " + login);
-			}
+
+	@Override
+	public boolean registerUser(User u) {
+        User user = null;
+        boolean ret=true;
+        try {
+            user = dao.retrieveUser(u.getLogin());
+        } catch (Exception  e) {
+//			logger.error("Exception launched: " + e.getMessage());
+            ret=false;
+        }
+
+        if (user != null) {
+            user.setPassword(u.getPassword());
+            dao.updateUser(user);
+        } else {
+            dao.storeUser(u);
+        }
+        return ret;
 	}
-	
+
+	@Override
+    public User getUser(String login) throws RemoteException{
+	    User u = null;
+        System.out.println("Checking whether the user exists...");
+        try {
+            u = dao.retrieveUser(login);
+        } catch (Exception  e) {
+            System.out.println("Exception launched: " + e.getMessage());
+        }
+        if (u != null) {
+            return u;
+        } else {
+            System.out.println("There is not a user with such login");
+            return u;
+        }
+    }
+
+    @Override
+    public Product searchProd(String name) throws RemoteException{
+	    Product prod=null;
+	    List<Product> listProd = new ArrayList<>();
+	    int cont = 0;
+	    try{
+	        listProd = dao.getAllProd();
+	        for(Product p: listProd){
+	            if(p.getName().equals(name) && cont < 1){
+	                cont ++;
+	                prod = p;
+                }
+            }
+        }catch (Exception e){
+	        System.out.println("Exception launched: " + e.getMessage());
+        }
+	    return prod;
+    }
+
+    @Override
+    public boolean registerProd(Product p) throws RemoteException{
+        boolean ret=true;
+        Product prod = null;
+        prod  = dao.retrieveProdSearch(p.getName());
+
+        if (prod != null ) {
+            ret = false;
+        }else{
+            p.setOwner(prod.getOwner());
+            dao.updateProd(prod);
+        }
+        return ret;
+    }
+
+    @Override
+    public boolean buyProd(String loginB, Product p, int amount, String loginS) throws RemoteException{
+        boolean ret = true;
+        Product prod = null;
+        User sender = null;
+        User buyer = null;
+        try {
+            prod = dao.retrieveProdSearch(p.getName());
+            sender = dao.retrieveUser(loginS);
+            buyer = dao.retrieveUser(loginB);
+        }catch(Exception e){
+        //  logger.error("Exception launched: " + e.getMessage());
+            ret=false;
+        }
+        if(prod == null || sender == null || buyer == null){
+        }else if(prod != null && sender != null && buyer != null){
+            buyer.removeMoney(amount);
+            sender.addMoney(amount);
+            prod.setOwner(buyer);
+            dao.updateProd(prod);
+            dao.updateUser(sender);
+            dao.updateUser(buyer);
+        }
+        return ret;
+    }
 
 	public void sendMoney(String loginR, int amount, String loginS) throws RemoteException {
 
@@ -74,5 +151,4 @@ public class Transferer extends UnicastRemoteObject implements ITransferer{
 				throw new RemoteException("Login details supplied for message delivery are not correct");
 			} 
 	}
-
 }

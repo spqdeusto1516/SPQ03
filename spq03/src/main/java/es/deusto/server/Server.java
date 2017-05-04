@@ -7,7 +7,7 @@ import es.deusto.server.remote.*;
 
 @SuppressWarnings("deprecation")
 public class Server {
-
+/*
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		if (args.length != 3) {
@@ -34,4 +34,5 @@ public class Server {
 			e.printStackTrace();
 		}
 	}
+	*/
 }

@@ -13,4 +13,7 @@ public interface ITransferer extends Remote {
 	void registerUser(String login, String password) throws RemoteException;
 	User getUser(String login) throws RemoteException;
 	List<Product> searchProd(String name) throws RemoteException;
+	void buyProduct(Product p, User buyer);
+	void registerProduct(Product p) throws RemoteException;
+
 }
