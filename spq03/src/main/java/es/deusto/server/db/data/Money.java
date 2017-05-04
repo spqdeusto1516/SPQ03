@@ -14,18 +14,24 @@ public class Money implements Serializable {
 	private static final long serialVersionUID = 1L;
 	User user;
 	Product product;
+    @PrimaryKey
     int amount=0;
 	long timestamp;
 	
 	
-    public Money(int amount, User sender) {
+    public Money(int amount, User sender, Product p) {
         this.amount = amount;
         this.user = sender;
+        this.product = p;
 		this.timestamp = System.currentTimeMillis();
     }
 
 	public User getSender() {
         return user;
+    }
+
+    public Product getProd() {
+        return product;
     }
 
     public void setUserSending(User sender) {

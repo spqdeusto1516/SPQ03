@@ -100,6 +100,28 @@ public class DB implements IDB {
     }
 
     @Override
+    public boolean insertMoney(Money m) {
+        Money money = null;
+        boolean ret=true;
+
+        try {
+            money = dao.retrieveMoney(m.getAmount());
+        } catch (Exception  e) {
+            //logger.error("Exception launched: " + e.getMessage());
+            ret=false;
+        }
+
+        if (money != null) {
+            money.setUserSending(m.getSender());
+
+            dao.updateMoney(money);
+        } else {
+            dao.storeMoney(m);
+        }
+        return ret;
+    }
+
+    @Override
     public  boolean buyProd(String loginB, String loginS, String name, int amount) {
         User uB = null;
         User uS = null;

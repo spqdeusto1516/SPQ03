@@ -15,4 +15,8 @@ public interface IDAO {
     Product retrieveProdSearch(String name);
     boolean updateProd(Product p);
 
+    boolean storeMoney(Money m);
+    Money retrieveMoney(int amount);
+    boolean updateMoney(Money m);
+
 }

@@ -195,4 +195,76 @@ public class DAO implements IDAO {
         return r;
     }
 
+    @Override
+    public boolean storeMoney(Money m) {
+
+        PersistenceManager pm = pmf.getPersistenceManager();
+        Transaction tx = pm.currentTransaction();
+        boolean ret=true;
+        try {
+            tx.begin();
+
+            pm.makePersistent(m);
+            tx.commit();
+        } catch (Exception ex) {
+//		    	logger.error("   $ Error storing an object: " + ex.getMessage());
+            ret=false;
+
+        } finally {
+            if (tx != null && tx.isActive()) {
+                tx.rollback();
+            }
+
+            pm.close();
+        }
+        return ret;
+    }
+
+    @Override
+    public Money retrieveMoney(int amount) {
+        Money money = null;
+        PersistenceManager pm = pmf.getPersistenceManager();
+        pm.getFetchPlan().setMaxFetchDepth(2);
+        Transaction tx = pm.currentTransaction();
+        try {
+            tx.begin();
+            money = pm.getObjectById(Money.class, amount);
+            tx.commit();
+        } catch (javax.jdo.JDOObjectNotFoundException jonfe)
+        {
+//			logger.warn("User does not exist: " + jonfe.getMessage());
+        }
+
+        finally {
+            if (tx != null && tx.isActive()) {
+                tx.rollback();
+            }
+
+            pm.close();
+        }
+
+        return money;
+    }
+
+    @Override
+    public	boolean updateMoney(Money m){
+        PersistenceManager pm = pmf.getPersistenceManager();
+        Transaction tx = pm.currentTransaction();
+        boolean r=true;
+        try {
+            tx.begin();
+            pm.makePersistent(m);
+            tx.commit();
+        } catch (Exception ex) {
+//	    	   	logger.error("Error updating a game: " + ex.getMessage());
+            r=false;
+        } finally {
+            if (tx != null && tx.isActive()) {
+                tx.rollback();
+            }
+
+            pm.close();
+        }
+        return r;
+    }
 }
