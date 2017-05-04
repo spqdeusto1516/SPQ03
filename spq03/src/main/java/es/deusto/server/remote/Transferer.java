@@ -125,8 +125,8 @@ public class Transferer extends UnicastRemoteObject implements ITransferer{
         return ret;
     }
 
-	public void sendMoney(String loginR, int amount, String loginS) throws RemoteException {
-
+	public boolean sendMoney(String loginR, int amount, String loginS) throws RemoteException {
+            boolean ret = true;
 			System.out.println("Retrieving the user: '" + loginR +"'");
 			User userR = null;
 			User userS = null;
@@ -135,6 +135,7 @@ public class Transferer extends UnicastRemoteObject implements ITransferer{
 				userS = dao.retrieveUser(loginS);
 			} catch (Exception  e) {
 				System.out.println("Exception launched: " + e.getMessage());
+				ret = false;
 			}
 			
 			System.out.println("Users retrieved: " + userR + userS);
@@ -149,6 +150,7 @@ public class Transferer extends UnicastRemoteObject implements ITransferer{
 			else {
 				System.out.println("Login details supplied for message delivery are not correct");
 				throw new RemoteException("Login details supplied for message delivery are not correct");
-			} 
+			}
+			return ret;
 	}
 }

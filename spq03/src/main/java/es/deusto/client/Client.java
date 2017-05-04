@@ -4,7 +4,7 @@ import java.rmi.RMISecurityManager;
 import java.util.List;
 import java.util.Scanner;
 
-import es.deusto.client.remote.ITransferer;
+import es.deusto.server.remote.ITransferer;
 import es.deusto.server.db.data.Product;
 import es.deusto.server.db.data.User;
 
@@ -28,9 +28,9 @@ public class Client {
             ITransferer objHello = (ITransferer) java.rmi.Naming.lookup(name);
             // Register to be allowed to send messages
             System.out.println("Register a user for the first time: dipina");
-            objHello.registerUser("jocor", "ral");
+            objHello.registerUser(new User("jocor", "ral"));
             System.out.println("Change the password as the user is already registered: kun");
-            objHello.registerUser("jocor", "kun");
+            objHello.registerUser(new User("jocor", "kun"));
             int dec1 = 0;
             User sender = objHello.getUser("jocor");
             do {
@@ -62,13 +62,11 @@ public class Client {
                     System.out.println("What's the name of the Product you are looking for?");
                     entradaEscaner = new Scanner(System.in);
                     prodName = entradaEscaner.nextLine();
-                    List<Product> search = objHello.searchProd(prodName);
+                    Product search = objHello.searchProd(prodName);
                     if (search.equals(null)) {
                         System.out.println("Error! No Product with such name");
                     } else {
-                        for (Product p : search) {
-                            System.out.println(p.toStringShort() + p.getOwner().toString());
-                        }
+                        System.out.println(search.toStringShort() + search.getOwner().toString());
                     }
                     break;
 
@@ -81,7 +79,7 @@ public class Client {
                     entradaEscaner = new Scanner(System.in);
                     String characteristics = entradaEscaner.nextLine();
                     p = new Product(sender, prodName, characteristics);
-                    objHello.registerProduct(p);
+                    objHello.registerProd(p);
                     break;
             }
 
