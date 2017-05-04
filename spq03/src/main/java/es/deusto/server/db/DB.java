@@ -6,19 +6,19 @@ import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
-import org.apache.log4j.spi.LoggerFactory;
 
 
 import es.deusto.server.db.dao.*;
 import es.deusto.server.db.data.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class DB implements IDB {
 
     private static final long serialVersionUID = 1L;
     private int cont = 0;
     IDAO dao;
-  //  final Logger logger = LoggerFactory.getLogger(DB.class);
+    final static Logger logger = LoggerFactory.getLogger(DB.class);
 
     public DB(){
         super();
@@ -31,48 +31,35 @@ public class DB implements IDB {
     }
 
     @Override
-    public boolean insertUser(User u) {
-        User user = null;
-        boolean ret=true;
-
-        try {
-            user = dao.retrieveUser(u.getLogin());
-        } catch (Exception  e) {
-            //logger.error("Exception launched: " + e.getMessage());
-            ret=false;
-        }
-
-        if (user != null) {
-            user.setPassword(u.getPassword());
-
-            dao.updateUser(user);
-
-        } else {
-            dao.storeUser(u);
-        }
-        return ret;
-    }
-
-    @Override
     public List<Product> getAllProd() {
         List <Product> prodList = new ArrayList<>();
         try {
             prodList = dao.getAllProd();
         }catch (Exception e){
-            //logger.error("Exception launched: " + e.getMessage());
+            logger.error("Exception launched: " + e.getMessage());
         }
         return prodList;
     }
 
     @Override
     public Product showProd(String name){
-        Product p = dao.retrieveProdSearch(name);
+        Product p = null;
+        try {
+            p = dao.retrieveProdSearch(name);
+        }catch(Exception e){
+            logger.error("Exception launched: " + e.getMessage());
+        }
         return p;
     }
 
     @Override
     public User showUser(String login){
-        User u = dao.retrieveUser(login);
+        User u = null;
+        try {
+             u = dao.retrieveUser(login);
+        }catch (Exception e){
+            logger.error("Exception launched: " + e.getMessage());
+        }
         return u;
     }
 
@@ -84,7 +71,7 @@ public class DB implements IDB {
         try {
             prod = dao.retrieveProdSearch(p.getName());
         } catch (Exception  e) {
-            //logger.error("Exception launched: " + e.getMessage());
+            logger.error("Exception launched: " + e.getMessage());
             ret=false;
         }
 
@@ -100,6 +87,29 @@ public class DB implements IDB {
     }
 
     @Override
+    public boolean insertUser(User u) {
+        User user = null;
+        boolean ret=true;
+
+        try {
+            user = dao.retrieveUser(u.getLogin());
+        } catch (Exception  e) {
+            logger.error("Exception launched: " + e.getMessage());
+            ret=false;
+        }
+
+        if (user != null) {
+            user.setPassword(u.getPassword());
+
+            dao.updateUser(user);
+
+        } else {
+            dao.storeUser(u);
+        }
+        return ret;
+    }
+
+    @Override
     public boolean insertMoney(Money m) {
         Money money = null;
         boolean ret=true;
@@ -107,13 +117,12 @@ public class DB implements IDB {
         try {
             money = dao.retrieveMoney(m.getAmount());
         } catch (Exception  e) {
-            //logger.error("Exception launched: " + e.getMessage());
+            logger.error("Exception launched: " + e.getMessage());
             ret=false;
         }
 
         if (money != null) {
             money.setUserSending(m.getSender());
-
             dao.updateMoney(money);
         } else {
             dao.storeMoney(m);
@@ -132,7 +141,7 @@ public class DB implements IDB {
             uS = dao.retrieveUser(loginS);
             p = dao.retrieveProdSearch(name);
         }catch(Exception e){
-            //logger.error("Exception launched: " + e.getMessage());
+            logger.error("Exception launched: " + e.getMessage());
             ret=false;
         }
 
@@ -148,4 +157,3 @@ public class DB implements IDB {
         return ret;
     }
 }
-

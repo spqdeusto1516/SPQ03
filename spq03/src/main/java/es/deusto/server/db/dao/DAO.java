@@ -6,13 +6,13 @@ import java.util.List;
 
 import es.deusto.server.db.data.*;
 
-//import org.slf4j.Logger;
-//import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class DAO implements IDAO {
 
     private PersistenceManagerFactory pmf;
-    //	final Logger logger = LoggerFactory.getLogger(DAO.class);
+    final static Logger logger = LoggerFactory.getLogger(DAO.class);
     public DAO(){
         pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
     }
@@ -29,7 +29,7 @@ public class DAO implements IDAO {
             pm.makePersistent(u);
             tx.commit();
         } catch (Exception ex) {
-//		    	logger.error("   $ Error storing an object: " + ex.getMessage());
+		    	logger.error("   $ Error storing an object User: " + ex.getMessage());
             ret=false;
 
         } finally {
@@ -54,7 +54,7 @@ public class DAO implements IDAO {
             tx.commit();
         } catch (javax.jdo.JDOObjectNotFoundException jonfe)
         {
-//			logger.warn("User does not exist: " + jonfe.getMessage());
+			logger.error("User does not exist: " + jonfe.getMessage());
         }
 
         finally {
@@ -78,7 +78,7 @@ public class DAO implements IDAO {
             pm.makePersistent(u);
             tx.commit();
         } catch (Exception ex) {
-//	    	   	logger.error("Error updating a user: " + ex.getMessage());
+	    	   	logger.error("Error updating a user: " + ex.getMessage());
             r=false;
         } finally {
             if (tx != null && tx.isActive()) {
@@ -102,7 +102,7 @@ public class DAO implements IDAO {
             pm.makePersistent(p);
             tx.commit();
         } catch (Exception ex) {
-//		    	 	logger.error("   $ Error storing an object: " + ex.getMessage());
+		    	 	logger.error("   $ Error storing an object Prod: " + ex.getMessage());
             r=false;
         } finally {
             if (tx != null && tx.isActive()) {
@@ -131,7 +131,7 @@ public class DAO implements IDAO {
             tx.commit();
 
         } catch (Exception ex) {
-//        	   logger.error("# Error getting Extent getAllGames: " + ex.getMessage());
+        	   logger.error("# Error getting Extent getAllGames: " + ex.getMessage());
         } finally {
 
             if (tx.isActive()) {
@@ -157,19 +157,18 @@ public class DAO implements IDAO {
 
                 if (p.getName().equals(name)) {
                     p = c;
-//                    logger.info("Retrieve by paparameter " + p.getName());
+                    logger.info("Retrieve by paparameter " + p.getName());
                 }
             }
             tx.commit();
         } catch (Exception ex) {
-//        	   logger.error("# Error getting Extent Game: " + ex.getMessage());
+       	   logger.error("# Error getting Extent Game: " + ex.getMessage());
         } finally {
             if (tx.isActive()) {
                 tx.rollback();
             }
             pm.close();
         }
-        //      logger.error(u);
         return p;
     }
 
@@ -183,7 +182,7 @@ public class DAO implements IDAO {
             pm.makePersistent(p);
             tx.commit();
         } catch (Exception ex) {
-//	    	   	logger.error("Error updating a game: " + ex.getMessage());
+	    	   	logger.error("Error updating a game: " + ex.getMessage());
             r=false;
         } finally {
             if (tx != null && tx.isActive()) {
@@ -207,7 +206,7 @@ public class DAO implements IDAO {
             pm.makePersistent(m);
             tx.commit();
         } catch (Exception ex) {
-//		    	logger.error("   $ Error storing an object: " + ex.getMessage());
+		    logger.error("   $ Error storing an object Money: " + ex.getMessage());
             ret=false;
 
         } finally {
@@ -230,9 +229,8 @@ public class DAO implements IDAO {
             tx.begin();
             money = pm.getObjectById(Money.class, amount);
             tx.commit();
-        } catch (javax.jdo.JDOObjectNotFoundException jonfe)
-        {
-//			logger.warn("User does not exist: " + jonfe.getMessage());
+        } catch (javax.jdo.JDOObjectNotFoundException jonfe) {
+			logger.error("Purchase does not exist: " + jonfe.getMessage());
         }
 
         finally {
@@ -256,7 +254,7 @@ public class DAO implements IDAO {
             pm.makePersistent(m);
             tx.commit();
         } catch (Exception ex) {
-//	    	   	logger.error("Error updating a game: " + ex.getMessage());
+	    	   	logger.error("Error updating a game: " + ex.getMessage());
             r=false;
         } finally {
             if (tx != null && tx.isActive()) {

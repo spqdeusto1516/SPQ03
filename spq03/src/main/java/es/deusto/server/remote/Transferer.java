@@ -9,9 +9,12 @@ import es.deusto.server.db.DB;
 import es.deusto.server.db.IDB;
 import es.deusto.server.db.dao.*;
 import es.deusto.server.db.data.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Transferer extends UnicastRemoteObject implements ITransferer{
 
+    final static Logger logger = LoggerFactory.getLogger(Transferer.class);
 	private static final long serialVersionUID = 1L;
 	private int cont = 0;
 	IDAO dao;
@@ -19,13 +22,11 @@ public class Transferer extends UnicastRemoteObject implements ITransferer{
 	public Transferer() throws RemoteException {
 		super();
 		dao = new DAO();
-
 	}
 
 	public Transferer(IDAO udao) throws RemoteException {
 		super();
 		dao = udao;
-
 	}
 
 	@Override
@@ -35,7 +36,7 @@ public class Transferer extends UnicastRemoteObject implements ITransferer{
         try {
             user = dao.retrieveUser(u.getLogin());
         } catch (Exception  e) {
-//			logger.error("Exception launched: " + e.getMessage());
+			logger.error("Exception launched: " + e.getMessage());
             ret=false;
         }
 
@@ -51,16 +52,16 @@ public class Transferer extends UnicastRemoteObject implements ITransferer{
 	@Override
     public User getUser(String login) throws RemoteException{
 	    User u = null;
-        System.out.println("Checking whether the user exists...");
+        logger.info("Checking whether the user exists...");
         try {
             u = dao.retrieveUser(login);
         } catch (Exception  e) {
-            System.out.println("Exception launched: " + e.getMessage());
+            logger.error("Exception launched: " + e.getMessage());
         }
         if (u != null) {
             return u;
         } else {
-            System.out.println("There is not a user with such login");
+            logger.warn("There is not a user with such login");
             return u;
         }
     }
@@ -79,7 +80,7 @@ public class Transferer extends UnicastRemoteObject implements ITransferer{
                 }
             }
         }catch (Exception e){
-	        System.out.println("Exception launched: " + e.getMessage());
+	        logger.error("Exception launched: " + e.getMessage());
         }
 	    return prod;
     }
@@ -88,13 +89,20 @@ public class Transferer extends UnicastRemoteObject implements ITransferer{
     public boolean registerProd(Product p) throws RemoteException{
         boolean ret=true;
         Product prod = null;
-        prod  = dao.retrieveProdSearch(p.getName());
-
+        try {
+            prod = dao.retrieveProdSearch(p.getName());
+        }catch(Exception  e){
+            logger.error("Exception launched: " + e.getMessage());
+            ret=false;
+        }
         if (prod != null ) {
-            ret = false;
+            p.setOwner(prod.getOwner());
+            p.setName(prod.getName());
+            dao.updateProd(prod);
         }else{
             p.setOwner(prod.getOwner());
-            dao.updateProd(prod);
+            p.setName(prod.getName());
+            dao.storeProd(prod);
         }
         return ret;
     }
@@ -110,7 +118,7 @@ public class Transferer extends UnicastRemoteObject implements ITransferer{
             sender = dao.retrieveUser(loginS);
             buyer = dao.retrieveUser(loginB);
         }catch(Exception e){
-        //  logger.error("Exception launched: " + e.getMessage());
+          logger.error("Exception launched: " + e.getMessage());
             ret=false;
         }
         if(prod == null || sender == null || buyer == null){
@@ -127,28 +135,28 @@ public class Transferer extends UnicastRemoteObject implements ITransferer{
 
 	public boolean sendMoney(String loginR, int amount, String loginS) throws RemoteException {
             boolean ret = true;
-			System.out.println("Retrieving the user: '" + loginR +"'");
+			logger.info("Retrieving the user: '" + loginR +"'");
 			User userR = null;
 			User userS = null;
 			try {
 				userR = dao.retrieveUser(loginR);
 				userS = dao.retrieveUser(loginS);
 			} catch (Exception  e) {
-				System.out.println("Exception launched: " + e.getMessage());
+				logger.error("Exception launched: " + e.getMessage());
 				ret = false;
 			}
 			
-			System.out.println("Users retrieved: " + userR + userS);
+			logger.info("Users retrieved: " + userR + userS);
 			if (userR != null)  {
 				userR.addMoney(amount);
 				userS.removeMoney(amount);
 				dao.updateUser(userR);
 				dao.updateUser(userS);
 				cont++;
-				System.out.println(" * Client number: " + cont);
+				logger.info(" * Client number: " + cont);
 			}
 			else {
-				System.out.println("Login details supplied for message delivery are not correct");
+				logger.error("Login details supplied for message delivery are not correct");
 				throw new RemoteException("Login details supplied for message delivery are not correct");
 			}
 			return ret;

@@ -1,5 +1,8 @@
 package es.deusto.server.db.data;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
@@ -13,6 +16,7 @@ import java.util.List;
 
 @PersistenceCapable (detachable = "true")
 public class Product implements Serializable {
+    final static Logger logger = LoggerFactory.getLogger(Product.class);
     /**
      * Messages will be transferred to the RMI client as part of a User
      */
@@ -41,6 +45,8 @@ public class Product implements Serializable {
     public String getName() {
         return name;
     }
+
+    public void setName(String name){ this.name = name; }
 
     public void setOwner(User owner) {
         this.user = owner;

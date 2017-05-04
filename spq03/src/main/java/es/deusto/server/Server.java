@@ -9,13 +9,16 @@ import es.deusto.server.db.data.Money;
 import es.deusto.server.db.data.Product;
 import es.deusto.server.db.data.User;
 import es.deusto.server.remote.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 public class Server {
 
+    final static Logger logger = LoggerFactory.getLogger(Server.class);
 	public static void main(String[] args) {
 		if (args.length != 3) {
-			System.out.println("How to invoke: java [policy] [codebase] Server.Server [host] [port] [server]");
+			logger.info("How to invoke: java [policy] [codebase] Server.Server [host] [port] [server]");
 			System.exit(0);
 		}
 
@@ -26,29 +29,28 @@ public class Server {
 		String name = "//" + args[0] + ":" + args[1] + "/" + args[2];
 
 		try {
-			
 			ITransferer objServer = new Transferer();
 			Naming.rebind(name, objServer);
-
-			System.out.println("Money Transfering Server '" + name + "' active and waiting...");
+            initialStuff();
+			logger.info("Money Transfering Server '" + name + "' active and waiting...");
 			java.io.InputStreamReader inputStreamReader = new java.io.InputStreamReader ( System.in );
 			java.io.BufferedReader stdin = new java.io.BufferedReader ( inputStreamReader );
             @SuppressWarnings("unused")
 			String line  = stdin.readLine();
 		} catch (Exception e) {
-			System.err.println("Transferer exception: " + e.getMessage());
+			logger.error("Transferer exception: " + e.getMessage());
 			e.printStackTrace();
 		}
 	}
 
-
-
-
-	private static void initialStuff(){
-
+    private static void initialStuff(){
         User u1 = new User("jocor", "kun");
         User u2 = new User("ainhoa", "qwerty");
         User u3 = new User("mikel", "ruiz");
+
+        u1.setAmount(3000000);
+        u2.setAmount(4000000);
+        u3.setAmount(5000000);
 
         Product p0 = new Product(u1, "Prod 0", "pretty");
         Product p1 =new Product(u1, "Prod 1", "useful");

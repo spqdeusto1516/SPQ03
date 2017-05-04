@@ -1,5 +1,9 @@
 package es.deusto.server.db.data;
 
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +15,7 @@ import javax.jdo.annotations.Persistent;
 
 @PersistenceCapable (detachable = "true")
 public class User implements Serializable {
+	final static Logger logger = LoggerFactory.getLogger(User.class);
 	/**
 	 * User implements Serializable to be transferred to the RMI client
 	 */
@@ -46,6 +51,8 @@ public class User implements Serializable {
 	}
 	
 	 public int getMoney() {return this.amount;}
+
+	 public void setAmount(int number){ this.amount = number; }
 	 
 	 public String toString() {
 			 return "User: login --> " + this.login + ", password -->  " + this.password;

@@ -1,5 +1,8 @@
 package es.deusto.server.db.data;
 
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.PrimaryKey;
 
@@ -8,6 +11,7 @@ import java.util.Date;
 
 @PersistenceCapable (detachable = "true")
 public class Money implements Serializable {
+    final static Logger logger = LoggerFactory.getLogger(Money.class);
 	/**
 	 * Messages will be transferred to the RMI client as part of a User
 	 */
