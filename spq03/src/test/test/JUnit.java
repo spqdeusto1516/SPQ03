@@ -20,7 +20,7 @@ import es.deusto.server.db.DB;
 import es.deusto.server.db.dao.IDAO;
 
 public class JUnit {
-	
+
 	User u;
 	String name;
 	Product p;
@@ -28,18 +28,20 @@ public class JUnit {
 	DB dataBase;
 	java.util.List<Product> products = new ArrayList<Product>();
 	IDAO dao;
-	
+	String nameCon = "//127.0.0.1:1099/MessengerRMIDAO";
 	Remote remote;
-	
+	ITransferer objHello;
+
+
 	final static org.slf4j.Logger logger = LoggerFactory.getLogger(JUnit.class);
-	
+
 	private static Thread rmiRegistryThread = null;
 	private static Thread rmiServerThread = null;
-	
+
 	public static junit.framework.Test suite() {
 		return new JUnit4TestAdapter(JUnit.class);
 	}
-	
+
 	@BeforeClass static public void setUp() {
 		// Launch the RMI registry
 		class RMIRegistryRunnable implements Runnable {
@@ -54,7 +56,7 @@ public class JUnit {
 				}	
 			}
 		}
-		
+
 		rmiRegistryThread = new Thread(new RMIRegistryRunnable());
 		rmiRegistryThread.start();
 		try {
@@ -62,7 +64,7 @@ public class JUnit {
 		} catch (InterruptedException ie) {
 			ie.printStackTrace();
 		}
-		
+
 		class RMIServerRunnable implements Runnable {
 
 			public void run() {
@@ -76,7 +78,7 @@ public class JUnit {
 				System.out.println("BeforeClass - Setting the server ready TestServer name: " + name);
 
 				try {
-					
+
 					Remote s = (Remote) new Server();
 					Naming.rebind(name,s);
 				} catch (RemoteException re) {
@@ -97,9 +99,9 @@ public class JUnit {
 		} catch (InterruptedException ie) {
 			ie.printStackTrace();
 		}
-	
+
 	}
-	
+
 	@Before
 	public void setUpUser(){
 		try {
@@ -112,43 +114,43 @@ public class JUnit {
 			String name = "//127.0.0.1:1099/MSRMIDAO";
 			System.out.println("BeforeTest - Setting the client ready for calling TestServer name: " + name);
 			remote = (Remote) java.rmi.Naming.lookup(name);
-			}
-			catch (Exception re) {
-				System.err.println(" # Messenger RemoteException: " + re.getMessage());
-				System.exit(-1);
-			} 
+		}
+		catch (Exception re) {
+			System.err.println(" # Messenger RemoteException: " + re.getMessage());
+			System.exit(-1);
+		} 
 	}
-	
+
 	/* @Before
 	public void setUpDatabase() {
 		PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
 		PersistenceManager pm = pmf.getPersistenceManager();
 		Transaction tx = pm.currentTransaction();
-		
+
 		try {
 			tx.begin();
-            
+
             Query q1 = pm.newQuery(User.class);
             long numberInstancesDeleted = q1.deletePersistentAll(1);
             System.out.println("Deleted " + numberInstancesDeleted + " user");
-            			            
+
 			Query q2 = pm.newQuery(Product.class);
 			long numberInstancesDeleted2 = q2.deletePersistentAll();
 			System.out.println("Deleted " + numberInstancesDeleted2 + " product");
-           
+
             Query q3 = pm.newQuery(Money.class);
             long numberInstancesDeleted3 = q3.deletePersistentAll();
             System.out.println("Deleted " + numberInstancesDeleted3 + " money"); 
-			            
+
 			tx.commit();
-        
+
         } finally {
 		    if (tx.isActive()) {
 		    	tx.rollback();
 			}
 			pm.close();
 		}
-		
+
 		Server server;
 		try {
 			server = new Server();
@@ -158,7 +160,65 @@ public class JUnit {
             e.printStackTrace();
         }
     }  */
+//////////////////////////////////////////////////////////
+	@Before
+	public void stablishConnection(){
+		
+            try {
+                objHello = (ITransferer) java.rmi.Naming.lookup(nameCon);
+            } catch (NotBoundException ex) {
+                Logger.getLogger(JUnit.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (MalformedURLException ex) {
+                Logger.getLogger(JUnit.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (RemoteException ex) {
+                Logger.getLogger(JUnit.class.getName()).log(Level.SEVERE, null, ex);
+            }
+	}
 	
+	@Test
+	public void registerProduct(){
+            try {
+                assertTrue(objHello.registerProd(new Product(new User("Itsazain", "123"), "Caja caramelos", "Caramelos de todos los sabores")));
+                        } catch (RemoteException ex) {
+                Logger.getLogger(JUnit.class.getName()).log(Level.SEVERE, null, ex);
+            }
+	}
+        @Test
+	public void registerUser(){
+            try {
+                assertTrue(objHello.registerUser(new User("Itsazain", "123")));
+            } catch (RemoteException ex) {
+                Logger.getLogger(JUnit.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        @Test
+	public void getUser(){
+            try {
+               if (null!=objHello.getUser("Itsazain")){
+                   assertTrue(true);
+               }
+               else
+                   assertTrue(false);
+            } catch (RemoteException ex) {
+                Logger.getLogger(JUnit.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+	@Test
+	public void searchProduct(){
+            try {
+                if (null!=objHello.searchProd("Caja caramelos")) {
+                    assertTrue(true);
+                }
+                else
+                    assertTrue(false);
+
+            } catch (RemoteException ex) {
+                Logger.getLogger(JUnit.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            
+        }
+	
+	////////////////////////////////////////////////////////////
 	@Test
 	public void testStoreUser(){
 		try {
@@ -171,31 +231,31 @@ public class JUnit {
 			String name = "//127.0.0.1:1099/SMRMIDAO";
 			System.out.println("BeforeTest - Setting the client ready for calling TestServer name: " + name);
 			remote = (Remote) java.rmi.Naming.lookup(name);
-			}
-			catch (Exception re) {
-				System.err.println(" # Messenger RemoteException: " + re.getMessage());
-				re.printStackTrace();
-				System.exit(-1);
-			} 
+		}
+		catch (Exception re) {
+			System.err.println(" # Messenger RemoteException: " + re.getMessage());
+			re.printStackTrace();
+			System.exit(-1);
+		} 
 	}
-	
+
 	@Test
 	public void testRetrieveUser(){
-			boolean t = false;
-			String a = null;
-			try {
-				a = remote.getLogin();
-				logger.info(a);
-			} catch (RemoteException e) {
-				logger.error(" # RemoteException: " + e.getMessage());
-				logger.trace(e.getMessage());
-			}
-			if(a!=null) {
-				t = true;
-			}
-			assertTrue(t);
+		boolean t = false;
+		String a = null;
+		try {
+			a = remote.getLogin();
+			logger.info(a);
+		} catch (RemoteException e) {
+			logger.error(" # RemoteException: " + e.getMessage());
+			logger.trace(e.getMessage());
+		}
+		if(a!=null) {
+			t = true;
+		}
+		assertTrue(t);
 	}
-	
+
 	@Test
 	public void testUpdateUser(){
 		try {
@@ -208,12 +268,12 @@ public class JUnit {
 			String name = "//127.0.0.1:1099/SMRMIDAO";
 			System.out.println("BeforeTest - Setting the client ready for calling TestServer name: " + name);
 			remote = (Remote) java.rmi.Naming.lookup(name);
-			}
-			catch (Exception re) {
-				System.err.println(" # Messenger RemoteException: " + re.getMessage());
-				re.printStackTrace();
-				System.exit(-1);
-			} 
+		}
+		catch (Exception re) {
+			System.err.println(" # Messenger RemoteException: " + re.getMessage());
+			re.printStackTrace();
+			System.exit(-1);
+		} 
 	}
 
 	@Test
@@ -222,19 +282,19 @@ public class JUnit {
 		assertEquals(1, dao.getAllProd().size());
 		assertEquals(p.getName(),dao.getAllProd().get(0).getName());
 	}
-	
+
 	@Test
 	public void testGetAllProd(){
-		
+
 	}
-	
+
 	@Test
 	public void testUpdateProduct(){
 		dao.updateProd(p);
 		assertEquals(1, dao.getAllProd().size());
 		assertEquals(p.getName(),dao.getAllProd().get(0).getName());
 	}
-	
+
 	@Test
 	public void testRegisterUser(){
 		boolean a = true;
@@ -249,47 +309,47 @@ public class JUnit {
 
 		assertTrue( a );
 	}
-	
+
 	@Test
 	public void testRegisterProd(){
-		
+
 	}
-	
+
 	@Test
 	public void testSearchProd(){
-		
+
 	}
-	
+
 	@Test
-	 public void testBuyProd(){
-		 
+	public void testBuyProd(){
+
 	}
-	
+
 	@Test
 	public void testUpdateMoney(){
 		dao.storeMoney(m);
 		assertEquals(1, dao.retrieveMoney(amount));
 		assertEquals(m.getAmount(),dao.retrieveMoney(0).getAmount());
 	}
-	
+
 	@Test
 	public void testStoreMoney(){
 		dao.storeMoney(m);
 		assertEquals(1, dao.retrieveMoney(amount));
 		assertEquals(m.getAmount(),dao.retrieveMoney(0).getAmount());
 	}
-	
+
 	@Test
 	public void testRetrieveMoney(){
 		dao.retrieveMoney(amount);
 		assertEquals(0, dao.retrieveMoney(amount));
 	}
-	
+
 	@Test
 	public void testSendMoney(){
-		
+
 	}
-	
+
 	@AfterClass 
 	static public void tearDown() {
 		try	{
@@ -298,11 +358,11 @@ public class JUnit {
 		} catch (InterruptedException ie) {
 			ie.printStackTrace();
 		}
-		
+
 
 	}
-	
-	
+
+
 
 }
 
