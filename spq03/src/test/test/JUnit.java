@@ -119,6 +119,46 @@ public class JUnit {
 			} 
 	}
 	
+	/* @Before
+	public void setUpDatabase() {
+		PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
+		PersistenceManager pm = pmf.getPersistenceManager();
+		Transaction tx = pm.currentTransaction();
+		
+		try {
+			tx.begin();
+            
+            Query q1 = pm.newQuery(User.class);
+            long numberInstancesDeleted = q1.deletePersistentAll(1);
+            System.out.println("Deleted " + numberInstancesDeleted + " user");
+            			            
+			Query q2 = pm.newQuery(Product.class);
+			long numberInstancesDeleted2 = q2.deletePersistentAll();
+			System.out.println("Deleted " + numberInstancesDeleted2 + " product");
+           
+            Query q3 = pm.newQuery(Money.class);
+            long numberInstancesDeleted3 = q3.deletePersistentAll();
+            System.out.println("Deleted " + numberInstancesDeleted3 + " money"); 
+			            
+			tx.commit();
+        
+        } finally {
+		    if (tx.isActive()) {
+		    	tx.rollback();
+			}
+			pm.close();
+		}
+		
+		Server server;
+		try {
+			server = new Server();
+			((Server) server).createDatabase();
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }  */
+	
 	@Test
 	public void testStoreUser(){
 		try {
@@ -141,7 +181,7 @@ public class JUnit {
 	
 	@Test
 	public void testRetrieveUser(){
-			/*boolean t = false;
+			boolean t = false;
 			String a = null;
 			try {
 				a = remote.getLogin();
@@ -153,7 +193,7 @@ public class JUnit {
 			if(a!=null) {
 				t = true;
 			}
-			assertTrue(t);*/
+			assertTrue(t);
 	}
 	
 	@Test
@@ -193,6 +233,61 @@ public class JUnit {
 		dao.updateProd(p);
 		assertEquals(1, dao.getAllProd().size());
 		assertEquals(p.getName(),dao.getAllProd().get(0).getName());
+	}
+	
+	@Test
+	public void testRegisterUser(){
+		boolean a = true;
+		try{
+			logger.info("Test 1 - Register new user");
+			remote.registerUser("login", "password");
+		}
+		catch (Exception re) {
+			logger.error(" # Messenger RemoteException: " + re.getMessage());
+			a =false;
+		} 
+
+		assertTrue( a );
+	}
+	
+	@Test
+	public void testRegisterProd(){
+		
+	}
+	
+	@Test
+	public void testSearchProd(){
+		
+	}
+	
+	@Test
+	 public void testBuyProd(){
+		 
+	}
+	
+	@Test
+	public void testUpdateMoney(){
+		dao.storeMoney(m);
+		assertEquals(1, dao.retrieveMoney(amount));
+		assertEquals(m.getAmount(),dao.retrieveMoney(0).getAmount());
+	}
+	
+	@Test
+	public void testStoreMoney(){
+		dao.storeMoney(m);
+		assertEquals(1, dao.retrieveMoney(amount));
+		assertEquals(m.getAmount(),dao.retrieveMoney(0).getAmount());
+	}
+	
+	@Test
+	public void testRetrieveMoney(){
+		dao.retrieveMoney(amount);
+		assertEquals(0, dao.retrieveMoney(amount));
+	}
+	
+	@Test
+	public void testSendMoney(){
+		
 	}
 	
 	@AfterClass 
