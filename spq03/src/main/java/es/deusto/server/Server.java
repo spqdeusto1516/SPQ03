@@ -64,8 +64,9 @@ public class Server {
         Money m0 = new Money(1, u2, p0);
         Money m1 = new Money(123, u3, p1);
         Money m2 = new Money(555, u1, p2);
-        Money m3 = new Money(777, u1, p3);
-        Money m4 = new Money(890, u1, p5);
+        Money m3 = new Money(777, u3, p3);
+        Money m4 = new Money(890, u2, p5);
+        Money m5 = new Money(891, u1, p6);
 
         IDB db = new DB();
 
@@ -87,6 +88,7 @@ public class Server {
         db.insertMoney(m2);
         db.insertMoney(m3);
         db.insertMoney(m4);
+        db.insertMoney(m5);
 
         db.buyProd(u2.getLogin(), u1.getLogin(), "Prod 0", 1);
         db.buyProd(u3.getLogin(), u1.getLogin(), "Prod 1", 123);

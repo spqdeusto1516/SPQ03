@@ -202,7 +202,6 @@ public class DAO implements IDAO {
         boolean ret=true;
         try {
             tx.begin();
-
             pm.makePersistent(m);
             tx.commit();
         } catch (Exception ex) {

@@ -35,56 +35,62 @@ public class Client {
             objHello.registerUser(new User("jocor", "kun"));
             int dec1 = 0;
             User sender = objHello.getUser("jocor");
-            do {
-                dec1 = 0;
-                logger.info("Insert whether you want to send some Money (1), you want to look for a Product (2) or you" +
-                        "want to insert a new Product (3)");
-                entradaEscaner = new Scanner(System.in);
-                dec1 = Integer.parseInt(entradaEscaner.nextLine());
-            } while (dec1 != 1 && dec1 != 2 && dec1 != 3);
-            switch (dec1) {
-                case (1):
-                    int amount = 0;
-                    do {
-                        amount = 0;
-                        logger.info("Set the amount of money");
+            while(dec1 != 4) {
+                do {
+                    dec1 = 0;
+                    logger.info("Insert whether you want to send some Money (1), you want to look for a Product (2) or you" +
+                            "want to insert a new Product (3) or exit the application (4)");
+                    entradaEscaner = new Scanner(System.in);
+                    dec1 = Integer.parseInt(entradaEscaner.nextLine());
+                } while (dec1 != 1 && dec1 != 2 && dec1 != 3 && dec1 != 4);
+
+                switch (dec1) {
+                    case (1):
+                        int amount = 0;
+                        do {
+                            amount = 0;
+                            logger.info("Set the amount of money");
+                            entradaEscaner = new Scanner(System.in);
+                            amount = Integer.parseInt(entradaEscaner.nextLine());
+                        } while (amount <= sender.getMoney());
+
+                        logger.info("Now insert who you want to send it to");
                         entradaEscaner = new Scanner(System.in);
-                        amount = Integer.parseInt(entradaEscaner.nextLine());
-                    } while (amount <= sender.getMoney());
+                        User receiver = objHello.getUser(entradaEscaner.nextLine());
+                        if (!(receiver == null)) {
+                            logger.info("Sending money...");
+                            objHello.sendMoney(receiver.getLogin(), amount, sender.getLogin());
+                        }
+                        break;
+                    case (2):
+                        logger.info("What's the name of the Product you are looking for?");
+                        entradaEscaner = new Scanner(System.in);
+                        prodName = entradaEscaner.nextLine();
+                        Product search = objHello.searchProd(prodName);
+                        if (search == null) {
+                            logger.error("Error! No Product with such name");
+                        } else {
+                            logger.info(search.toStringShort() + search.getOwner().toString());
+                        }
+                        break;
 
-                    logger.info("Now insert who you want to send it to");
-                    entradaEscaner = new Scanner(System.in);
-                    User receiver = objHello.getUser(entradaEscaner.nextLine());
-                    if (!receiver.equals(null)) {
-                        logger.info("Sending money...");
-                        objHello.sendMoney(receiver.getLogin(), amount, sender.getLogin());
-                    }
-                    break;
-                case (2):
-                    logger.info("What's the name of the Product you are looking for?");
-                    entradaEscaner = new Scanner(System.in);
-                    prodName = entradaEscaner.nextLine();
-                    Product search = objHello.searchProd(prodName);
-                    if (search.equals(null)) {
-                        logger.info("Error! No Product with such name");
-                    } else {
-                        logger.info(search.toStringShort() + search.getOwner().toString());
-                    }
-                    break;
+                    case (3):
+                        Product p = null;
+                        logger.info("Insert the name of the product");
+                        entradaEscaner = new Scanner(System.in);
+                        prodName = entradaEscaner.nextLine();
+                        logger.info("Insert the characteristics");
+                        entradaEscaner = new Scanner(System.in);
+                        String characteristics = entradaEscaner.nextLine();
+                        p = new Product(sender, prodName, characteristics);
+                        objHello.registerProd(p);
+                        break;
+                    case(4):
+                        logger.info("Exiting the application....");
+                        break;
 
-                case (3):
-                    Product p = null;
-                    logger.info("Insert the name of the product");
-                    entradaEscaner = new Scanner(System.in);
-                    prodName = entradaEscaner.nextLine();
-                    logger.info("Insert the characteristics");
-                    entradaEscaner = new Scanner(System.in);
-                    String characteristics = entradaEscaner.nextLine();
-                    p = new Product(sender, prodName, characteristics);
-                    objHello.registerProd(p);
-                    break;
+                }
             }
-
         } catch (Exception e) {
             logger.debug("RMI Example exception: " + e.getMessage());
             e.printStackTrace();

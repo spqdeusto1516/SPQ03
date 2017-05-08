@@ -18,7 +18,6 @@ public class Money implements Serializable {
 	private static final long serialVersionUID = 1L;
 	User user;
 	Product product;
-    @PrimaryKey
     int amount=0;
 	long timestamp;
 	
