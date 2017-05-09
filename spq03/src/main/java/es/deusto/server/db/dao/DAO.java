@@ -145,31 +145,29 @@ public class DAO implements IDAO {
 
     @Override
     public Product retrieveProdSearch(String name){
+        Product prod = null;
         PersistenceManager pm = pmf.getPersistenceManager();
-        Transaction tx = pm.currentTransaction();
         pm.getFetchPlan().setMaxFetchDepth(3);
-        Product p = null;
+        Transaction tx = pm.currentTransaction();
         try {
             tx.begin();
-            Extent<Product> extentP = pm.getExtent(Product.class);
-
-            for (Product c : extentP) {
-
-                if (p.getName().equals(name)) {
-                    p = c;
-                    logger.info("Retrieve by paparameter " + p.getName());
-                }
-            }
+            prod = pm.getObjectById(Product.class, name);
+            logger.info("Product in dao" + prod.getName());
             tx.commit();
-        } catch (Exception ex) {
-       	   logger.error("# Error getting Extent Game: " + ex.getMessage());
-        } finally {
-            if (tx.isActive()) {
+        } catch (javax.jdo.JDOObjectNotFoundException jonfe)
+        {
+            logger.error("Product does not exist: " + jonfe.getMessage());
+        }
+
+        finally {
+            if (tx != null && tx.isActive()) {
                 tx.rollback();
             }
+
             pm.close();
         }
-        return p;
+        logger.info("The final return is: " + prod.getName());
+        return prod;
     }
 
     @Override

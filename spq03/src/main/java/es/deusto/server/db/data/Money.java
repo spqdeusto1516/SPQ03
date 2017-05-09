@@ -16,16 +16,14 @@ public class Money implements Serializable {
 	 * Messages will be transferred to the RMI client as part of a User
 	 */
 	private static final long serialVersionUID = 1L;
-	User user;
-	Product product;
-    int amount=0;
-	long timestamp;
+    private User user;
+    private Product product;
+    private int amount=0;
+    private long timestamp;
 	
 	
-    public Money(int amount, User sender, Product p) {
+    public Money(int amount) {
         this.amount = amount;
-        this.user = sender;
-        this.product = p;
 		this.timestamp = System.currentTimeMillis();
     }
 
@@ -39,6 +37,10 @@ public class Money implements Serializable {
 
     public void setUserSending(User sender) {
         this.user = sender;
+    }
+
+    public void setProduct(Product p) {
+        this.product = p;
     }
 
     public int getAmount(){return amount;}

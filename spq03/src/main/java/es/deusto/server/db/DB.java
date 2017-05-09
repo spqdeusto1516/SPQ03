@@ -76,7 +76,7 @@ public class DB implements IDB {
         }
 
         if (prod != null) {
-            prod.setOwner(p.getOwner());
+            prod.setOwner(p.dnGetuser());
 
             dao.updateProd(prod);
 
@@ -149,8 +149,8 @@ public class DB implements IDB {
         }else{
             uB.removeMoney(amount);
             uS.addMoney(amount);
-            p.setOwner(uB);
             dao.updateUser(uB);
+            p.setOwner(uB);
             dao.updateUser(uS);
             dao.updateProd(p);
         }

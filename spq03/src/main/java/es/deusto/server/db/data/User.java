@@ -21,12 +21,12 @@ public class User implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	@PrimaryKey
-	String login=null;
-	String password=null;
-	@Persistent(defaultFetchGroup="true", mappedBy="user", dependentElement="true")
+	private String login;
+	private String password=null;
+	@Persistent(defaultFetchGroup="true", mappedBy="user")
 	@Join
 	List<Money> moneyList = new ArrayList<>();
-	int amount = 0;
+	private int amount = 0;
 	
 	
 	public User(String login, String password) {

@@ -21,24 +21,25 @@ public class Product implements Serializable {
      * Messages will be transferred to the RMI client as part of a User
      */
     private static final long serialVersionUID = 1L;
-    User user;
+    private User user;
+
     @PrimaryKey
-    String name=null;
-    String characteristics=null;
+    private String name;
+
+    private String characteristics=null;
     @Persistent(defaultFetchGroup="true", mappedBy="product", dependentElement="true")
     @Join
-    List<Money> buyersPayment = new ArrayList<>();
-    long timestamp;
+    private List<Money> buyersPayment = new ArrayList<>();
+    private long timestamp;
 
 
-    public Product(User owner, String name, String characteristics) {
-        this.user = owner;
+    public Product(String name, String characteristics) {
         this.name = name;
         this.characteristics = characteristics;
         this.timestamp = System.currentTimeMillis();
     }
 
-    public User getOwner() {
+    public User dnGetuser() {
         return user;
     }
 

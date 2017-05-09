@@ -1,563 +1,268 @@
-19:16:01> INFO  (Log4JLogger.java:82): DataNucleus SchemaTool : Eliminación del esquema para clases
-19:16:01> INFO  (Log4JLogger.java:82): DataNucleus SchemaTool : Classpath
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\org\datanucleus\datanucleus-maven-plugin\5.0.2\datanucleus-maven-plugin-5.0.2.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.8\plexus-utils-3.0.8.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\org\codehaus\plexus\plexus-container-default\1.5.5\plexus-container-default-1.5.5.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.2\plexus-classworlds-2.2.2.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\org\apache\xbean\xbean-reflect\3.4\xbean-reflect-3.4.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\log4j\log4j\1.2.12\log4j-1.2.12.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\commons-logging\commons-logging-api\1.1\commons-logging-api-1.1.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\com\google\collections\google-collections\1.0\google-collections-1.0.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\junit\junit\3.8.2\junit-3.8.2.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\git\SPQ03\spq03\target\classes
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\org\datanucleus\datanucleus-core\5.1.0-m2\datanucleus-core-5.1.0-m2.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\org\datanucleus\datanucleus-api-jdo\5.1.0-m2\datanucleus-api-jdo-5.1.0-m2.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\org\datanucleus\datanucleus-rdbms\5.1.0-m2\datanucleus-rdbms-5.1.0-m2.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\org\datanucleus\javax.jdo\3.2.0-m6\javax.jdo-3.2.0-m6.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\javax\transaction\transaction-api\1.1\transaction-api-1.1.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\mysql\mysql-connector-java\5.1.41\mysql-connector-java-5.1.41.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\org\mockito\mockito-core\2.7.21\mockito-core-2.7.21.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\org\ow2\asm\asm\5.2\asm-5.2.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\org\slf4j\slf4j-log4j12\1.6.4\slf4j-log4j12-1.6.4.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\org\slf4j\slf4j-simple\1.6.4\slf4j-simple-1.6.4.jar
-19:16:01> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\.m2\repository\org\slf4j\slf4j-api\1.6.4\slf4j-api-1.6.4.jar
-19:16:01> DEBUG (Log4JLogger.java:63): Using PluginRegistry org.datanucleus.plugin.NonManagedPluginRegistry
-19:16:01> DEBUG (Log4JLogger.java:63): Registering bundle org.sonatype.inject version 2.3.0 at URL file:/C:/Users/Jorge/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar.
-19:16:01> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Jorge/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar!/plugin.xml.
-19:16:01> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Jorge/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar!/plugin.xml.
-19:16:01> DEBUG (Log4JLogger.java:63): Registering bundle org.datanucleus version 5.1.0.m2 at URL file:/C:/Users/Jorge/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m2/datanucleus-core-5.1.0-m2.jar.
-19:16:01> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Jorge/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m2/datanucleus-core-5.1.0-m2.jar!/plugin.xml.
-19:16:01> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Jorge/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m2/datanucleus-core-5.1.0-m2.jar!/plugin.xml.
-19:16:01> DEBUG (Log4JLogger.java:63): Registering bundle org.datanucleus.api.jdo version 5.1.0.m2 at URL file:/C:/Users/Jorge/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m2/datanucleus-api-jdo-5.1.0-m2.jar.
-19:16:01> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Jorge/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m2/datanucleus-api-jdo-5.1.0-m2.jar!/plugin.xml.
-19:16:01> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Jorge/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m2/datanucleus-api-jdo-5.1.0-m2.jar!/plugin.xml.
-19:16:01> DEBUG (Log4JLogger.java:63): Registering bundle org.datanucleus.store.rdbms version 5.1.0.m2 at URL file:/C:/Users/Jorge/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m2/datanucleus-rdbms-5.1.0-m2.jar.
-19:16:01> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Jorge/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m2/datanucleus-rdbms-5.1.0-m2.jar!/plugin.xml.
-19:16:01> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Jorge/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m2/datanucleus-rdbms-5.1.0-m2.jar!/plugin.xml.
-19:16:01> DEBUG (Log4JLogger.java:63): Creating StoreManager for datastore
-19:16:02> DEBUG (Log4JLogger.java:63): Hemos creado tx data source con pool tipo dbcp2-builtin
-19:16:02> DEBUG (Log4JLogger.java:63): Registrado la factoria de connecciones transaccionales bajo el nombre "rdbms/tx"
-19:16:02> DEBUG (Log4JLogger.java:63): Registrado la factoria de connecciones nontransaccionales bajo el nombre "rdbms/nontx"
-19:16:02> DEBUG (Log4JLogger.java:63): Hemos creado nontx data source con pool tipo dbcp2-builtin
-19:16:03> DEBUG (Log4JLogger.java:63): ManagedConnection(non-enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@20322d26 [conn=null, commitOnRelease=true, closeOnRelease=true, closeOnTxnEnd=true]" abierto
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=BIT, sql-type=BIT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BitRDBMSMapping, default=true)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=BOOLEAN, sql-type=BOOLEAN, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BooleanRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Byte (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=true)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Byte (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Character (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=true)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Character (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Double (jdbc-type=DOUBLE, sql-type=DOUBLE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DoubleRDBMSMapping, default=true)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Double (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DecimalRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Float (jdbc-type=FLOAT, sql-type=FLOAT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.FloatRDBMSMapping, default=true)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Float (jdbc-type=DOUBLE, sql-type=DOUBLE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DoubleRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Float (jdbc-type=REAL, sql-type=REAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.RealRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Float (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DecimalRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Integer (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=true)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Integer (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Integer (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Integer (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Integer (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Long (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=true)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Long (jdbc-type=INTEGER, sql-type=INT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Long (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Long (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Long (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Short (jdbc-type=SMALLINT, sql-type=SMALLINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.SmallIntRDBMSMapping, default=true)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Short (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.Short (jdbc-type=TINYINT, sql-type=TINYINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TinyIntRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=true)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=LONGVARCHAR, sql-type=LONGVARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=CLOB, sql-type=CLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.ClobRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=BLOB, sql-type=BLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=LONGVARCHAR, sql-type=LONGTEXT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=LONGVARCHAR, sql-type=MEDIUMTEXT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=LONGVARCHAR, sql-type=TEXT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarcharRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=BLOB, sql-type=LONGBLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=BLOB, sql-type=MEDIUMBLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=NVARCHAR, sql-type=NVARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NVarcharRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=NCHAR, sql-type=NCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NCharRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.math.BigDecimal (jdbc-type=DECIMAL, sql-type=DECIMAL, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DecimalRDBMSMapping, default=true)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.math.BigDecimal (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.math.BigInteger (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=true)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.sql.Date (jdbc-type=DATE, sql-type=DATE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DateRDBMSMapping, default=true)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.sql.Date (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.sql.Date (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.sql.Date (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.sql.Date (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.sql.Time (jdbc-type=TIME, sql-type=TIME, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimeRDBMSMapping, default=true)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.sql.Time (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.sql.Time (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.sql.Time (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.sql.Time (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.sql.Timestamp (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=true)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.sql.Timestamp (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.sql.Timestamp (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.sql.Timestamp (jdbc-type=DATE, sql-type=DATE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DateRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.sql.Timestamp (jdbc-type=TIME, sql-type=TIME, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimeRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=TIMESTAMP, sql-type=TIMESTAMP, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping, default=true)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=DATE, sql-type=DATE, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.DateRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.util.Date (jdbc-type=TIME, sql-type=TIME, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.TimeRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.io.Serializable (jdbc-type=LONGVARBINARY, sql-type=LONGVARBINARY, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.LongVarBinaryRDBMSMapping, default=true)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.io.Serializable (jdbc-type=BLOB, sql-type=BLOB, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BlobRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.io.Serializable (jdbc-type=VARBINARY, sql-type=VARBINARY, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarBinaryRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java java.io.File (jdbc-type=LONGVARBINARY, sql-type=LONGVARBINARY, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BinaryStreamRDBMSMapping, default=true)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java org.datanucleus.identity.DatastoreId (jdbc-type=BIGINT, sql-type=BIGINT, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping, default=true)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java org.datanucleus.identity.DatastoreId (jdbc-type=INTEGER, sql-type=INTEGER, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java org.datanucleus.identity.DatastoreId (jdbc-type=NUMERIC, sql-type=NUMERIC, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.NumericRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java org.datanucleus.identity.DatastoreId (jdbc-type=CHAR, sql-type=CHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.CharRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): Soportando el tipo RDBMS de Java org.datanucleus.identity.DatastoreId (jdbc-type=VARCHAR, sql-type=VARCHAR, datastore-mapping-type=org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping, default=false)
-19:16:03> DEBUG (Log4JLogger.java:63): No Soportando el tipo RDBMS de Java java.lang.Float (jdbc-type=REAL, sql-type=REAL)
-19:16:03> DEBUG (Log4JLogger.java:63): No Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=NVARCHAR, sql-type=NVARCHAR)
-19:16:03> DEBUG (Log4JLogger.java:63): No Soportando el tipo RDBMS de Java java.lang.String (jdbc-type=NCHAR, sql-type=NCHAR)
-19:16:03> DEBUG (Log4JLogger.java:63): No Soportando el tipo RDBMS de Java java.lang.Boolean (jdbc-type=BOOLEAN, sql-type=BOOLEAN)
-19:16:03> DEBUG (Log4JLogger.java:63): La columna "`DELETEME1494263763942`.`UNUSED`" añadió a la representación de la table.
-19:16:03> DEBUG (Log4JLogger.java:63): Crear la tabla `DELETEME1494263763942`
-19:16:03> DEBUG (Log4JLogger.java:63): CREATE TABLE `DELETEME1494263763942`
-(
-    `UNUSED` INTEGER NOT NULL
-) ENGINE=INNODB
-19:16:04> DEBUG (Log4JLogger.java:63): Tiempo de cumplir = 286 ms
-19:16:04> DEBUG (Log4JLogger.java:63): No era posible determinar el nombre del esquema por este DataStore
-19:16:04> DEBUG (Log4JLogger.java:63): Borrar la tabla `DELETEME1494263763942`
-19:16:04> DEBUG (Log4JLogger.java:63): DROP TABLE `DELETEME1494263763942` CASCADE
-19:16:04> DEBUG (Log4JLogger.java:63): Tiempo de cumplir = 200 ms
-19:16:04> DEBUG (Log4JLogger.java:63): ======================= Datastore =========================
-19:16:04> DEBUG (Log4JLogger.java:63): StoreManager : "rdbms" (org.datanucleus.store.rdbms.RDBMSStoreManager)
-19:16:04> DEBUG (Log4JLogger.java:63): Datastore : read-write
-19:16:04> DEBUG (Log4JLogger.java:63): Schema Control : AutoCreate(Tables,Columns,Constraints), Validate(None)
-19:16:04> DEBUG (Log4JLogger.java:63): Schema : NamingFactory=datanucleus2 identifierCase=null
-19:16:04> DEBUG (Log4JLogger.java:63): Query Languages : [JDOQL, JPQL, SQL, STOREDPROC]
-19:16:04> DEBUG (Log4JLogger.java:63): Queries : Timeout=0
-19:16:04> DEBUG (Log4JLogger.java:63): ===========================================================
-19:16:04> DEBUG (Log4JLogger.java:63): Datastore Adapter : org.datanucleus.store.rdbms.adapter.MySQLAdapter
-19:16:04> DEBUG (Log4JLogger.java:63): Datastore : name="MySQL" version="5.7.18-log"
-19:16:04> DEBUG (Log4JLogger.java:63): Datastore Driver : name="MySQL Connector Java" version="mysql-connector-java-5.1.41 ( Revision: 83c6dc41b96809df81444362933043b20a1d49d5 )"
-19:16:04> DEBUG (Log4JLogger.java:63): Primary Connection Factory : URL[jdbc:mysql://localhost/transactionsDB?verifyServerCertificate=false&useSSL=true]
-19:16:04> DEBUG (Log4JLogger.java:63): Secondary Connection Factory : URL[jdbc:mysql://localhost/transactionsDB?verifyServerCertificate=false&useSSL=true]
-19:16:04> DEBUG (Log4JLogger.java:63): Datastore Identifiers : factory="datanucleus2" case="UPPERCASE" catalog=transactionsDB
-19:16:04> DEBUG (Log4JLogger.java:63): Supported Identifier Cases : lowercase "lowercase" "UPPERCASE" 
-19:16:04> DEBUG (Log4JLogger.java:63): Supported Identifier Lengths (max) : Table=64 Column=64 Constraint=64 Index=64 Delimiter=`
-19:16:04> DEBUG (Log4JLogger.java:63): Support for Identifiers in DDL : catalog=true schema=false
-19:16:04> DEBUG (Log4JLogger.java:63): Datastore : checkTableViewExistence, rdbmsConstraintCreateMode=DataNucleus, initialiseColumnInfo=ALL
-19:16:04> DEBUG (Log4JLogger.java:63): Support Statement Batching : yes (max-batch-size=50)
-19:16:04> DEBUG (Log4JLogger.java:63): Queries : Results direction=forward, type=forward-only, concurrency=read-only
-19:16:04> DEBUG (Log4JLogger.java:63): Java-Types : string-default-length=255
-19:16:04> DEBUG (Log4JLogger.java:63): JDBC-Types : VARCHAR, LONGVARCHAR, BINARY, VARBINARY, LONGVARBINARY, BIGINT, TINYINT, BIT, CHAR, NUMERIC, DECIMAL, INTEGER, CLOB, SMALLINT, BLOB, FLOAT, DOUBLE, DATE, TIME, TIMESTAMP
-19:16:04> DEBUG (Log4JLogger.java:63): ===========================================================
-19:16:04> DEBUG (Log4JLogger.java:63): ManagedConnection(non-enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@20322d26 [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@27d415d9, commitOnRelease=true, closeOnRelease=true, closeOnTxnEnd=true]" cerrado
-19:16:04> DEBUG (Log4JLogger.java:63): StoreManager now created
-19:16:04> DEBUG (Log4JLogger.java:63): Tipos de Java inicializando ...
-19:16:04> DEBUG (Log4JLogger.java:63): Soporte para tipos de Java listo : tipos soportados = [B, [C, [D, [F, [I, [J, [Ljava.lang.Boolean;, [Ljava.lang.Byte;, [Ljava.lang.Character;, [Ljava.lang.Double;, [Ljava.lang.Enum;, [Ljava.lang.Float;, [Ljava.lang.Integer;, [Ljava.lang.Long;, [Ljava.lang.Number;, [Ljava.lang.Object;, [Ljava.lang.Short;, [Ljava.lang.String;, [Ljava.math.BigDecimal;, [Ljava.math.BigInteger;, [Ljava.util.Date;, [Ljava.util.Locale;, [S, [Z, boolean, byte, char, double, float, int, java.awt.Color, java.awt.image.BufferedImage, java.lang.Boolean, java.lang.Byte, java.lang.Character, java.lang.Class, java.lang.Double, java.lang.Enum, java.lang.Float, java.lang.Integer, java.lang.Long, java.lang.Number, java.lang.Short, java.lang.String, java.lang.StringBuffer, java.lang.StringBuilder, java.math.BigDecimal, java.math.BigInteger, java.net.URI, java.net.URL, java.sql.Date, java.sql.Time, java.sql.Timestamp, java.time.Duration, java.time.Instant, java.time.LocalDate, java.time.LocalDateTime, java.time.LocalTime, java.time.MonthDay, java.time.OffsetDateTime, java.time.OffsetTime, java.time.Period, java.time.Year, java.time.YearMonth, java.time.ZonedDateTime, java.time.ZoneId, java.time.ZoneOffset, java.util.ArrayList, java.util.Arrays$ArrayList, java.util.BitSet, java.util.Calendar, java.util.Collection, java.util.Currency, java.util.Date, java.util.GregorianCalendar, java.util.HashMap, java.util.HashSet, java.util.Hashtable, java.util.LinkedHashMap, java.util.LinkedHashSet, java.util.LinkedList, java.util.List, java.util.Locale, java.util.Map, java.util.Optional, java.util.PriorityQueue, java.util.Properties, java.util.Queue, java.util.Set, java.util.SortedMap, java.util.SortedSet, java.util.Stack, java.util.TimeZone, java.util.TreeMap, java.util.TreeSet, java.util.UUID, java.util.Vector, long, short
-19:16:04> DEBUG (Log4JLogger.java:63): Inicializando TypeConverters ...
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverters listo
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for byte[] to : java.nio.ByteBuffer
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for char[] to : java.nio.ByteBuffer
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for double[] to : java.nio.ByteBuffer
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for float[] to : java.nio.ByteBuffer
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for int[] to : java.nio.ByteBuffer
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for long[] to : java.nio.ByteBuffer
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for short[] to : java.nio.ByteBuffer
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for boolean[] to : java.nio.ByteBuffer
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.awt.Color to : int[],java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.awt.image.BufferedImage to : java.nio.ByteBuffer,byte[]
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.io.Serializable to : java.nio.ByteBuffer,byte[],java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Boolean to : java.lang.Integer,java.lang.Character
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Character to : java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Class to : java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Integer to : java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Long to : java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.StringBuffer to : java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.StringBuilder to : java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.math.BigDecimal to : java.nio.ByteBuffer,java.lang.Double,java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.math.BigInteger to : java.nio.ByteBuffer,java.lang.Long,java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.net.URI to : java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.net.URL to : java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.sql.Date to : java.util.Date,java.lang.Long,java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.sql.Time to : java.util.Date,java.lang.Long,java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.sql.Timestamp to : java.util.Date,java.lang.Long,java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Duration to : java.lang.Long,java.lang.Double,java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Instant to : java.util.Date,java.sql.Timestamp,java.lang.Long,java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.LocalDate to : java.util.Date,java.lang.String,java.sql.Date
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.LocalDateTime to : java.util.Date,java.sql.Timestamp,java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.LocalTime to : java.sql.Time,java.util.Date,java.lang.Long,java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.MonthDay to : java.util.Date,int[],java.lang.String,java.sql.Date
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.OffsetDateTime to : java.util.Date,java.sql.Timestamp,java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.OffsetTime to : java.sql.Time,java.lang.Long,java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Period to : java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Year to : java.lang.Integer,java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.YearMonth to : java.util.Date,int[],java.lang.String,java.sql.Date
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.ZonedDateTime to : java.sql.Timestamp,java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.ZoneId to : java.lang.String
-19:16:04> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.ZoneOffset to : java.lang.String
-19:16:05> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.BitSet to : java.lang.String
-19:16:05> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Calendar to : java.util.Date,java.sql.Timestamp,[Ljava.lang.Object;,java.lang.String
-19:16:05> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Currency to : java.lang.String
-19:16:05> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Date to : java.lang.Long,java.lang.String
-19:16:05> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Locale to : java.lang.String
-19:16:05> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.TimeZone to : java.lang.String
-19:16:05> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.UUID to : java.lang.String
-19:16:05> DEBUG (Log4JLogger.java:63): MetaDataManager : Input=(XML,Annotations), XML-Validation=false, XML-Suffices=(persistence=*.jdo, orm=orm, query=*.jdoquery) mapping-name=mysql, JDO-listener=true
-19:16:05> DEBUG (Log4JLogger.java:63): Registering listener for metadata initialisation
-19:16:05> DEBUG (Log4JLogger.java:63): Cache de nivel 2 del tipo "soft" inicializada
-19:16:05> DEBUG (Log4JLogger.java:63): Started pool of ExecutionContext (maxPool=20, reaperThread=false)
-19:16:05> DEBUG (Log4JLogger.java:63): ================= NucleusContext ===============
-19:16:05> DEBUG (Log4JLogger.java:63): DataNucleus Context : Versión: "5.1.0.m2" con JRE "1.8.0_20" en "Windows 8.1"
-19:16:05> DEBUG (Log4JLogger.java:63): Persistence API : JDO
-19:16:05> DEBUG (Log4JLogger.java:63): Plugin Registry : org.datanucleus.plugin.NonManagedPluginRegistry
-19:16:05> DEBUG (Log4JLogger.java:63): ClassLoading : default
-19:16:05> DEBUG (Log4JLogger.java:63): Persistence : pm-singlethreaded, nontransactional-read, nontransactional-write, reachability-at-commit, detach-all-on-commit, copy-on-attach, managed-relations(checked), deletion-policy=JDO2, serverTimeZone=Europe/Paris
-19:16:05> DEBUG (Log4JLogger.java:63): Transactions : type=RESOURCE_LOCAL, mode=datastore, isolation=read-committed
-19:16:05> DEBUG (Log4JLogger.java:63): ValueGeneration : txn-isolation=read-committed connection=New
-19:16:05> DEBUG (Log4JLogger.java:63): Cache : Level1 (soft), Level2 (soft, mode=UNSPECIFIED), QueryResults (soft), Collections/Maps 
-19:16:05> DEBUG (Log4JLogger.java:63): ================================================
-19:16:05> INFO  (Log4JLogger.java:82): DataNucleus SchemaTool : Propiedades para persistencia
-19:16:05> INFO  (Log4JLogger.java:82): >>  datanucleus.autostartmechanism=None
-19:16:05> INFO  (Log4JLogger.java:82): >>  datanucleus.connectiondrivername=com.mysql.jdbc.Driver
-19:16:05> INFO  (Log4JLogger.java:82): >>  datanucleus.connectionurl=jdbc:mysql://localhost/transactionsDB?verifyServerCertificate=false&useSSL=true
-19:16:05> INFO  (Log4JLogger.java:82): >>  datanucleus.connectionusername=root
-19:16:05> INFO  (Log4JLogger.java:82): >>  datanucleus.detachalloncommit=true
-19:16:05> INFO  (Log4JLogger.java:82): >>  datanucleus.mapping=mysql
-19:16:05> INFO  (Log4JLogger.java:82): >>  datanucleus.readonlydatastore=false
-19:16:05> INFO  (Log4JLogger.java:82): >>  datanucleus.schema.autocreateall=true
-19:16:05> INFO  (Log4JLogger.java:82): >>  datanucleus.schema.validateconstraints=false
-19:16:05> INFO  (Log4JLogger.java:82): >>  datanucleus.schema.validatetables=false
-19:16:05> INFO  (Log4JLogger.java:82): DataNucleus SchemaTool : Ficheros
-19:16:05> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\git\SPQ03\spq03\target\classes\es\deusto\client\Client.class
-19:16:05> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\git\SPQ03\spq03\target\classes\es\deusto\client\remote\ITransferer.class
-19:16:05> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\git\SPQ03\spq03\target\classes\es\deusto\server\db\dao\DAO.class
-19:16:05> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\git\SPQ03\spq03\target\classes\es\deusto\server\db\dao\IDAO.class
-19:16:05> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\git\SPQ03\spq03\target\classes\es\deusto\server\db\data\Money.class
-19:16:05> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\git\SPQ03\spq03\target\classes\es\deusto\server\db\data\Product.class
-19:16:05> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\git\SPQ03\spq03\target\classes\es\deusto\server\db\data\User.class
-19:16:05> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\git\SPQ03\spq03\target\classes\es\deusto\server\db\DB.class
-19:16:05> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\git\SPQ03\spq03\target\classes\es\deusto\server\db\IDB.class
-19:16:05> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\git\SPQ03\spq03\target\classes\es\deusto\server\remote\ITransferer.class
-19:16:05> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\git\SPQ03\spq03\target\classes\es\deusto\server\remote\Transferer.class
-19:16:05> INFO  (Log4JLogger.java:82): >>  C:\Users\Jorge\git\SPQ03\spq03\target\classes\es\deusto\server\Server.class
-19:16:05> DEBUG (Log4JLogger.java:63): Leyendo 12 ficheros (metadata/class) ...
-19:16:05> DEBUG (Log4JLogger.java:63): MetaData Management : Carga de Metadata de los archivos de metadata "[]" ...
-19:16:05> DEBUG (Log4JLogger.java:63): MetaData Management : Carga de Metadata ya ha terminado
-19:16:05> DEBUG (Log4JLogger.java:63): MetaData Management : Carga de Metadata de las clases "[es.deusto.server.remote.ITransferer, es.deusto.server.db.DB, es.deusto.client.remote.ITransferer, es.deusto.server.remote.Transferer, es.deusto.server.db.dao.DAO, es.deusto.client.Client, es.deusto.server.db.data.User, es.deusto.server.db.IDB, es.deusto.server.Server, es.deusto.server.db.data.Money, es.deusto.server.db.dao.IDAO, es.deusto.server.db.data.Product]" ...
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /META-INF/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /WEB-INF/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /es/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /es.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /es/deusto/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /es/deusto.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /es/deusto/server/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /es/deusto/server.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /es/deusto/server/remote/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /es/deusto/server/remote.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /es/deusto/server/remote/ITransferer.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer"
-19:16:05> DEBUG (Log4JLogger.java:63): Registrando la clase "es.deusto.server.remote.ITransferer" no tener Meta-Data
-19:16:05> DEBUG (Log4JLogger.java:63): La clase "es.deusto.server.remote.ITransferer" no tiene MetaData o annotaciones.
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /META-INF/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /WEB-INF/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /es/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /es.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /es/deusto/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /es/deusto.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /es/deusto/server/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /es/deusto/server.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /es/deusto/server/db/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /es/deusto/server/db.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /es/deusto/server/db/DB.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB"
-19:16:05> DEBUG (Log4JLogger.java:63): Registrando la clase "es.deusto.server.db.DB" no tener Meta-Data
-19:16:05> DEBUG (Log4JLogger.java:63): La clase "es.deusto.server.db.DB" no tiene MetaData o annotaciones.
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /META-INF/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /WEB-INF/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /es/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /es.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /es/deusto/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /es/deusto.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /es/deusto/client/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /es/deusto/client.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /es/deusto/client/remote/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /es/deusto/client/remote.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /es/deusto/client/remote/ITransferer.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer"
-19:16:05> DEBUG (Log4JLogger.java:63): Registrando la clase "es.deusto.client.remote.ITransferer" no tener Meta-Data
-19:16:05> DEBUG (Log4JLogger.java:63): La clase "es.deusto.client.remote.ITransferer" no tiene MetaData o annotaciones.
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /META-INF/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /WEB-INF/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /es/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /es.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /es/deusto/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /es/deusto.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /es/deusto/server/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /es/deusto/server.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /es/deusto/server/remote/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /es/deusto/server/remote.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /es/deusto/server/remote/Transferer.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer"
-19:16:05> DEBUG (Log4JLogger.java:63): Registrando la clase "es.deusto.server.remote.Transferer" no tener Meta-Data
-19:16:05> DEBUG (Log4JLogger.java:63): La clase "es.deusto.server.remote.Transferer" no tiene MetaData o annotaciones.
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /META-INF/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /WEB-INF/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /es/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /es.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /es/deusto/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /es/deusto.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /es/deusto/server/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /es/deusto/server.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /es/deusto/server/db/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /es/deusto/server/db.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /es/deusto/server/db/dao/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /es/deusto/server/db/dao.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /es/deusto/server/db/dao/DAO.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO"
-19:16:05> DEBUG (Log4JLogger.java:63): Registrando la clase "es.deusto.server.db.dao.DAO" no tener Meta-Data
-19:16:05> DEBUG (Log4JLogger.java:63): La clase "es.deusto.server.db.dao.DAO" no tiene MetaData o annotaciones.
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /META-INF/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /WEB-INF/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /es/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /es.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /es/deusto/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /es/deusto.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /es/deusto/client/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /es/deusto/client.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /es/deusto/client/Client.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.client.Client"
-19:16:05> DEBUG (Log4JLogger.java:63): Registrando la clase "es.deusto.client.Client" no tener Meta-Data
-19:16:05> DEBUG (Log4JLogger.java:63): La clase "es.deusto.client.Client" no tiene MetaData o annotaciones.
-19:16:05> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.User" tiene anotaciones de JDO y vamos a usarlas.
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /META-INF/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /WEB-INF/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /es/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /es.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /es/deusto/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /es/deusto.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /es/deusto/server/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /es/deusto/server.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /es/deusto/server/db/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /es/deusto/server/db.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /es/deusto/server/db/IDB.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB"
-19:16:05> DEBUG (Log4JLogger.java:63): Registrando la clase "es.deusto.server.db.IDB" no tener Meta-Data
-19:16:05> DEBUG (Log4JLogger.java:63): La clase "es.deusto.server.db.IDB" no tiene MetaData o annotaciones.
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /META-INF/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /WEB-INF/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /es/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /es.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /es/deusto/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /es/deusto.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /es/deusto/server/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /es/deusto/server.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /es/deusto/server/Server.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.server.Server"
-19:16:05> DEBUG (Log4JLogger.java:63): Registrando la clase "es.deusto.server.Server" no tener Meta-Data
-19:16:05> DEBUG (Log4JLogger.java:63): La clase "es.deusto.server.Server" no tiene MetaData o annotaciones.
-19:16:05> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Money" tiene anotaciones de JDO y vamos a usarlas.
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /META-INF/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /WEB-INF/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /es/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /es.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /es/deusto/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /es/deusto.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /es/deusto/server/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /es/deusto/server.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /es/deusto/server/db/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /es/deusto/server/db.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /es/deusto/server/db/dao/package.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /es/deusto/server/db/dao.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /es/deusto/server/db/dao/IDAO.jdo
-19:16:05> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO"
-19:16:05> DEBUG (Log4JLogger.java:63): Registrando la clase "es.deusto.server.db.dao.IDAO" no tener Meta-Data
-19:16:05> DEBUG (Log4JLogger.java:63): La clase "es.deusto.server.db.dao.IDAO" no tiene MetaData o annotaciones.
-19:16:05> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Product" tiene anotaciones de JDO y vamos a usarlas.
-19:16:05> DEBUG (Log4JLogger.java:63): Populación del MetaData ...
-19:16:05> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.User" : Populando Meta-Data
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.User" en /META-INF/package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.User" en /WEB-INF/package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.User" en /package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.User" en /es/package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.User" en /es-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.User" en /es/deusto/package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.User" en /es/deusto-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.User" en /es/deusto/server/package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.User" en /es/deusto/server-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.User" en /es/deusto/server/db/package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.User" en /es/deusto/server/db-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.User" en /es/deusto/server/db/data/package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.User" en /es/deusto/server/db/data-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.User" en /es/deusto/server/db/data/User-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.User"
-19:16:05> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.User" campo "password" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-19:16:05> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.User" campo "amount" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-19:16:05> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Money" : Populando Meta-Data
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Money" en /META-INF/package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Money" en /WEB-INF/package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Money" en /package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Money" en /es/package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Money" en /es-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Money" en /es/deusto/package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Money" en /es/deusto-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Money" en /es/deusto/server/package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Money" en /es/deusto/server-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Money" en /es/deusto/server/db/package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Money" en /es/deusto/server/db-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Money" en /es/deusto/server/db/data/package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Money" en /es/deusto/server/db/data-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Money" en /es/deusto/server/db/data/Money-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Money"
-19:16:05> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Money" campo "user" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-19:16:05> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Money" campo "product" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-19:16:05> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Money" campo "amount" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-19:16:05> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Money" campo "timestamp" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-19:16:05> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Product" : Populando Meta-Data
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Product" en /META-INF/package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Product" en /WEB-INF/package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Product" en /package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Product" en /es/package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Product" en /es-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Product" en /es/deusto/package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Product" en /es/deusto-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Product" en /es/deusto/server/package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Product" en /es/deusto/server-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Product" en /es/deusto/server/db/package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Product" en /es/deusto/server/db-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Product" en /es/deusto/server/db/data/package-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Product" en /es/deusto/server/db/data-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Product" en /es/deusto/server/db/data/Product-mysql.orm
-19:16:05> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "orm" por la clase "es.deusto.server.db.data.Product"
-19:16:05> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Product" campo "user" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-19:16:05> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Product" campo "characteristics" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-19:16:05> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Product" campo "timestamp" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
-19:16:05> DEBUG (Log4JLogger.java:63): Inicialisación del MetaData ...
-19:16:05> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.User" : Inicializando Meta-Data
-19:16:05> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Money" : Inicializando Meta-Data
-19:16:05> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Product" : Inicializando Meta-Data
-19:16:05> DEBUG (Log4JLogger.java:63): MetaData Management : Carga de Metadata ya ha terminado
-19:16:05> DEBUG (Log4JLogger.java:63): Hemos acabado de leer 12 ficheros (metadata/class)
-19:16:05> DEBUG (Log4JLogger.java:63): Va a manjejar la persistencia de Clase : es.deusto.server.db.data.User [Tabla : `USER`, Estrategia de heredar : new-table]
-19:16:05> DEBUG (Log4JLogger.java:63): La columna "`USER`.`LOGIN`" añadió a la representación de la table.
-19:16:05> DEBUG (Log4JLogger.java:63): Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-19:16:05> DEBUG (Log4JLogger.java:63): Campo [es.deusto.server.db.data.User.login] -> Columnas [`USER`.`LOGIN`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-19:16:05> DEBUG (Log4JLogger.java:63): Va a manjejar la persistencia de Clase : es.deusto.server.db.data.Product [Tabla : `PRODUCT`, Estrategia de heredar : new-table]
-19:16:05> DEBUG (Log4JLogger.java:63): La columna "`PRODUCT`.`NAME`" añadió a la representación de la table.
-19:16:05> DEBUG (Log4JLogger.java:63): Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-19:16:05> DEBUG (Log4JLogger.java:63): Campo [es.deusto.server.db.data.Product.name] -> Columnas [`PRODUCT`.`NAME`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-19:16:05> DEBUG (Log4JLogger.java:63): Va a manjejar la persistencia de Clase : es.deusto.server.db.data.Money [Tabla : `MONEY`, Estrategia de heredar : new-table]
-19:16:05> DEBUG (Log4JLogger.java:63): La columna "`MONEY`.`MONEY_ID`" añadió a la representación de la table.
-19:16:05> DEBUG (Log4JLogger.java:63): Campo [DATASTORE_ID] -> Columnas [`MONEY`.`MONEY_ID`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.DatastoreIdMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
-19:16:05> DEBUG (Log4JLogger.java:63): La tabla `USER` va a manejar la persistencia de los campos de la clase es.deusto.server.db.data.User (estrategia de heredar="new-table")
-19:16:05> DEBUG (Log4JLogger.java:63): La columna "`USER`.`AMOUNT`" añadió a la representación de la table.
-19:16:05> DEBUG (Log4JLogger.java:63): Campo [es.deusto.server.db.data.User.amount] -> Columnas [`USER`.`AMOUNT`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.IntegerMapping" (org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping)
-19:16:05> DEBUG (Log4JLogger.java:63): Va a manjejar la persistencia de Campo : es.deusto.server.db.data.User.moneyList [Tabla : `USER_MONEYLIST`]
-19:16:05> DEBUG (Log4JLogger.java:63): Campo [es.deusto.server.db.data.User.moneyList] -> Columnas [[none]] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.CollectionMapping" ()
-19:16:05> DEBUG (Log4JLogger.java:63): La columna "`USER`.`PASSWORD`" añadió a la representación de la table.
-19:16:05> DEBUG (Log4JLogger.java:63): Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-19:16:05> DEBUG (Log4JLogger.java:63): Campo [es.deusto.server.db.data.User.password] -> Columnas [`USER`.`PASSWORD`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-19:16:05> DEBUG (Log4JLogger.java:63): Table/View `USER` ha sido inicializado
-19:16:05> DEBUG (Log4JLogger.java:63): La tabla `MONEY` va a manejar la persistencia de los campos de la clase es.deusto.server.db.data.Money (estrategia de heredar="new-table")
-19:16:05> DEBUG (Log4JLogger.java:63): La columna "`MONEY`.`AMOUNT`" añadió a la representación de la table.
-19:16:05> DEBUG (Log4JLogger.java:63): Campo [es.deusto.server.db.data.Money.amount] -> Columnas [`MONEY`.`AMOUNT`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.IntegerMapping" (org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping)
-19:16:05> DEBUG (Log4JLogger.java:63): Campo [es.deusto.server.db.data.Money.product] -> Columnas [[none]] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" ()
-19:16:05> DEBUG (Log4JLogger.java:63): La columna "`MONEY`.`TIMESTAMP`" añadió a la representación de la table.
-19:16:05> DEBUG (Log4JLogger.java:63): Campo [es.deusto.server.db.data.Money.timestamp] -> Columnas [`MONEY`.`TIMESTAMP`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.LongMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
-19:16:05> DEBUG (Log4JLogger.java:63): Campo [es.deusto.server.db.data.Money.user] -> Columnas [[none]] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" ()
-19:16:05> DEBUG (Log4JLogger.java:63): Table/View `MONEY` ha sido inicializado
-19:16:05> DEBUG (Log4JLogger.java:63): La tabla `PRODUCT` va a manejar la persistencia de los campos de la clase es.deusto.server.db.data.Product (estrategia de heredar="new-table")
-19:16:05> DEBUG (Log4JLogger.java:63): Va a manjejar la persistencia de Campo : es.deusto.server.db.data.Product.buyersPayment [Tabla : `PRODUCT_BUYERSPAYMENT`]
-19:16:05> DEBUG (Log4JLogger.java:63): Campo [es.deusto.server.db.data.Product.buyersPayment] -> Columnas [[none]] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.CollectionMapping" ()
-19:16:05> DEBUG (Log4JLogger.java:63): La columna "`PRODUCT`.`CHARACTERISTICS`" añadió a la representación de la table.
-19:16:05> DEBUG (Log4JLogger.java:63): Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-19:16:05> DEBUG (Log4JLogger.java:63): Campo [es.deusto.server.db.data.Product.characteristics] -> Columnas [`PRODUCT`.`CHARACTERISTICS`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-19:16:05> DEBUG (Log4JLogger.java:63): La columna "`PRODUCT`.`TIMESTAMP`" añadió a la representación de la table.
-19:16:05> DEBUG (Log4JLogger.java:63): Campo [es.deusto.server.db.data.Product.timestamp] -> Columnas [`PRODUCT`.`TIMESTAMP`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.LongMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
-19:16:05> DEBUG (Log4JLogger.java:63): La columna "`PRODUCT`.`USER_LOGIN_OID`" añadió a la representación de la table.
-19:16:05> DEBUG (Log4JLogger.java:63): Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-19:16:05> DEBUG (Log4JLogger.java:63): Campo [es.deusto.server.db.data.Product.user] -> Columnas [`PRODUCT`.`USER_LOGIN_OID`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-19:16:05> DEBUG (Log4JLogger.java:63): Table/View `PRODUCT` ha sido inicializado
-19:16:05> DEBUG (Log4JLogger.java:63): La columna "`USER_MONEYLIST`.`LOGIN_OID`" añadió a la representación de la table.
-19:16:05> DEBUG (Log4JLogger.java:63): Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-19:16:05> DEBUG (Log4JLogger.java:63): Campo [es.deusto.server.db.data.User.moneyList.[OWNER]] -> Columnas [`USER_MONEYLIST`.`LOGIN_OID`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-19:16:05> DEBUG (Log4JLogger.java:63): La columna "`USER_MONEYLIST`.`MONEY_ID_EID`" añadió a la representación de la table.
-19:16:05> DEBUG (Log4JLogger.java:63): Campo [es.deusto.server.db.data.User.moneyList.[ELEMENT]] -> Columnas [`USER_MONEYLIST`.`MONEY_ID_EID`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
-19:16:05> DEBUG (Log4JLogger.java:63): La columna "`USER_MONEYLIST`.`IDX`" añadió a la representación de la table.
-19:16:05> DEBUG (Log4JLogger.java:63): Campo [es.deusto.server.db.data.User.moneyList.[ORDER]] -> Columnas [`USER_MONEYLIST`.`IDX`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.IntegerMapping" (org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping)
-19:16:05> DEBUG (Log4JLogger.java:63): Table/View `USER_MONEYLIST` ha sido inicializado
-19:16:05> DEBUG (Log4JLogger.java:63): La columna "`PRODUCT_BUYERSPAYMENT`.`NAME_OID`" añadió a la representación de la table.
-19:16:05> DEBUG (Log4JLogger.java:63): Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-19:16:05> DEBUG (Log4JLogger.java:63): Campo [es.deusto.server.db.data.Product.buyersPayment.[OWNER]] -> Columnas [`PRODUCT_BUYERSPAYMENT`.`NAME_OID`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-19:16:05> DEBUG (Log4JLogger.java:63): La columna "`PRODUCT_BUYERSPAYMENT`.`MONEY_ID_EID`" añadió a la representación de la table.
-19:16:05> DEBUG (Log4JLogger.java:63): Campo [es.deusto.server.db.data.Product.buyersPayment.[ELEMENT]] -> Columnas [`PRODUCT_BUYERSPAYMENT`.`MONEY_ID_EID`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
-19:16:05> DEBUG (Log4JLogger.java:63): La columna "`PRODUCT_BUYERSPAYMENT`.`IDX`" añadió a la representación de la table.
-19:16:05> DEBUG (Log4JLogger.java:63): Campo [es.deusto.server.db.data.Product.buyersPayment.[ORDER]] -> Columnas [`PRODUCT_BUYERSPAYMENT`.`IDX`] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.IntegerMapping" (org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping)
-19:16:05> DEBUG (Log4JLogger.java:63): Table/View `PRODUCT_BUYERSPAYMENT` ha sido inicializado
-19:16:05> DEBUG (Log4JLogger.java:63): Borrando todas las clases de persistencia por el catalogo "transactionsDB", esquema ""
-19:16:05> DEBUG (Log4JLogger.java:63): Borrando la clase "es.deusto.server.db.data.User" de persistencia
-19:16:05> DEBUG (Log4JLogger.java:63): Borrando la clase "es.deusto.server.db.data.User.moneyList" de persistencia
-19:16:05> DEBUG (Log4JLogger.java:63): Borrando la clase "es.deusto.server.db.data.Product.buyersPayment" de persistencia
-19:16:05> DEBUG (Log4JLogger.java:63): Borrando la clase "es.deusto.server.db.data.Money" de persistencia
-19:16:05> DEBUG (Log4JLogger.java:63): Borrando la clase "es.deusto.server.db.data.Product" de persistencia
-19:16:05> DEBUG (Log4JLogger.java:63): ManagedConnection(non-enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@53976f5c [conn=null, commitOnRelease=true, closeOnRelease=true, closeOnTxnEnd=true]" abierto con isolación "read-committed" y auto-commit=false
-19:16:05> DEBUG (Log4JLogger.java:63): Empezando transaccion del esquema con conneccion "org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@2f8dad04" y isolacion "read-committed"
-19:16:05> DEBUG (Log4JLogger.java:63): Borrando 1 foreign key(s) de la tabla `PRODUCT`
-19:16:05> DEBUG (Log4JLogger.java:63): ALTER TABLE `PRODUCT` DROP FOREIGN KEY `PRODUCT_FK1`
-19:16:06> DEBUG (Log4JLogger.java:63): Tiempo de cumplir = 145 ms
-19:16:06> DEBUG (Log4JLogger.java:63): Borrando 2 foreign key(s) de la tabla `PRODUCT_BUYERSPAYMENT`
-19:16:06> DEBUG (Log4JLogger.java:63): ALTER TABLE `PRODUCT_BUYERSPAYMENT` DROP FOREIGN KEY `PRODUCT_BUYERSPAYMENT_FK1`
-19:16:06> DEBUG (Log4JLogger.java:63): Tiempo de cumplir = 94 ms
-19:16:06> DEBUG (Log4JLogger.java:63): ALTER TABLE `PRODUCT_BUYERSPAYMENT` DROP FOREIGN KEY `PRODUCT_BUYERSPAYMENT_FK2`
-19:16:06> DEBUG (Log4JLogger.java:63): Tiempo de cumplir = 142 ms
-19:16:06> DEBUG (Log4JLogger.java:63): Borrando 2 foreign key(s) de la tabla `USER_MONEYLIST`
-19:16:06> DEBUG (Log4JLogger.java:63): ALTER TABLE `USER_MONEYLIST` DROP FOREIGN KEY `USER_MONEYLIST_FK1`
-19:16:06> DEBUG (Log4JLogger.java:63): Tiempo de cumplir = 101 ms
-19:16:06> DEBUG (Log4JLogger.java:63): ALTER TABLE `USER_MONEYLIST` DROP FOREIGN KEY `USER_MONEYLIST_FK2`
-19:16:06> DEBUG (Log4JLogger.java:63): Tiempo de cumplir = 101 ms
-19:16:06> DEBUG (Log4JLogger.java:63): Borrar la tabla `MONEY`
-19:16:06> DEBUG (Log4JLogger.java:63): DROP TABLE `MONEY` CASCADE
-19:16:06> DEBUG (Log4JLogger.java:63): Tiempo de cumplir = 298 ms
-19:16:06> DEBUG (Log4JLogger.java:63): Borrar la tabla `PRODUCT`
-19:16:06> DEBUG (Log4JLogger.java:63): DROP TABLE `PRODUCT` CASCADE
-19:16:07> DEBUG (Log4JLogger.java:63): Tiempo de cumplir = 322 ms
-19:16:07> DEBUG (Log4JLogger.java:63): Borrar la tabla `PRODUCT_BUYERSPAYMENT`
-19:16:07> DEBUG (Log4JLogger.java:63): DROP TABLE `PRODUCT_BUYERSPAYMENT` CASCADE
-19:16:07> DEBUG (Log4JLogger.java:63): Tiempo de cumplir = 252 ms
-19:16:07> DEBUG (Log4JLogger.java:63): Borrar la tabla `USER_MONEYLIST`
-19:16:07> DEBUG (Log4JLogger.java:63): DROP TABLE `USER_MONEYLIST` CASCADE
-19:16:07> DEBUG (Log4JLogger.java:63): Tiempo de cumplir = 186 ms
-19:16:07> DEBUG (Log4JLogger.java:63): Borrar la tabla `USER`
-19:16:07> DEBUG (Log4JLogger.java:63): DROP TABLE `USER` CASCADE
-19:16:07> DEBUG (Log4JLogger.java:63): Tiempo de cumplir = 208 ms
-19:16:07> DEBUG (Log4JLogger.java:63): Committing transaccion del esquema "org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@2f8dad04"
-19:16:07> DEBUG (Log4JLogger.java:63): Cerrando la conneccion de la transaccion del esquema "org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@2f8dad04"
-19:16:07> DEBUG (Log4JLogger.java:63): ManagedConnection(non-enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@53976f5c [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@2f8dad04, commitOnRelease=true, closeOnRelease=true, closeOnTxnEnd=true]" va a cometer
-19:16:07> DEBUG (Log4JLogger.java:63): ManagedConnection(non-enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@53976f5c [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@2f8dad04, commitOnRelease=true, closeOnRelease=true, closeOnTxnEnd=true]" cerrado
-19:16:07> DEBUG (Log4JLogger.java:63): Desmanejando la persistencia de todas las clases
-19:16:07> DEBUG (Log4JLogger.java:63): ManagedConnection(non-enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@49c7b90e [conn=null, commitOnRelease=true, closeOnRelease=true, closeOnTxnEnd=true]" abierto con isolación "read-committed" y auto-commit=false
-19:16:07> DEBUG (Log4JLogger.java:63): ManagedConnection(non-enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@49c7b90e [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@4d5b6aac, commitOnRelease=true, closeOnRelease=true, closeOnTxnEnd=true]" va a cometer
-19:16:07> DEBUG (Log4JLogger.java:63): ManagedConnection(non-enlisted) "org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl@49c7b90e [conn=org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource$PoolGuardConnectionWrapper@4d5b6aac, commitOnRelease=true, closeOnRelease=true, closeOnTxnEnd=true]" cerrado
-19:16:07> INFO  (Log4JLogger.java:82): DataNucleus SchemaTool ha terminado con exito
-19:16:07> DEBUG (Log4JLogger.java:63): Cerrando pool de connecciones tx
-19:16:07> DEBUG (Log4JLogger.java:63): Cerrando pool de connecciones nontx
-19:16:07> DEBUG (Log4JLogger.java:63): Desmanejando la persistencia de todas las clases
+11:28:46> DEBUG (Log4JLogger.java:63): Using PluginRegistry org.datanucleus.plugin.NonManagedPluginRegistry
+11:28:46> DEBUG (Log4JLogger.java:63): Registering bundle org.sonatype.inject version 2.3.0 at URL file:/C:/Users/Jorge/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar.
+11:28:46> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Jorge/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar!/plugin.xml.
+11:28:46> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Jorge/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar!/plugin.xml.
+11:28:46> DEBUG (Log4JLogger.java:63): Registering bundle org.datanucleus version 5.1.0.m2 at URL file:/C:/Users/Jorge/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m2/datanucleus-core-5.1.0-m2.jar.
+11:28:46> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Jorge/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m2/datanucleus-core-5.1.0-m2.jar!/plugin.xml.
+11:28:46> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Jorge/.m2/repository/org/datanucleus/datanucleus-core/5.1.0-m2/datanucleus-core-5.1.0-m2.jar!/plugin.xml.
+11:28:46> DEBUG (Log4JLogger.java:63): Registering bundle org.datanucleus.api.jdo version 5.1.0.m2 at URL file:/C:/Users/Jorge/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m2/datanucleus-api-jdo-5.1.0-m2.jar.
+11:28:46> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Jorge/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m2/datanucleus-api-jdo-5.1.0-m2.jar!/plugin.xml.
+11:28:46> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Jorge/.m2/repository/org/datanucleus/datanucleus-api-jdo/5.1.0-m2/datanucleus-api-jdo-5.1.0-m2.jar!/plugin.xml.
+11:28:46> DEBUG (Log4JLogger.java:63): Registering bundle org.datanucleus.store.rdbms version 5.1.0.m2 at URL file:/C:/Users/Jorge/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m2/datanucleus-rdbms-5.1.0-m2.jar.
+11:28:46> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Jorge/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m2/datanucleus-rdbms-5.1.0-m2.jar!/plugin.xml.
+11:28:46> DEBUG (Log4JLogger.java:63): Loading extensions from plug-in file jar:file:/C:/Users/Jorge/.m2/repository/org/datanucleus/datanucleus-rdbms/5.1.0-m2/datanucleus-rdbms-5.1.0-m2.jar!/plugin.xml.
+11:28:47> DEBUG (Log4JLogger.java:63): Tipos de Java inicializando ...
+11:28:47> DEBUG (Log4JLogger.java:63): Soporte para tipos de Java listo : tipos soportados = [B, [C, [D, [F, [I, [J, [Ljava.lang.Boolean;, [Ljava.lang.Byte;, [Ljava.lang.Character;, [Ljava.lang.Double;, [Ljava.lang.Enum;, [Ljava.lang.Float;, [Ljava.lang.Integer;, [Ljava.lang.Long;, [Ljava.lang.Number;, [Ljava.lang.Object;, [Ljava.lang.Short;, [Ljava.lang.String;, [Ljava.math.BigDecimal;, [Ljava.math.BigInteger;, [Ljava.util.Date;, [Ljava.util.Locale;, [S, [Z, boolean, byte, char, double, float, int, java.awt.Color, java.awt.image.BufferedImage, java.lang.Boolean, java.lang.Byte, java.lang.Character, java.lang.Class, java.lang.Double, java.lang.Enum, java.lang.Float, java.lang.Integer, java.lang.Long, java.lang.Number, java.lang.Short, java.lang.String, java.lang.StringBuffer, java.lang.StringBuilder, java.math.BigDecimal, java.math.BigInteger, java.net.URI, java.net.URL, java.sql.Date, java.sql.Time, java.sql.Timestamp, java.time.Duration, java.time.Instant, java.time.LocalDate, java.time.LocalDateTime, java.time.LocalTime, java.time.MonthDay, java.time.OffsetDateTime, java.time.OffsetTime, java.time.Period, java.time.Year, java.time.YearMonth, java.time.ZonedDateTime, java.time.ZoneId, java.time.ZoneOffset, java.util.ArrayList, java.util.Arrays$ArrayList, java.util.BitSet, java.util.Calendar, java.util.Collection, java.util.Currency, java.util.Date, java.util.GregorianCalendar, java.util.HashMap, java.util.HashSet, java.util.Hashtable, java.util.LinkedHashMap, java.util.LinkedHashSet, java.util.LinkedList, java.util.List, java.util.Locale, java.util.Map, java.util.Optional, java.util.PriorityQueue, java.util.Properties, java.util.Queue, java.util.Set, java.util.SortedMap, java.util.SortedSet, java.util.Stack, java.util.TimeZone, java.util.TreeMap, java.util.TreeSet, java.util.UUID, java.util.Vector, long, short
+11:28:47> DEBUG (Log4JLogger.java:63): Inicializando TypeConverters ...
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverters listo
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for byte[] to : java.nio.ByteBuffer
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for char[] to : java.nio.ByteBuffer
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for double[] to : java.nio.ByteBuffer
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for float[] to : java.nio.ByteBuffer
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for int[] to : java.nio.ByteBuffer
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for long[] to : java.nio.ByteBuffer
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for short[] to : java.nio.ByteBuffer
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for boolean[] to : java.nio.ByteBuffer
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.awt.Color to : int[],java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.awt.image.BufferedImage to : byte[],java.nio.ByteBuffer
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.io.Serializable to : byte[],java.nio.ByteBuffer,java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Boolean to : java.lang.Character,java.lang.Integer
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Character to : java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Class to : java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Integer to : java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.Long to : java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.StringBuffer to : java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.lang.StringBuilder to : java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.math.BigDecimal to : java.nio.ByteBuffer,java.lang.Double,java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.math.BigInteger to : java.lang.Long,java.nio.ByteBuffer,java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.net.URI to : java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.net.URL to : java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.sql.Date to : java.lang.Long,java.util.Date,java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.sql.Time to : java.lang.Long,java.util.Date,java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.sql.Timestamp to : java.lang.Long,java.util.Date,java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Duration to : java.lang.Long,java.lang.Double,java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Instant to : java.lang.Long,java.util.Date,java.lang.String,java.sql.Timestamp
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.LocalDate to : java.util.Date,java.lang.String,java.sql.Date
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.LocalDateTime to : java.util.Date,java.lang.String,java.sql.Timestamp
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.LocalTime to : java.lang.Long,java.util.Date,java.sql.Time,java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.MonthDay to : int[],java.util.Date,java.lang.String,java.sql.Date
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.OffsetDateTime to : java.util.Date,java.lang.String,java.sql.Timestamp
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.OffsetTime to : java.lang.Long,java.sql.Time,java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Period to : java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.Year to : java.lang.Integer,java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.YearMonth to : int[],java.util.Date,java.lang.String,java.sql.Date
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.ZonedDateTime to : java.lang.String,java.sql.Timestamp
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.ZoneId to : java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.time.ZoneOffset to : java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.BitSet to : java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Calendar to : java.util.Date,[Ljava.lang.Object;,java.lang.String,java.sql.Timestamp
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Currency to : java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Date to : java.lang.Long,java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.Locale to : java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.TimeZone to : java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): TypeConverter(s) available for java.util.UUID to : java.lang.String
+11:28:47> DEBUG (Log4JLogger.java:63): MetaDataManager : Input=(XML,Annotations), XML-Validation=false, XML-Suffices=(persistence=*.jdo, orm=orm, query=*.jdoquery), JDO-listener=false
+11:28:47> INFO  (Log4JLogger.java:82): DataNucleus Enhancer (versión 5.1.0.m2) para el API "JDO" utilisando el JRE "{2}"
+11:28:47> DEBUG (Log4JLogger.java:63): DataNucleus Enhancer : Classpath
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\org\datanucleus\datanucleus-maven-plugin\5.0.2\datanucleus-maven-plugin-5.0.2.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.8\plexus-utils-3.0.8.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\org\codehaus\plexus\plexus-container-default\1.5.5\plexus-container-default-1.5.5.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.2\plexus-classworlds-2.2.2.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\org\apache\xbean\xbean-reflect\3.4\xbean-reflect-3.4.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\log4j\log4j\1.2.12\log4j-1.2.12.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\commons-logging\commons-logging-api\1.1\commons-logging-api-1.1.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\com\google\collections\google-collections\1.0\google-collections-1.0.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\junit\junit\3.8.2\junit-3.8.2.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\git\SPQ03\spq03\target\classes
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\org\datanucleus\datanucleus-core\5.1.0-m2\datanucleus-core-5.1.0-m2.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\org\datanucleus\datanucleus-api-jdo\5.1.0-m2\datanucleus-api-jdo-5.1.0-m2.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\org\datanucleus\datanucleus-rdbms\5.1.0-m2\datanucleus-rdbms-5.1.0-m2.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\org\datanucleus\javax.jdo\3.2.0-m6\javax.jdo-3.2.0-m6.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\javax\transaction\transaction-api\1.1\transaction-api-1.1.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\mysql\mysql-connector-java\5.1.41\mysql-connector-java-5.1.41.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\org\mockito\mockito-core\2.7.21\mockito-core-2.7.21.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\org\ow2\asm\asm\5.2\asm-5.2.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\org\slf4j\slf4j-log4j12\1.6.4\slf4j-log4j12-1.6.4.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\org\slf4j\slf4j-simple\1.6.4\slf4j-simple-1.6.4.jar
+11:28:47> DEBUG (Log4JLogger.java:63): >>  C:\Users\Jorge\.m2\repository\org\slf4j\slf4j-api\1.6.4\slf4j-api-1.6.4.jar
+11:28:47> DEBUG (Log4JLogger.java:63): Reading fileListFile: C:\Users\Jorge\AppData\Local\Temp\enhancer-6740977604291325530.flf
+11:28:47> DEBUG (Log4JLogger.java:63): Enhancing classes
+11:28:47> DEBUG (Log4JLogger.java:63): MetaData Management : Carga de Metadata de las clases "[es.deusto.client.Client, es.deusto.client.remote.ITransferer, es.deusto.server.db.dao.DAO, es.deusto.server.db.dao.IDAO, es.deusto.server.db.data.Money, es.deusto.server.db.data.Product, es.deusto.server.db.data.User, es.deusto.server.db.DB, es.deusto.server.db.IDB, es.deusto.server.remote.ITransferer, es.deusto.server.remote.Transferer, es.deusto.server.Server]" ...
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /META-INF/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /WEB-INF/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /es/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /es.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /es/deusto/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /es/deusto.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /es/deusto/client/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /es/deusto/client.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.Client" en /es/deusto/client/Client.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.client.Client"
+11:28:47> DEBUG (Log4JLogger.java:63): Registrando la clase "es.deusto.client.Client" no tener Meta-Data
+11:28:47> DEBUG (Log4JLogger.java:63): La clase "es.deusto.client.Client" no tiene MetaData o annotaciones.
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /META-INF/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /WEB-INF/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /es/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /es.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /es/deusto/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /es/deusto.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /es/deusto/client/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /es/deusto/client.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /es/deusto/client/remote/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /es/deusto/client/remote.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer" en /es/deusto/client/remote/ITransferer.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.client.remote.ITransferer"
+11:28:47> DEBUG (Log4JLogger.java:63): Registrando la clase "es.deusto.client.remote.ITransferer" no tener Meta-Data
+11:28:47> DEBUG (Log4JLogger.java:63): La clase "es.deusto.client.remote.ITransferer" no tiene MetaData o annotaciones.
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /META-INF/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /WEB-INF/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /es/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /es.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /es/deusto/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /es/deusto.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /es/deusto/server/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /es/deusto/server.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /es/deusto/server/db/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /es/deusto/server/db.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /es/deusto/server/db/dao/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /es/deusto/server/db/dao.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO" en /es/deusto/server/db/dao/DAO.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.DAO"
+11:28:47> DEBUG (Log4JLogger.java:63): Registrando la clase "es.deusto.server.db.dao.DAO" no tener Meta-Data
+11:28:47> DEBUG (Log4JLogger.java:63): La clase "es.deusto.server.db.dao.DAO" no tiene MetaData o annotaciones.
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /META-INF/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /WEB-INF/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /es/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /es.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /es/deusto/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /es/deusto.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /es/deusto/server/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /es/deusto/server.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /es/deusto/server/db/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /es/deusto/server/db.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /es/deusto/server/db/dao/package.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /es/deusto/server/db/dao.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO" en /es/deusto/server/db/dao/IDAO.jdo
+11:28:47> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.server.db.dao.IDAO"
+11:28:47> DEBUG (Log4JLogger.java:63): Registrando la clase "es.deusto.server.db.dao.IDAO" no tener Meta-Data
+11:28:47> DEBUG (Log4JLogger.java:63): La clase "es.deusto.server.db.dao.IDAO" no tiene MetaData o annotaciones.
+11:28:48> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Money" tiene anotaciones de JDO y vamos a usarlas.
+11:28:48> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Product" tiene anotaciones de JDO y vamos a usarlas.
+11:28:48> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.User" tiene anotaciones de JDO y vamos a usarlas.
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /META-INF/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /WEB-INF/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /es/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /es.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /es/deusto/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /es/deusto.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /es/deusto/server/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /es/deusto/server.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /es/deusto/server/db/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /es/deusto/server/db.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB" en /es/deusto/server/db/DB.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.server.db.DB"
+11:28:48> DEBUG (Log4JLogger.java:63): Registrando la clase "es.deusto.server.db.DB" no tener Meta-Data
+11:28:48> DEBUG (Log4JLogger.java:63): La clase "es.deusto.server.db.DB" no tiene MetaData o annotaciones.
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /META-INF/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /WEB-INF/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /es/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /es.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /es/deusto/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /es/deusto.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /es/deusto/server/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /es/deusto/server.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /es/deusto/server/db/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /es/deusto/server/db.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB" en /es/deusto/server/db/IDB.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.server.db.IDB"
+11:28:48> DEBUG (Log4JLogger.java:63): Registrando la clase "es.deusto.server.db.IDB" no tener Meta-Data
+11:28:48> DEBUG (Log4JLogger.java:63): La clase "es.deusto.server.db.IDB" no tiene MetaData o annotaciones.
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /META-INF/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /WEB-INF/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /es/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /es.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /es/deusto/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /es/deusto.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /es/deusto/server/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /es/deusto/server.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /es/deusto/server/remote/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /es/deusto/server/remote.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer" en /es/deusto/server/remote/ITransferer.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.ITransferer"
+11:28:48> DEBUG (Log4JLogger.java:63): Registrando la clase "es.deusto.server.remote.ITransferer" no tener Meta-Data
+11:28:48> DEBUG (Log4JLogger.java:63): La clase "es.deusto.server.remote.ITransferer" no tiene MetaData o annotaciones.
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /META-INF/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /WEB-INF/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /es/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /es.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /es/deusto/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /es/deusto.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /es/deusto/server/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /es/deusto/server.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /es/deusto/server/remote/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /es/deusto/server/remote.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer" en /es/deusto/server/remote/Transferer.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.server.remote.Transferer"
+11:28:48> DEBUG (Log4JLogger.java:63): Registrando la clase "es.deusto.server.remote.Transferer" no tener Meta-Data
+11:28:48> DEBUG (Log4JLogger.java:63): La clase "es.deusto.server.remote.Transferer" no tiene MetaData o annotaciones.
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /META-INF/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /WEB-INF/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /es/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /es.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /es/deusto/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /es/deusto.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /es/deusto/server/package.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /es/deusto/server.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No encontramos el MetaData del tipo "jdo" por la clase "es.deusto.server.Server" en /es/deusto/server/Server.jdo
+11:28:48> DEBUG (Log4JLogger.java:63): No hemos encontrado el MetaData del tipo "jdo" por la clase "es.deusto.server.Server"
+11:28:48> DEBUG (Log4JLogger.java:63): Registrando la clase "es.deusto.server.Server" no tener Meta-Data
+11:28:48> DEBUG (Log4JLogger.java:63): La clase "es.deusto.server.Server" no tiene MetaData o annotaciones.
+11:28:48> DEBUG (Log4JLogger.java:63): Populación del MetaData ...
+11:28:48> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Money" : Populando Meta-Data
+11:28:48> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Money" campo "user" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+11:28:48> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Money" campo "product" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+11:28:48> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Money" campo "amount" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+11:28:48> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Money" campo "timestamp" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+11:28:48> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Product" : Populando Meta-Data
+11:28:48> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Product" campo "user" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+11:28:48> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Product" campo "characteristics" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+11:28:48> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Product" campo "timestamp" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+11:28:48> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.User" : Populando Meta-Data
+11:28:48> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.User" campo "password" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+11:28:48> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.User" campo "amount" : añadiendo el Meta-Data por el campo como no estaba en la definición de Meta-Data.
+11:28:48> DEBUG (Log4JLogger.java:63): Inicialisación del MetaData ...
+11:28:48> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Money" : Inicializando Meta-Data
+11:28:48> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.Product" : Inicializando Meta-Data
+11:28:48> DEBUG (Log4JLogger.java:63): Clase "es.deusto.server.db.data.User" : Inicializando Meta-Data
+11:28:48> DEBUG (Log4JLogger.java:63): MetaData Management : Carga de Metadata ya ha terminado
+11:28:48> DEBUG (Log4JLogger.java:63): Enhance de la clase "es.deusto.server.db.data.Money" empezando ...
+11:28:48> INFO  (Log4JLogger.java:82): La clase "es.deusto.server.db.data.Money" esta enhanced.
+11:28:48> INFO  (Log4JLogger.java:82): ENHANCED (Persistable) : es.deusto.server.db.data.Money
+11:28:48> DEBUG (Log4JLogger.java:63): Enhance de la clase "es.deusto.server.db.data.Money" ha terminado
+11:28:48> DEBUG (Log4JLogger.java:63): Enhance de la clase "es.deusto.server.db.data.Product" empezando ...
+11:28:48> INFO  (Log4JLogger.java:82): La clase "es.deusto.server.db.data.Product" esta enhanced.
+11:28:48> INFO  (Log4JLogger.java:82): ENHANCED (Persistable) : es.deusto.server.db.data.Product
+11:28:48> DEBUG (Log4JLogger.java:63): Enhance de la clase "es.deusto.server.db.data.Product" ha terminado
+11:28:48> DEBUG (Log4JLogger.java:63): Enhance de la clase "es.deusto.server.db.data.User" empezando ...
+11:28:48> INFO  (Log4JLogger.java:82): La clase "es.deusto.server.db.data.User" esta enhanced.
+11:28:48> INFO  (Log4JLogger.java:82): ENHANCED (Persistable) : es.deusto.server.db.data.User
+11:28:48> DEBUG (Log4JLogger.java:63): Enhance de la clase "es.deusto.server.db.data.User" ha terminado
+11:28:48> INFO  (Log4JLogger.java:82): DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=662 ms, enhance=163 ms, total=825 ms. Compruebe el LOG para los detalles

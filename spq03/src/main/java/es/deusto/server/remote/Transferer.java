@@ -96,11 +96,11 @@ public class Transferer extends UnicastRemoteObject implements ITransferer{
             ret=false;
         }
         if (prod != null ) {
-            p.setOwner(prod.getOwner());
+            p.setOwner(prod.dnGetuser());
             p.setName(prod.getName());
             dao.updateProd(prod);
         }else{
-            p.setOwner(prod.getOwner());
+            p.setOwner(prod.dnGetuser());
             p.setName(prod.getName());
             dao.storeProd(prod);
         }

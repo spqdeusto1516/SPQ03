@@ -29,7 +29,7 @@ public class Client {
             String name = "//" + args[0] + ":" + args[1] + "/" + args[2];
             ITransferer objHello = (ITransferer) java.rmi.Naming.lookup(name);
             // Register to be allowed to send messages
-            logger.info("Register a user for the first time: dipina");
+            logger.info("Register a user for the first time: jocor");
             objHello.registerUser(new User("jocor", "ral"));
             logger.info("Change the password as the user is already registered: kun");
             objHello.registerUser(new User("jocor", "kun"));
@@ -47,12 +47,12 @@ public class Client {
                 switch (dec1) {
                     case (1):
                         int amount = 0;
-                        do {
+                       //do {
                             amount = 0;
-                            logger.info("Set the amount of money");
+                            logger.info("Set the amount of money, now: " + sender.getMoney());
                             entradaEscaner = new Scanner(System.in);
                             amount = Integer.parseInt(entradaEscaner.nextLine());
-                        } while (amount <= sender.getMoney());
+                       // } while (amount <= sender.getMoney());
 
                         logger.info("Now insert who you want to send it to");
                         entradaEscaner = new Scanner(System.in);
@@ -70,7 +70,7 @@ public class Client {
                         if (search == null) {
                             logger.error("Error! No Product with such name");
                         } else {
-                            logger.info(search.toStringShort() + search.getOwner().toString());
+                            logger.info(search.toStringShort() + search.dnGetuser().toString());
                         }
                         break;
 
@@ -82,9 +82,10 @@ public class Client {
                         logger.info("Insert the characteristics");
                         entradaEscaner = new Scanner(System.in);
                         String characteristics = entradaEscaner.nextLine();
-                        p = new Product(sender, prodName, characteristics);
+                        p = new Product( prodName, characteristics);
+                        p.setOwner(sender);
                         objHello.registerProd(p);
-                        break;
+                    break;
                     case(4):
                         logger.info("Exiting the application....");
                         break;
