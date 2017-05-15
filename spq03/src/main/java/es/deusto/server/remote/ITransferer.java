@@ -10,6 +10,7 @@ import java.util.ArrayList;
 public interface ITransferer extends Remote {
 
 	boolean sendMoney(String loginR, int amount, String loginS) throws RemoteException;
+	ArrayList<User> getAllUser() throws RemoteException;
 	boolean registerUser(User u) throws RemoteException;
 	User getUser(String login) throws RemoteException;
 	ArrayList<Product> getAllProd() throws RemoteException;

@@ -2,6 +2,8 @@ package es.deusto.client;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 import java.rmi.RMISecurityManager;
 import java.util.ArrayList;
 import java.util.List;
@@ -49,6 +51,7 @@ public class Client extends JFrame implements ActionListener{
 	private User activeU;
 	private int moneyNow;
 	private ArrayList<Product> allProdList;
+	private ArrayList<User> allUserList;
 
 	public Client() {
 		setResizable(false);
@@ -109,7 +112,6 @@ public class Client extends JFrame implements ActionListener{
 
 		table = new JTable(30, 2);
 		table.getColumnModel().getColumn(0).setHeaderValue("Name");
-		table.getColumnModel().getColumn(1).setHeaderValue("Description");
 		scrollPane.setViewportView(table);
 
 		btnBuyProduct = new JButton("Buy Product");
@@ -165,12 +167,24 @@ public class Client extends JFrame implements ActionListener{
 		btnSearch.addActionListener(this);
 		btnSend.addActionListener(this);
 		btnLogIn.addActionListener(this);
-
+		
+		table.addFocusListener(new FocusListener() {
+			
+			@Override
+			public void focusLost(FocusEvent e) {
+				btnBuyProduct.setEnabled(false);
+			}
+			
+			@Override
+			public void focusGained(FocusEvent e) {
+				btnBuyProduct.setEnabled(true);				
+			}
+		});
+		
+		this.pack();
 		this.setLocationRelativeTo(null);
 
 	}
-
-
 
 	public static void main(String[] args) {
 		if (args.length != 3) {
@@ -193,81 +207,6 @@ public class Client extends JFrame implements ActionListener{
 			e.printStackTrace();
 		}
 
-
-		/* 
-        try {
-            Scanner entradaEscaner = null;
-            String prodName = null;
-            String name = "//" + args[0] + ":" + args[1] + "/" + args[2];
-            ITransferer objHello = (ITransferer) java.rmi.Naming.lookup(name);
-            // Register to be allowed to send messages
-            logger.info("Register a user for the first time: jocor");
-            objHello.registerUser(new User("jocor", "ral"));
-            logger.info("Change the password as the user is already registered: kun");
-            objHello.registerUser(new User("jocor", "kun"));
-            int dec1 = 0;
-            User sender = objHello.getUser("jocor");
-            while(dec1 != 4) {
-                do {
-                    dec1 = 0;
-                    logger.info("Insert whether you want to send some Money (1), you want to look for a Product (2) or you" +
-                            " want to insert a new Product (3) or exit the application (4)");
-                    entradaEscaner = new Scanner(System.in);
-                    dec1 = Integer.parseInt(entradaEscaner.nextLine());
-                } while (dec1 != 1 && dec1 != 2 && dec1 != 3 && dec1 != 4);
-
-                switch (dec1) {
-                    case (1):
-                        int amount = 0;
-                       //do {
-                            amount = 0;
-                            logger.info("Set the amount of money, now: " + sender.getMoney());
-                            entradaEscaner = new Scanner(System.in);
-                            amount = Integer.parseInt(entradaEscaner.nextLine());
-                       // } while (amount <= sender.getMoney());
-
-                        logger.info("Now insert who you want to send it to");
-                        entradaEscaner = new Scanner(System.in);
-                        User receiver = objHello.getUser(entradaEscaner.nextLine());
-                        if (!(receiver == null)) {
-                            logger.info("Sending money...");
-                            objHello.sendMoney(receiver.getLogin(), amount, sender.getLogin());
-                        }
-                        break;
-                    case (2):
-                        logger.info("What's the name of the Product you are looking for?");
-                        entradaEscaner = new Scanner(System.in);
-                        prodName = entradaEscaner.nextLine();
-                        Product search = objHello.searchProd(prodName);
-                        if (search == null) {
-                            logger.error("Error! No Product with such name");
-                        } else {
-                            logger.info(search.toStringShort() + search.dnGetuser().toString());
-                        }
-                        break;
-
-                    case (3):
-                        Product p = null;
-                        logger.info("Insert the name of the product");
-                        entradaEscaner = new Scanner(System.in);
-                        prodName = entradaEscaner.nextLine();
-                        logger.info("Insert the characteristics");
-                        entradaEscaner = new Scanner(System.in);
-                        String characteristics = entradaEscaner.nextLine();
-                        p = new Product( prodName, characteristics);
-                        p.setOwner(sender);
-                        objHello.registerProd(p);
-                    break;
-                    case(4):
-                        logger.info("Exiting the application....");
-                        break;
-
-                }
-            }
-        } catch (Exception e) {
-            logger.debug("RMI Example exception: " + e.getMessage());
-            e.printStackTrace();
-        }*/
 	}
 
 
@@ -276,7 +215,7 @@ public class Client extends JFrame implements ActionListener{
 		String login = null;
 		String pass = null;
 		String name = null;
-		
+
 		int amountSend = 0;
 		String loginMoRec = null;
 		if(e.getSource().equals(btnLogIn)){
@@ -295,32 +234,37 @@ public class Client extends JFrame implements ActionListener{
 				//Get amount of money and set it to txtMoneyRightNow
 				moneyNow = activeU.getMoney();
 				txtMoneyNow.setText(moneyNow + "");
+				if(activeU.getSuper()){
+					btnAllUsers.setEnabled(true);
+				}
 				panelLogged.setVisible(true);
 
 			}catch(Exception ex){
 				logger.error("Exception launched: " + ex.getMessage());
 			}
 		}else if(e.getSource().equals(btnBuyProduct)){
-			if(table.hasFocus()){
 
-				int row = table.getSelectedRow();
-
-				// TODO buscar por nombre
-
-				// TODO comprar el que encuentre
-
-
-			}else{
-				System.out.println("Nothing selected");
+			try{
+				Product p = allProdList.get(table.getSelectedRow());
+				System.out.println(p.getName());
+				objHello.buyProd(txfMoneyTo.getText(), p, 
+						Integer.parseInt(txfAmount.getText()), activeU.getLogin());
+			}catch(Exception ex){
+				logger.error("Exception launched: " + ex.getMessage());
 			}
+
 		}else if(e.getSource().equals(btnInsertNewProduct)){
 			NewProdWindow npw = new NewProdWindow();
 			npw.setVisible(true);
 			npw.setSize(450, 155);
+			npw.setLocationRelativeTo(this);
 
-			//TODO recopilar datos de la ventana y llamar a DB
-			
-			
+			// Get all the data from the New Product Window 
+			try{
+				npw.setTransferer(objHello);
+			}catch(Exception ex){
+				logger.error("Exception launched: " + ex.getMessage());
+			}
 		}else if(e.getSource().equals(btnSearch)){
 			try{
 
@@ -333,11 +277,11 @@ public class Client extends JFrame implements ActionListener{
 				Product p = objHello.searchProd(txfProdName.getText());
 				table.setValueAt(p.getName(), 0, 0);
 				table.setValueAt(p.getCharacteristics(), 0, 1);
-				
+
 			}catch(Exception ex){
 				logger.error("Exception launched: " + ex.getMessage());
 			}
-			
+
 		}else if(e.getSource().equals(btnSend)){
 
 			amountSend = Integer.parseInt(txfAmount.getText());
@@ -346,22 +290,28 @@ public class Client extends JFrame implements ActionListener{
 				objHello.sendMoney(loginMoRec, amountSend, activeU.getLogin());
 				moneyNow -= amountSend;
 				txtMoneyNow.setText(moneyNow + "");
-				}catch(Exception ex){
+			}catch(Exception ex){
 				logger.error("Exception launched: " + ex.getMessage());
 			}
 
 		}else if(e.getSource().equals(btnAllUsers)){
-			// TODO Si puede accede es que es superuser
-			//rellenarTablaUser();//Coger la lista de usuarios de la BD
+			try{
+				allUserList = objHello.getAllUser();
+				rellenarTablaUser(allUserList);
+						
+			}catch(Exception ex){
+				logger.error("Exception launched: " + ex.getMessage());
+			}
+			
 		}else{
-			// Logger.error("Other Action detected");
+			//TODO ERROR
 		}
 	}
 
 	public void rellenarTablaProd(ArrayList<Product> pList){
 		String name = null;
 		String characteristics = null;
-
+		table.getColumnModel().getColumn(1).setHeaderValue("Description");
 		for(int x = 0; x < pList.size(); x++){
 			name = pList.get(x).getName();
 			characteristics = pList.get(x).getCharacteristics();
@@ -373,7 +323,7 @@ public class Client extends JFrame implements ActionListener{
 
 	public void rellenarTablaUser(ArrayList<User> uList){
 		String login = null;
-
+		table.getColumnModel().getColumn(1).setHeaderValue("Password");
 		for(int x = 0; x < uList.size(); x++){
 			login = uList.get(x).getLogin();
 			// Hay que añadir los valores a la tabla

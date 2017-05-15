@@ -30,6 +30,19 @@ public class Transferer extends UnicastRemoteObject implements ITransferer{
 	}
 
 	@Override
+    public ArrayList<User> getAllUser() throws RemoteException{
+    	List<User> listUser = new ArrayList<>();
+	    int cont = 0;
+	    try{
+	        listUser = dao.getAllUser();
+        }catch (Exception e){
+	        logger.error("Exception launched: " + e.getMessage());
+        }
+	    return (ArrayList)listUser;
+    }
+	
+	
+	@Override
 	public boolean registerUser(User u) {
         User user = null;
         boolean ret=true;

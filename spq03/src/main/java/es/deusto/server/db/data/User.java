@@ -28,13 +28,13 @@ public class User implements Serializable {
 	@Join
 	List<Money> moneyList = new ArrayList<>();
 	private int amount = 0;
-	
-	
+
+
 	public User(String login, String password) {
 		this.login = login;
 		this.password = password;
 	}
-	
+
 	public void addMoney(int money) { this.amount += money;	}
 
 	public void removeMoney(int money) { this.amount -= money;	}
@@ -42,25 +42,26 @@ public class User implements Serializable {
 	public String getLogin() {
 		return this.login;
 	}
-	
+
 	public String getPassword() {
 		return this.password;
 	}
-	
+
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+
 	public void setSuper(boolean superU){
 		this.superU = superU;
 	}
-	
-	 public int getMoney() {return this.amount;}
+	public boolean getSuper() {return this.superU;}
 
-	 public void setAmount(int number){ this.amount = number; }
-	 
-	 public String toString() {
-			 return "User: login --> " + this.login + ", password -->  " + this.password;
-	 }
+	public int getMoney() {return this.amount;}
+
+	public void setAmount(int number){ this.amount = number; }
+
+	public String toString() {
+		return "User: login --> " + this.login + ", password -->  " + this.password;
+	}
 }
 
