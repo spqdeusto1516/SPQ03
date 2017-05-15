@@ -67,6 +67,18 @@ public class Transferer extends UnicastRemoteObject implements ITransferer{
     }
 
     @Override
+    public ArrayList<Product> getAllProd() throws RemoteException{
+    	List<Product> listProd = new ArrayList<>();
+	    int cont = 0;
+	    try{
+	        listProd = dao.getAllProd();
+        }catch (Exception e){
+	        logger.error("Exception launched: " + e.getMessage());
+        }
+	    return (ArrayList)listProd;
+    }
+	
+    @Override
     public Product searchProd(String name) throws RemoteException{
 	    Product prod=null;
 	    List<Product> listProd = new ArrayList<>();

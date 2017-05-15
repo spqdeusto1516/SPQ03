@@ -43,6 +43,39 @@ public class DAO implements IDAO {
     }
 
     @Override
+    public List<User> getAllUser() {
+        PersistenceManager pm = pmf.getPersistenceManager();
+        Transaction tx = pm.currentTransaction();
+        pm.getFetchPlan().setMaxFetchDepth(3);
+
+        List<User> users=new ArrayList<>();
+        try {
+
+            tx.begin();
+            Extent<User> extentU = pm.getExtent(User.class);
+            for (User u : extentU) {
+                users.add(u);
+                u.getLogin();
+                u.getMoney();
+                u.getPassword();
+            }
+            tx.commit();
+
+        } catch (Exception ex) {
+        	   logger.error("# Error getting Extent getAllUsers: " + ex.getMessage());
+        } finally {
+
+            if (tx.isActive()) {
+                tx.rollback();
+            }
+            pm.close();
+
+        }
+        return users;
+    }
+    
+    
+    @Override
     public User retrieveUser(String login) {
         User user = null;
         PersistenceManager pm = pmf.getPersistenceManager();
@@ -127,11 +160,12 @@ public class DAO implements IDAO {
             Extent<Product> extentP = pm.getExtent(Product.class);
             for (Product p : extentP) {
                 products.add(p);
+                p.dnGetuser();
             }
             tx.commit();
 
         } catch (Exception ex) {
-        	   logger.error("# Error getting Extent getAllGames: " + ex.getMessage());
+        	   logger.error("# Error getting Extent getAllProds: " + ex.getMessage());
         } finally {
 
             if (tx.isActive()) {

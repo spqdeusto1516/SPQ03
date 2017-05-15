@@ -23,6 +23,7 @@ public class User implements Serializable {
 	@PrimaryKey
 	private String login;
 	private String password=null;
+	private boolean superU = false;
 	@Persistent(defaultFetchGroup="true", mappedBy="user")
 	@Join
 	List<Money> moneyList = new ArrayList<>();
@@ -36,7 +37,7 @@ public class User implements Serializable {
 	
 	public void addMoney(int money) { this.amount += money;	}
 
-	public void removeMoney(int money) { this.amount += money;	}
+	public void removeMoney(int money) { this.amount -= money;	}
 
 	public String getLogin() {
 		return this.login;
@@ -48,6 +49,10 @@ public class User implements Serializable {
 	
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	
+	public void setSuper(boolean superU){
+		this.superU = superU;
 	}
 	
 	 public int getMoney() {return this.amount;}

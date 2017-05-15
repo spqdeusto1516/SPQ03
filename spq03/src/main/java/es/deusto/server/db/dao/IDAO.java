@@ -7,6 +7,7 @@ import java.util.List;
 public interface IDAO {
 
     boolean storeUser(User u);
+    List<User> getAllUser();
     User retrieveUser(String login);
     boolean updateUser(User u);
 
