@@ -6,7 +6,6 @@ es\deusto\client\Client$1.class
 es\deusto\client\NewProdWindow.class
 es\deusto\server\db\dao\DAO.class
 es\deusto\server\db\data\Money.class
-es\deusto\client\remote\ITransferer.class
 es\deusto\server\Server.class
 es\deusto\client\Client.class
 es\deusto\client\MainWindow.class

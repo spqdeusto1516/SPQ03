@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 18:51:01> DEBUG (Log4JLogger.java:63): Using PluginRegistry org.datanucleus.plugin.NonManagedPluginRegistry
 18:51:01> DEBUG (Log4JLogger.java:63): Registering bundle org.sonatype.inject version 2.3.0 at URL file:/C:/Users/Jorge/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar.
 18:51:01> DEBUG (Log4JLogger.java:63): Loading extension points from plug-in file jar:file:/C:/Users/Jorge/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.3.0/sisu-inject-bean-2.3.0.jar!/plugin.xml.
@@ -306,3 +307,5 @@
 18:51:06> INFO  (Log4JLogger.java:82): ENHANCED (Persistable) : es.deusto.server.db.data.User
 18:51:06> DEBUG (Log4JLogger.java:63): Enhance de la clase "es.deusto.server.db.data.User" ha terminado
 18:51:06> INFO  (Log4JLogger.java:82): DataNucleus Enhancer ha terminado con exito para 3 clases. Tiempos : input=2290 ms, enhance=245 ms, total=2535 ms. Compruebe el LOG para los detalles
+=======
+>>>>>>> cb22448d422a44e4c93183ee348a08ed017597d5
