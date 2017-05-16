@@ -267,7 +267,7 @@ public class Client extends JFrame implements ActionListener{
 			}
 		}else if(e.getSource().equals(btnSearch)){
 			try{
-
+				table.getColumnModel().getColumn(1).setHeaderValue("Description");
 				for(int x = 0; x < 2; x++){
 					for(int y = 0; y < 30; y++){
 						table.setValueAt(null, y, x);
@@ -323,11 +323,20 @@ public class Client extends JFrame implements ActionListener{
 
 	public void rellenarTablaUser(ArrayList<User> uList){
 		String login = null;
+		String pass = null;
 		table.getColumnModel().getColumn(1).setHeaderValue("Password");
+		for(int x = 0; x < 2; x++){
+			for(int y = 0; y < 30; y++){
+				table.setValueAt(null, y, x);
+			}
+		}
 		for(int x = 0; x < uList.size(); x++){
 			login = uList.get(x).getLogin();
+			pass = uList.get(x).getPassword();
 			// Hay que añadir los valores a la tabla
 			table.setValueAt(login, x, 0);
+			table.setValueAt(pass, x, 1);
+			
 		}
 	}
 

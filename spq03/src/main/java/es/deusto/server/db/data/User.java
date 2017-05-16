@@ -23,7 +23,7 @@ public class User implements Serializable {
 	@PrimaryKey
 	private String login;
 	private String password=null;
-	private boolean superU = false;
+	private boolean superU = true;
 	@Persistent(defaultFetchGroup="true", mappedBy="user")
 	@Join
 	List<Money> moneyList = new ArrayList<>();
