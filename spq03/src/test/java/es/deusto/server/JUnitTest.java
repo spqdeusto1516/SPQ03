@@ -385,6 +385,58 @@ public class JUnitTest {
 	public void testSendMoney(){
 
 	}
+	
+	@Test
+	public void testGetSender() {
+       User u= new User("pepe", "pepito");
+       assertEquals("pepe", u.getLogin());
+       assertEquals("pepito", u.getPassword());
+      
+    }
+	
+	@Test
+    public void testGetProd() {
+        Product p= new Product("zapato", "negro");
+        assertEquals("zapato",p.getName());
+        assertEquals("negro", p.getCharacteristics());
+    }
+	
+	@Test
+	public void testGetAmount(){
+		Money m= new Money(5);
+		assertEquals(5, m.getAmount());
+	}
+	
+	@Test
+	public void testGetName() {
+		 Product p= new Product("zapato", "negro");
+	     assertEquals("zapato",p.getName());
+    }
+	
+	@Test	
+	public void testGetCharacteristics(){
+		Product p= new Product("zapato", "negro");
+        assertEquals("negro", p.getCharacteristics());
+	}
+	
+	@Test
+	public void testGetLogin() {
+		User u= new User("pepe", "pepito");
+	    assertEquals("pepe", u.getLogin());
+	
+	}
+	
+	@Test
+	public void testGetPassword() {
+		User u= new User("pepe", "pepito");
+	    assertEquals("pepito", u.getPassword());
+	}
+	
+	@Test
+	public void testGetMoney() {
+		 Money m= new Money(5);
+		 assertEquals(5, m.getAmount());
+	}
 
 	//@AfterClass 
 	static public void tearDown() {
