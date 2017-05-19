@@ -402,7 +402,7 @@ public class JUnitTest {
 	@Test
 		@PerfTest(invocations = 1000, threads= 200)
 		@Required(max = 1200, average = 250)
-    public void getetProdPerfTest() {
+    public void getProdPerfTest() {
         Product p= new Product("zapato", "negro");
         assertEquals("zapato",p.getName());
         assertEquals("negro", p.getCharacteristics());
@@ -414,6 +414,47 @@ public class JUnitTest {
 	public void getAmountPerfTest(){
 		Money m= new Money(5);
 		assertEquals(5, m.getAmount());
+	}
+	
+	@Test
+	@PerfTest(invocations = 1000, threads= 200)
+	@Required(max = 1200, average = 250)
+	public void getNamePerfTest() {
+		 Product p= new Product("zapato", "negro");
+	     assertEquals("zapato",p.getName());
+    }
+	
+	@Test
+	@PerfTest(invocations = 1000, threads= 200)
+	@Required(max = 1200, average = 250)
+	public void getCharacteristicsPerfTest(){
+		Product p= new Product("zapato", "negro");
+        assertEquals("negro", p.getCharacteristics());
+	}
+	
+	@Test
+	@PerfTest(invocations = 1000, threads= 200)
+	@Required(max = 1200, average = 250)
+	public void getLoginPerfTest() {
+		User u= new User("pepe", "pepito");
+	    assertEquals("pepe", u.getLogin());
+	
+	}
+	
+	@Test
+	@PerfTest(invocations = 1000, threads= 200)
+	@Required(max = 1200, average = 250)
+	public void getPasswordPerfTest() {
+		User u= new User("pepe", "pepito");
+	    assertEquals("pepito", u.getPassword());
+	}
+	
+	@Test
+	@PerfTest(invocations = 1000, threads= 200)
+	@Required(max = 1200, average = 250)
+	public void getMoneyPerfTest() {
+		 Money m= new Money(5);
+		 assertEquals(5, m.getAmount());
 	}
 	
 	@Test
