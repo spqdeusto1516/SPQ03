@@ -17,6 +17,9 @@ import javax.jdo.PersistenceManagerFactory;
 import javax.jdo.Query;
 import javax.jdo.Transaction;
 
+import org.databene.contiperf.PerfTest;
+import org.databene.contiperf.Required;
+
 /*import javax.jdo.JDOHelper;
 import javax.jdo.PersistenceManager;
 import javax.jdo.PersistenceManagerFactory;
@@ -384,6 +387,33 @@ public class JUnitTest {
 	//@Test
 	public void testSendMoney(){
 
+	}
+	
+	@Test
+	 	@PerfTest(invocations = 1000, threads= 200)
+    	@Required(max = 1200, average = 250)
+	public void getSenderPerfTest() {
+       User u= new User("pepe", "pepito");
+       assertEquals("pepe", u.getLogin());
+       assertEquals("pepito", u.getPassword());
+      
+    }
+	
+	@Test
+		@PerfTest(invocations = 1000, threads= 200)
+		@Required(max = 1200, average = 250)
+    public void getetProdPerfTest() {
+        Product p= new Product("zapato", "negro");
+        assertEquals("zapato",p.getName());
+        assertEquals("negro", p.getCharacteristics());
+    }
+	
+	@Test
+		@PerfTest(invocations = 1000, threads= 200)
+		@Required(max = 1200, average = 250)
+	public void getAmountPerfTest(){
+		Money m= new Money(5);
+		assertEquals(5, m.getAmount());
 	}
 	
 	@Test
