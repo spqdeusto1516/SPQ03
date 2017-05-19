@@ -8,7 +8,6 @@ es\deusto\server\db\dao\DAO.class
 es\deusto\server\db\data\Money.class
 es\deusto\server\Server.class
 es\deusto\client\Client.class
-es\deusto\client\MainWindow.class
 es\deusto\server\db\DB.class
 es\deusto\server\remote\Transferer.class
 es\deusto\server\db\data\Product.class

@@ -1,19 +1,4 @@
-<<<<<<< HEAD
-C:\Users\Jorge\git\SPQ03\spq03\src\main\java\es\deusto\client\MainWindow.java
-C:\Users\Jorge\git\SPQ03\spq03\src\main\java\es\deusto\server\db\data\User.java
-C:\Users\Jorge\git\SPQ03\spq03\src\main\java\es\deusto\client\remote\ITransferer.java
-C:\Users\Jorge\git\SPQ03\spq03\src\main\java\es\deusto\server\db\DB.java
-C:\Users\Jorge\git\SPQ03\spq03\src\main\java\es\deusto\client\Client.java
-C:\Users\Jorge\git\SPQ03\spq03\src\main\java\es\deusto\server\db\dao\IDAO.java
-C:\Users\Jorge\git\SPQ03\spq03\src\main\java\es\deusto\server\Server.java
-C:\Users\Jorge\git\SPQ03\spq03\src\main\java\es\deusto\server\db\IDB.java
-C:\Users\Jorge\git\SPQ03\spq03\src\main\java\es\deusto\server\remote\ITransferer.java
-C:\Users\Jorge\git\SPQ03\spq03\src\main\java\es\deusto\server\db\data\Product.java
-C:\Users\Jorge\git\SPQ03\spq03\src\main\java\es\deusto\client\NewProdWindow.java
-C:\Users\Jorge\git\SPQ03\spq03\src\main\java\es\deusto\server\db\dao\DAO.java
-C:\Users\Jorge\git\SPQ03\spq03\src\main\java\es\deusto\server\remote\Transferer.java
-C:\Users\Jorge\git\SPQ03\spq03\src\main\java\es\deusto\server\db\data\Money.java
-=======
+C:\Users\Oihane\git\SPQ03\spq03\src\main\java\es\deusto\client\NewProdWindow.java
 C:\Users\Oihane\git\SPQ03\spq03\src\main\java\es\deusto\client\Client.java
 C:\Users\Oihane\git\SPQ03\spq03\src\main\java\es\deusto\server\db\IDB.java
 C:\Users\Oihane\git\SPQ03\spq03\src\main\java\es\deusto\server\remote\Transferer.java
@@ -25,5 +10,3 @@ C:\Users\Oihane\git\SPQ03\spq03\src\main\java\es\deusto\server\db\data\Money.jav
 C:\Users\Oihane\git\SPQ03\spq03\src\main\java\es\deusto\server\remote\ITransferer.java
 C:\Users\Oihane\git\SPQ03\spq03\src\main\java\es\deusto\server\db\dao\IDAO.java
 C:\Users\Oihane\git\SPQ03\spq03\src\main\java\es\deusto\server\db\data\Product.java
-C:\Users\Oihane\git\SPQ03\spq03\src\main\java\es\deusto\client\MainWindow.java
->>>>>>> cb22448d422a44e4c93183ee348a08ed017597d5
