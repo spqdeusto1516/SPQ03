@@ -1,5 +1,13 @@
 var classes_1_1deusto_1_1server_1_1_j_unit_test =
 [
+    [ "getAmountPerfTest", "classes_1_1deusto_1_1server_1_1_j_unit_test.html#af8d8ab1be153c202fa1b5210c289cf9e", null ],
+    [ "getCharacteristicsPerfTest", "classes_1_1deusto_1_1server_1_1_j_unit_test.html#a2d03b70c2755220640f1faf9187ff0eb", null ],
+    [ "getLoginPerfTest", "classes_1_1deusto_1_1server_1_1_j_unit_test.html#acc60e1b0408897890a68f8a3e8e7e0f1", null ],
+    [ "getMoneyPerfTest", "classes_1_1deusto_1_1server_1_1_j_unit_test.html#ac6a5f7176a83d86cc6a08663f1552f30", null ],
+    [ "getNamePerfTest", "classes_1_1deusto_1_1server_1_1_j_unit_test.html#af00ff9ebc78b3084cae01b1dc17deac1", null ],
+    [ "getPasswordPerfTest", "classes_1_1deusto_1_1server_1_1_j_unit_test.html#a044b003f52f432938d9fee7189f0c7bb", null ],
+    [ "getProdPerfTest", "classes_1_1deusto_1_1server_1_1_j_unit_test.html#a1a7020b294376615f6e970c8f333413d", null ],
+    [ "getSenderPerfTest", "classes_1_1deusto_1_1server_1_1_j_unit_test.html#a46253683d4cd22c6501825f126973410", null ],
     [ "RegisterProductTest", "classes_1_1deusto_1_1server_1_1_j_unit_test.html#a11102e5000a6ff4c211c7243ab938117", null ],
     [ "setUpUser", "classes_1_1deusto_1_1server_1_1_j_unit_test.html#a70ed61bac7b0101aed52c1ea8d2a58cf", null ],
     [ "stablishConnection", "classes_1_1deusto_1_1server_1_1_j_unit_test.html#a2bdde69e0f41e4977c4ad76fa2cd0b95", null ],
