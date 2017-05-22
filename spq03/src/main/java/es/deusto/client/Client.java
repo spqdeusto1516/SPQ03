@@ -23,6 +23,7 @@ import es.deusto.server.db.data.Product;
 import es.deusto.server.db.data.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import javax.swing.JCheckBox;
 
 @SuppressWarnings("deprecation")
 public class Client extends JFrame implements ActionListener{
@@ -46,6 +47,8 @@ public class Client extends JFrame implements ActionListener{
 	private JPanel panel_login;
 	private JPanel panelLogged;
 
+	private JCheckBox chckbxSuperU;
+	
 	private static ITransferer objHello;
 	private static String name;
 	private User activeU;
@@ -53,6 +56,10 @@ public class Client extends JFrame implements ActionListener{
 	private ArrayList<Product> allProdList;
 	private ArrayList<User> allUserList;
 
+	/**
+	 * Generates a Client Window with all the different attributes  it has, begins with a log in and then allows the user to
+	 * send money, search a product, insert new products, search for all the users (if it has permission), etc.
+	 */
 	public Client() {
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -155,6 +162,10 @@ public class Client extends JFrame implements ActionListener{
 		txfPassword.setBounds(189, 122, 164, 21);
 		panel_login.add(txfPassword);
 		txfPassword.setColumns(10);
+		
+		chckbxSuperU = new JCheckBox("Super");
+		chckbxSuperU.setBounds(84, 195, 150, 22);
+		panel_login.add(chckbxSuperU);
 
 		btnLogIn = new JButton("Log in");
 		btnLogIn.setBounds(292, 194, 99, 23);
@@ -209,7 +220,6 @@ public class Client extends JFrame implements ActionListener{
 
 	}
 
-
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		String login = null;
@@ -225,7 +235,12 @@ public class Client extends JFrame implements ActionListener{
 				pass = txfPassword.getText();
 				logger.info("User " + login + " with pass " + pass);
 				panel_login.setVisible(false);
-				objHello.registerUser(new User(txfLogin.getText(), txfPassword.getText()));
+				activeU = new User(txfLogin.getText(), txfPassword.getText());
+				//If super is selected, set the user as a superUser
+				if(chckbxSuperU.isSelected()){
+				activeU.setSuper(true);
+				}
+				objHello.registerUser(activeU);
 				activeU = objHello.getUser(txfLogin.getText());
 				moneyNow = activeU.getMoney();
 				allProdList = objHello.getAllProd();
@@ -308,6 +323,10 @@ public class Client extends JFrame implements ActionListener{
 		}
 	}
 
+	/**
+	 * Fill the table (this.table) with the ArrayList set by parameter after switching the title of the second column to "Description"
+	 * @param pList The list of all the products inside the DB
+	 */
 	public void rellenarTablaProd(ArrayList<Product> pList){
 		String name = null;
 		String characteristics = null;
@@ -326,6 +345,10 @@ public class Client extends JFrame implements ActionListener{
 		}
 	}
 
+	/**
+	 * Fill the table (this.table) with the ArrayList set by parameter after switching the title of the second column to "Password"
+	 * @param uList The list of all the users inside the DB
+	 */
 	public void rellenarTablaUser(ArrayList<User> uList){
 		String login = null;
 		String pass = null;
@@ -343,5 +366,4 @@ public class Client extends JFrame implements ActionListener{
 			table.setValueAt(pass, x, 1);	
 		}
 	}
-
 }
