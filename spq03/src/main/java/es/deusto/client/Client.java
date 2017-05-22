@@ -51,6 +51,7 @@ public class Client extends JFrame implements ActionListener{
 	
 	private static ITransferer objHello;
 	private static String name;
+	private static boolean isSuper = false;
 	private User activeU;
 	private int moneyNow;
 	private ArrayList<Product> allProdList;
@@ -238,10 +239,13 @@ public class Client extends JFrame implements ActionListener{
 				activeU = new User(txfLogin.getText(), txfPassword.getText());
 				//If super is selected, set the user as a superUser
 				if(chckbxSuperU.isSelected()){
-				activeU.setSuper(true);
+					isSuper = true;
 				}
 				objHello.registerUser(activeU);
 				activeU = objHello.getUser(txfLogin.getText());
+				if(isSuper){
+					activeU.setSuper(true);
+				}
 				moneyNow = activeU.getMoney();
 				allProdList = objHello.getAllProd();
 				rellenarTablaProd(allProdList);
