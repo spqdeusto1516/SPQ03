@@ -32,29 +32,57 @@ public class Product implements Serializable {
     private List<Money> buyersPayment = new ArrayList<>();
     private long timestamp;
 
-
+    /**
+     * Method to create a new instance of an object Product
+     * @param name The value for the PK that will identify a product between all the ones in the DB
+     * @param characteristics The value for the characteristics of the product
+     */
     public Product(String name, String characteristics) {
         this.name = name;
         this.characteristics = characteristics;
         this.timestamp = System.currentTimeMillis();
     }
 
+    /**
+   	 * This method returns the user that owns the product
+   	 * @return The owner of the Product
+   	 */
     public User dnGetuser() {
         return user;
     }
 
+    /**
+   	 * This method returns the name (PK) of the product
+   	 * @return The name of the Product
+   	 */
     public String getName() {
         return name;
     }
 
+    /**
+	 * Establishes the value for the parameter name of the Product
+	 * @param name The value for the name
+	 */
     public void setName(String name){ this.name = name; }
 
+    /**
+	 * Establishes the value for the parameter owner of the Product
+	 * @param owner The value for the new owner
+	 */
     public void setOwner(User owner) {
         this.user = owner;
     }
 
+    /**
+	 * This method returns the characteristics of the product
+	 * @return The characteristics of the Product
+	 */
     public String getCharacteristics(){return characteristics;}
 
+    /**
+	 * This method returns the buyers payment of the product
+	 * @return The buyers payment of the Product
+	 */
     public String getBuyersPayment(){
         if(this.buyersPayment != null){
             return this.buyersPayment.toString();

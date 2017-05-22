@@ -223,7 +223,7 @@ public class Client extends JFrame implements ActionListener{
 
 				login = txfLogin.getText();
 				pass = txfPassword.getText();
-				System.out.println("User " + login + " with pass " + pass);
+				logger.info("User " + login + " with pass " + pass);
 				panel_login.setVisible(false);
 				objHello.registerUser(new User(txfLogin.getText(), txfPassword.getText()));
 				activeU = objHello.getUser(txfLogin.getText());
@@ -246,7 +246,7 @@ public class Client extends JFrame implements ActionListener{
 
 			try{
 				Product p = allProdList.get(table.getSelectedRow());
-				System.out.println(p.getName());
+				logger.info(p.getName());
 				objHello.buyProd(txfMoneyTo.getText(), p, 
 						Integer.parseInt(txfAmount.getText()), activeU.getLogin());
 			}catch(Exception ex){
@@ -312,6 +312,11 @@ public class Client extends JFrame implements ActionListener{
 		String name = null;
 		String characteristics = null;
 		table.getColumnModel().getColumn(1).setHeaderValue("Description");
+		for(int x = 0; x < 2; x++){
+			for(int y = 0; y < 30; y++){
+				table.setValueAt(null, y, x);
+			}
+		}
 		for(int x = 0; x < pList.size(); x++){
 			name = pList.get(x).getName();
 			characteristics = pList.get(x).getCharacteristics();
@@ -335,8 +340,7 @@ public class Client extends JFrame implements ActionListener{
 			pass = uList.get(x).getPassword();
 			// Hay que añadir los valores a la tabla
 			table.setValueAt(login, x, 0);
-			table.setValueAt(pass, x, 1);
-			
+			table.setValueAt(pass, x, 1);	
 		}
 	}
 

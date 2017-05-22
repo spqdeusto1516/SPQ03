@@ -1,0 +1,181 @@
+\hypertarget{classes_1_1deusto_1_1server_1_1remote_1_1_transferer}{}\section{es.\+deusto.\+server.\+remote.\+Transferer Class Reference}
+\label{classes_1_1deusto_1_1server_1_1remote_1_1_transferer}\index{es.\+deusto.\+server.\+remote.\+Transferer@{es.\+deusto.\+server.\+remote.\+Transferer}}
+Inheritance diagram for es.\+deusto.\+server.\+remote.\+Transferer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classes_1_1deusto_1_1server_1_1remote_1_1_transferer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_ad9465ee99430add24c3bf6badab21a91}{Transferer} ()  throws Remote\+Exception 
+\item 
+\hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a1cd1f321e0f5650f8a37907e8cb23840}{Transferer} (\hyperlink{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o}{I\+D\+AO} udao)  throws Remote\+Exception 
+\item 
+Array\+List$<$ \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user}{User} $>$ \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a613c0c3af149140e58488ce9d0745593}{get\+All\+User} ()  throws Remote\+Exception
+\item 
+boolean \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a80e2dd7db595bdd8d39969e5d0e8ae7b}{register\+User} (\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user}{User} u)
+\item 
+\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user}{User} \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a16976959aeb3080244422aeac061a23b}{get\+User} (String login)  throws Remote\+Exception
+\item 
+Array\+List$<$ \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product}{Product} $>$ \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a29cbb75edeb4e0973780fd379ef2b3fb}{get\+All\+Prod} ()  throws Remote\+Exception
+\item 
+\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product}{Product} \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_ad6759f696eddd682b750f92ec41d1fcb}{search\+Prod} (String name)  throws Remote\+Exception
+\item 
+boolean \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a64c1f3b57b74106df83335b124937afe}{register\+Prod} (\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product}{Product} p)  throws Remote\+Exception
+\item 
+boolean \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_ad5868dd67ee9a53e7cdf0c30e08a3a1b}{buy\+Prod} (String loginB, \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product}{Product} p, int amount, String loginS)  throws Remote\+Exception
+\item 
+boolean \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_ad1eb84155ba0c457645f2ad53725320d}{send\+Money} (String loginR, int amount, String loginS)  throws Remote\+Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file Transferer.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_ad9465ee99430add24c3bf6badab21a91}\label{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_ad9465ee99430add24c3bf6badab21a91}} 
+\index{es\+::deusto\+::server\+::remote\+::\+Transferer@{es\+::deusto\+::server\+::remote\+::\+Transferer}!Transferer@{Transferer}}
+\index{Transferer@{Transferer}!es\+::deusto\+::server\+::remote\+::\+Transferer@{es\+::deusto\+::server\+::remote\+::\+Transferer}}
+\subsubsection{\texorpdfstring{Transferer()}{Transferer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily es.\+deusto.\+server.\+remote.\+Transferer.\+Transferer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+
+
+Definition at line 22 of file Transferer.\+java.
+
+\mbox{\Hypertarget{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a1cd1f321e0f5650f8a37907e8cb23840}\label{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a1cd1f321e0f5650f8a37907e8cb23840}} 
+\index{es\+::deusto\+::server\+::remote\+::\+Transferer@{es\+::deusto\+::server\+::remote\+::\+Transferer}!Transferer@{Transferer}}
+\index{Transferer@{Transferer}!es\+::deusto\+::server\+::remote\+::\+Transferer@{es\+::deusto\+::server\+::remote\+::\+Transferer}}
+\subsubsection{\texorpdfstring{Transferer()}{Transferer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily es.\+deusto.\+server.\+remote.\+Transferer.\+Transferer (\begin{DoxyParamCaption}\item[{\hyperlink{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o}{I\+D\+AO}}]{udao }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+
+
+Definition at line 27 of file Transferer.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_ad5868dd67ee9a53e7cdf0c30e08a3a1b}\label{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_ad5868dd67ee9a53e7cdf0c30e08a3a1b}} 
+\index{es\+::deusto\+::server\+::remote\+::\+Transferer@{es\+::deusto\+::server\+::remote\+::\+Transferer}!buy\+Prod@{buy\+Prod}}
+\index{buy\+Prod@{buy\+Prod}!es\+::deusto\+::server\+::remote\+::\+Transferer@{es\+::deusto\+::server\+::remote\+::\+Transferer}}
+\subsubsection{\texorpdfstring{buy\+Prod()}{buyProd()}}
+{\footnotesize\ttfamily boolean es.\+deusto.\+server.\+remote.\+Transferer.\+buy\+Prod (\begin{DoxyParamCaption}\item[{String}]{loginB,  }\item[{\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product}{Product}}]{p,  }\item[{int}]{amount,  }\item[{String}]{loginS }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+
+
+Implements \hyperlink{interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transferer_a86d92e8a78257551122807ae02259950}{es.\+deusto.\+server.\+remote.\+I\+Transferer}.
+
+
+
+Definition at line 136 of file Transferer.\+java.
+
+\mbox{\Hypertarget{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a29cbb75edeb4e0973780fd379ef2b3fb}\label{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a29cbb75edeb4e0973780fd379ef2b3fb}} 
+\index{es\+::deusto\+::server\+::remote\+::\+Transferer@{es\+::deusto\+::server\+::remote\+::\+Transferer}!get\+All\+Prod@{get\+All\+Prod}}
+\index{get\+All\+Prod@{get\+All\+Prod}!es\+::deusto\+::server\+::remote\+::\+Transferer@{es\+::deusto\+::server\+::remote\+::\+Transferer}}
+\subsubsection{\texorpdfstring{get\+All\+Prod()}{getAllProd()}}
+{\footnotesize\ttfamily Array\+List$<$\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product}{Product}$>$ es.\+deusto.\+server.\+remote.\+Transferer.\+get\+All\+Prod (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+
+
+Implements \hyperlink{interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transferer_a71afa6799122b3f09805f86d2e58fc23}{es.\+deusto.\+server.\+remote.\+I\+Transferer}.
+
+
+
+Definition at line 83 of file Transferer.\+java.
+
+\mbox{\Hypertarget{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a613c0c3af149140e58488ce9d0745593}\label{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a613c0c3af149140e58488ce9d0745593}} 
+\index{es\+::deusto\+::server\+::remote\+::\+Transferer@{es\+::deusto\+::server\+::remote\+::\+Transferer}!get\+All\+User@{get\+All\+User}}
+\index{get\+All\+User@{get\+All\+User}!es\+::deusto\+::server\+::remote\+::\+Transferer@{es\+::deusto\+::server\+::remote\+::\+Transferer}}
+\subsubsection{\texorpdfstring{get\+All\+User()}{getAllUser()}}
+{\footnotesize\ttfamily Array\+List$<$\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user}{User}$>$ es.\+deusto.\+server.\+remote.\+Transferer.\+get\+All\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+
+
+Implements \hyperlink{interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transferer_aec6609427d773f075a78295a97888103}{es.\+deusto.\+server.\+remote.\+I\+Transferer}.
+
+
+
+Definition at line 33 of file Transferer.\+java.
+
+\mbox{\Hypertarget{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a16976959aeb3080244422aeac061a23b}\label{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a16976959aeb3080244422aeac061a23b}} 
+\index{es\+::deusto\+::server\+::remote\+::\+Transferer@{es\+::deusto\+::server\+::remote\+::\+Transferer}!get\+User@{get\+User}}
+\index{get\+User@{get\+User}!es\+::deusto\+::server\+::remote\+::\+Transferer@{es\+::deusto\+::server\+::remote\+::\+Transferer}}
+\subsubsection{\texorpdfstring{get\+User()}{getUser()}}
+{\footnotesize\ttfamily \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user}{User} es.\+deusto.\+server.\+remote.\+Transferer.\+get\+User (\begin{DoxyParamCaption}\item[{String}]{login }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+
+
+Implements \hyperlink{interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transferer_ab767521556fc61bc5a39306080f00cae}{es.\+deusto.\+server.\+remote.\+I\+Transferer}.
+
+
+
+Definition at line 66 of file Transferer.\+java.
+
+\mbox{\Hypertarget{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a64c1f3b57b74106df83335b124937afe}\label{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a64c1f3b57b74106df83335b124937afe}} 
+\index{es\+::deusto\+::server\+::remote\+::\+Transferer@{es\+::deusto\+::server\+::remote\+::\+Transferer}!register\+Prod@{register\+Prod}}
+\index{register\+Prod@{register\+Prod}!es\+::deusto\+::server\+::remote\+::\+Transferer@{es\+::deusto\+::server\+::remote\+::\+Transferer}}
+\subsubsection{\texorpdfstring{register\+Prod()}{registerProd()}}
+{\footnotesize\ttfamily boolean es.\+deusto.\+server.\+remote.\+Transferer.\+register\+Prod (\begin{DoxyParamCaption}\item[{\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product}{Product}}]{p }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+
+
+Implements \hyperlink{interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transferer_a06629c7021aae4d2ce1a449726102ded}{es.\+deusto.\+server.\+remote.\+I\+Transferer}.
+
+
+
+Definition at line 114 of file Transferer.\+java.
+
+\mbox{\Hypertarget{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a80e2dd7db595bdd8d39969e5d0e8ae7b}\label{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a80e2dd7db595bdd8d39969e5d0e8ae7b}} 
+\index{es\+::deusto\+::server\+::remote\+::\+Transferer@{es\+::deusto\+::server\+::remote\+::\+Transferer}!register\+User@{register\+User}}
+\index{register\+User@{register\+User}!es\+::deusto\+::server\+::remote\+::\+Transferer@{es\+::deusto\+::server\+::remote\+::\+Transferer}}
+\subsubsection{\texorpdfstring{register\+User()}{registerUser()}}
+{\footnotesize\ttfamily boolean es.\+deusto.\+server.\+remote.\+Transferer.\+register\+User (\begin{DoxyParamCaption}\item[{\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user}{User}}]{u }\end{DoxyParamCaption})}
+
+
+
+Implements \hyperlink{interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transferer_ab805207e578865de5bf2e69ca8942344}{es.\+deusto.\+server.\+remote.\+I\+Transferer}.
+
+
+
+Definition at line 46 of file Transferer.\+java.
+
+\mbox{\Hypertarget{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_ad6759f696eddd682b750f92ec41d1fcb}\label{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_ad6759f696eddd682b750f92ec41d1fcb}} 
+\index{es\+::deusto\+::server\+::remote\+::\+Transferer@{es\+::deusto\+::server\+::remote\+::\+Transferer}!search\+Prod@{search\+Prod}}
+\index{search\+Prod@{search\+Prod}!es\+::deusto\+::server\+::remote\+::\+Transferer@{es\+::deusto\+::server\+::remote\+::\+Transferer}}
+\subsubsection{\texorpdfstring{search\+Prod()}{searchProd()}}
+{\footnotesize\ttfamily \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product}{Product} es.\+deusto.\+server.\+remote.\+Transferer.\+search\+Prod (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+
+
+Implements \hyperlink{interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transferer_a1fb33a5447e1647ffde8a01d180b8d99}{es.\+deusto.\+server.\+remote.\+I\+Transferer}.
+
+
+
+Definition at line 95 of file Transferer.\+java.
+
+\mbox{\Hypertarget{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_ad1eb84155ba0c457645f2ad53725320d}\label{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_ad1eb84155ba0c457645f2ad53725320d}} 
+\index{es\+::deusto\+::server\+::remote\+::\+Transferer@{es\+::deusto\+::server\+::remote\+::\+Transferer}!send\+Money@{send\+Money}}
+\index{send\+Money@{send\+Money}!es\+::deusto\+::server\+::remote\+::\+Transferer@{es\+::deusto\+::server\+::remote\+::\+Transferer}}
+\subsubsection{\texorpdfstring{send\+Money()}{sendMoney()}}
+{\footnotesize\ttfamily boolean es.\+deusto.\+server.\+remote.\+Transferer.\+send\+Money (\begin{DoxyParamCaption}\item[{String}]{loginR,  }\item[{int}]{amount,  }\item[{String}]{loginS }\end{DoxyParamCaption}) throws Remote\+Exception}
+
+
+
+Implements \hyperlink{interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transferer_ab43399cfce0d84f6e27032a7c14865f6}{es.\+deusto.\+server.\+remote.\+I\+Transferer}.
+
+
+
+Definition at line 161 of file Transferer.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Oihane/git/\+S\+P\+Q03/spq03/src/main/java/es/deusto/server/remote/\hyperlink{_transferer_8java}{Transferer.\+java}\end{DoxyCompactItemize}

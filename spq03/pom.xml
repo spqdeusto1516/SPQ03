@@ -133,6 +133,10 @@
 				<artifactId>cobertura-maven-plugin</artifactId>
 				<version>2.7</version>
 				<configuration>
+					<formats>
+						<format>html</format>
+						<format>xml</format>
+					</formats>
 					<check>
 						<branchRate>85</branchRate>
 						<lineRate>85</lineRate>

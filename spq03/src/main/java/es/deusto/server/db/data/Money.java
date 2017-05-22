@@ -21,28 +21,51 @@ public class Money implements Serializable {
     private int amount=0;
     private long timestamp;
 	
-	
+	/**
+	 * Method to create a new instance of an object Product
+	 * @param amount establishes the value for the parameter amount
+	 */
     public Money(int amount) {
         this.amount = amount;
 		this.timestamp = System.currentTimeMillis();
     }
 
+    /**
+   	 * This method returns the user that sends the money
+   	 * @return The sender of the money
+   	 */
 	public User getSender() {
         return user;
     }
 
+	/**
+   	 * This method returns the product inside the money interaction
+   	 * @return The product of the money interaction
+   	 */
     public Product getProd() {
         return product;
     }
 
+    /**
+	 * Establishes the value for the parameter sender of the Money
+     * @param sender the user that will send the money
+     */
     public void setUserSending(User sender) {
         this.user = sender;
     }
 
+    /**
+	 * Establishes the value for the parameter sender of the Money
+     * @param p the product inside the money interaction
+     */
     public void setProduct(Product p) {
         this.product = p;
     }
 
+	/**
+   	 * This method returns the amount of the money
+   	 * @return The amount of money in the interaction
+   	 */
     public int getAmount(){return amount;}
 
     public String toString() {

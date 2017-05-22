@@ -1,0 +1,158 @@
+\hypertarget{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o}{}\section{es.\+deusto.\+server.\+db.\+dao.\+I\+D\+AO Interface Reference}
+\label{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o}\index{es.\+deusto.\+server.\+db.\+dao.\+I\+D\+AO@{es.\+deusto.\+server.\+db.\+dao.\+I\+D\+AO}}
+Inheritance diagram for es.\+deusto.\+server.\+db.\+dao.\+I\+D\+AO\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \hyperlink{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_ab943216560f43595a852b406dcd394a4}{store\+User} (\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user}{User} u)
+\item 
+List$<$ \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user}{User} $>$ \hyperlink{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_affa6fc846698427199cb7305155a95c7}{get\+All\+User} ()
+\item 
+\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user}{User} \hyperlink{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a19f9b0d0b6f5f80730d6d197deca7dfc}{retrieve\+User} (String login)
+\item 
+boolean \hyperlink{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a790b00e2989b634c1bbb2c6620ff3583}{update\+User} (\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user}{User} u)
+\item 
+boolean \hyperlink{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a1f6d1e58c88fb3a24021f94de5e70056}{store\+Prod} (\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product}{Product} p)
+\item 
+List$<$ \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product}{Product} $>$ \hyperlink{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a5a3e4739557f0af9060b4ca90e69c0e3}{get\+All\+Prod} ()
+\item 
+\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product}{Product} \hyperlink{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a9ba3fce5b0679bb1068484734fe0ed02}{retrieve\+Prod\+Search} (String name)
+\item 
+boolean \hyperlink{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_afc4634e403796a1b66fc5251b5b86d1e}{update\+Prod} (\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product}{Product} p)
+\item 
+boolean \hyperlink{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a0c952a7cac366a448451d8150a8d57e4}{store\+Money} (\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_money}{Money} m)
+\item 
+\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_money}{Money} \hyperlink{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a1386c2e329277fc36575b0450a0e8997}{retrieve\+Money} (int amount)
+\item 
+boolean \hyperlink{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a2a4641aeefc28dc979e0146e8ca73342}{update\+Money} (\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_money}{Money} m)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 7 of file I\+D\+A\+O.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a5a3e4739557f0af9060b4ca90e69c0e3}\label{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a5a3e4739557f0af9060b4ca90e69c0e3}} 
+\index{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO@{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}!get\+All\+Prod@{get\+All\+Prod}}
+\index{get\+All\+Prod@{get\+All\+Prod}!es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO@{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}}
+\subsubsection{\texorpdfstring{get\+All\+Prod()}{getAllProd()}}
+{\footnotesize\ttfamily List$<$\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product}{Product}$>$ es.\+deusto.\+server.\+db.\+dao.\+I\+D\+A\+O.\+get\+All\+Prod (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1dao_1_1_d_a_o_a589bc944971075e694d9dc8eabf76870}{es.\+deusto.\+server.\+db.\+dao.\+D\+AO}.
+
+\mbox{\Hypertarget{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_affa6fc846698427199cb7305155a95c7}\label{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_affa6fc846698427199cb7305155a95c7}} 
+\index{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO@{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}!get\+All\+User@{get\+All\+User}}
+\index{get\+All\+User@{get\+All\+User}!es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO@{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}}
+\subsubsection{\texorpdfstring{get\+All\+User()}{getAllUser()}}
+{\footnotesize\ttfamily List$<$\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user}{User}$>$ es.\+deusto.\+server.\+db.\+dao.\+I\+D\+A\+O.\+get\+All\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1dao_1_1_d_a_o_a0ee6fd52276091b7e40129d1c484ef14}{es.\+deusto.\+server.\+db.\+dao.\+D\+AO}.
+
+\mbox{\Hypertarget{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a1386c2e329277fc36575b0450a0e8997}\label{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a1386c2e329277fc36575b0450a0e8997}} 
+\index{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO@{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}!retrieve\+Money@{retrieve\+Money}}
+\index{retrieve\+Money@{retrieve\+Money}!es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO@{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}}
+\subsubsection{\texorpdfstring{retrieve\+Money()}{retrieveMoney()}}
+{\footnotesize\ttfamily \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_money}{Money} es.\+deusto.\+server.\+db.\+dao.\+I\+D\+A\+O.\+retrieve\+Money (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1dao_1_1_d_a_o_a171a709ad2008e5eea8a77db494df1d0}{es.\+deusto.\+server.\+db.\+dao.\+D\+AO}.
+
+\mbox{\Hypertarget{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a9ba3fce5b0679bb1068484734fe0ed02}\label{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a9ba3fce5b0679bb1068484734fe0ed02}} 
+\index{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO@{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}!retrieve\+Prod\+Search@{retrieve\+Prod\+Search}}
+\index{retrieve\+Prod\+Search@{retrieve\+Prod\+Search}!es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO@{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}}
+\subsubsection{\texorpdfstring{retrieve\+Prod\+Search()}{retrieveProdSearch()}}
+{\footnotesize\ttfamily \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product}{Product} es.\+deusto.\+server.\+db.\+dao.\+I\+D\+A\+O.\+retrieve\+Prod\+Search (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+
+
+Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1dao_1_1_d_a_o_a5b4aa30073fdf9ea4263a86165ed4c18}{es.\+deusto.\+server.\+db.\+dao.\+D\+AO}.
+
+\mbox{\Hypertarget{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a19f9b0d0b6f5f80730d6d197deca7dfc}\label{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a19f9b0d0b6f5f80730d6d197deca7dfc}} 
+\index{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO@{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}!retrieve\+User@{retrieve\+User}}
+\index{retrieve\+User@{retrieve\+User}!es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO@{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}}
+\subsubsection{\texorpdfstring{retrieve\+User()}{retrieveUser()}}
+{\footnotesize\ttfamily \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user}{User} es.\+deusto.\+server.\+db.\+dao.\+I\+D\+A\+O.\+retrieve\+User (\begin{DoxyParamCaption}\item[{String}]{login }\end{DoxyParamCaption})}
+
+
+
+Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1dao_1_1_d_a_o_a8c316b4c3bf246d00fb2b423a603ebe6}{es.\+deusto.\+server.\+db.\+dao.\+D\+AO}.
+
+\mbox{\Hypertarget{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a0c952a7cac366a448451d8150a8d57e4}\label{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a0c952a7cac366a448451d8150a8d57e4}} 
+\index{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO@{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}!store\+Money@{store\+Money}}
+\index{store\+Money@{store\+Money}!es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO@{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}}
+\subsubsection{\texorpdfstring{store\+Money()}{storeMoney()}}
+{\footnotesize\ttfamily boolean es.\+deusto.\+server.\+db.\+dao.\+I\+D\+A\+O.\+store\+Money (\begin{DoxyParamCaption}\item[{\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_money}{Money}}]{m }\end{DoxyParamCaption})}
+
+
+
+Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1dao_1_1_d_a_o_a0cfb218b648ebc99aed950614173b6c6}{es.\+deusto.\+server.\+db.\+dao.\+D\+AO}.
+
+\mbox{\Hypertarget{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a1f6d1e58c88fb3a24021f94de5e70056}\label{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a1f6d1e58c88fb3a24021f94de5e70056}} 
+\index{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO@{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}!store\+Prod@{store\+Prod}}
+\index{store\+Prod@{store\+Prod}!es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO@{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}}
+\subsubsection{\texorpdfstring{store\+Prod()}{storeProd()}}
+{\footnotesize\ttfamily boolean es.\+deusto.\+server.\+db.\+dao.\+I\+D\+A\+O.\+store\+Prod (\begin{DoxyParamCaption}\item[{\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product}{Product}}]{p }\end{DoxyParamCaption})}
+
+
+
+Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1dao_1_1_d_a_o_a345f30d95426e1cc8bd845949978dd1c}{es.\+deusto.\+server.\+db.\+dao.\+D\+AO}.
+
+\mbox{\Hypertarget{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_ab943216560f43595a852b406dcd394a4}\label{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_ab943216560f43595a852b406dcd394a4}} 
+\index{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO@{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}!store\+User@{store\+User}}
+\index{store\+User@{store\+User}!es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO@{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}}
+\subsubsection{\texorpdfstring{store\+User()}{storeUser()}}
+{\footnotesize\ttfamily boolean es.\+deusto.\+server.\+db.\+dao.\+I\+D\+A\+O.\+store\+User (\begin{DoxyParamCaption}\item[{\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user}{User}}]{u }\end{DoxyParamCaption})}
+
+
+
+Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1dao_1_1_d_a_o_acb146e96959c340ef828ef8e36b4283c}{es.\+deusto.\+server.\+db.\+dao.\+D\+AO}.
+
+\mbox{\Hypertarget{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a2a4641aeefc28dc979e0146e8ca73342}\label{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a2a4641aeefc28dc979e0146e8ca73342}} 
+\index{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO@{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}!update\+Money@{update\+Money}}
+\index{update\+Money@{update\+Money}!es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO@{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}}
+\subsubsection{\texorpdfstring{update\+Money()}{updateMoney()}}
+{\footnotesize\ttfamily boolean es.\+deusto.\+server.\+db.\+dao.\+I\+D\+A\+O.\+update\+Money (\begin{DoxyParamCaption}\item[{\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_money}{Money}}]{m }\end{DoxyParamCaption})}
+
+
+
+Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1dao_1_1_d_a_o_a05c7fc41d49e5ab7f0830405ccf60c87}{es.\+deusto.\+server.\+db.\+dao.\+D\+AO}.
+
+\mbox{\Hypertarget{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_afc4634e403796a1b66fc5251b5b86d1e}\label{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_afc4634e403796a1b66fc5251b5b86d1e}} 
+\index{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO@{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}!update\+Prod@{update\+Prod}}
+\index{update\+Prod@{update\+Prod}!es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO@{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}}
+\subsubsection{\texorpdfstring{update\+Prod()}{updateProd()}}
+{\footnotesize\ttfamily boolean es.\+deusto.\+server.\+db.\+dao.\+I\+D\+A\+O.\+update\+Prod (\begin{DoxyParamCaption}\item[{\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product}{Product}}]{p }\end{DoxyParamCaption})}
+
+
+
+Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1dao_1_1_d_a_o_a2a7817f0def3d19a7871910ebba76df7}{es.\+deusto.\+server.\+db.\+dao.\+D\+AO}.
+
+\mbox{\Hypertarget{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a790b00e2989b634c1bbb2c6620ff3583}\label{interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o_a790b00e2989b634c1bbb2c6620ff3583}} 
+\index{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO@{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}!update\+User@{update\+User}}
+\index{update\+User@{update\+User}!es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO@{es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}}
+\subsubsection{\texorpdfstring{update\+User()}{updateUser()}}
+{\footnotesize\ttfamily boolean es.\+deusto.\+server.\+db.\+dao.\+I\+D\+A\+O.\+update\+User (\begin{DoxyParamCaption}\item[{\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user}{User}}]{u }\end{DoxyParamCaption})}
+
+
+
+Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1dao_1_1_d_a_o_a7f6ed77294fe1f61cbebbea410cef6e0}{es.\+deusto.\+server.\+db.\+dao.\+D\+AO}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Oihane/git/\+S\+P\+Q03/spq03/src/main/java/es/deusto/server/db/dao/\hyperlink{_i_d_a_o_8java}{I\+D\+A\+O.\+java}\end{DoxyCompactItemize}
