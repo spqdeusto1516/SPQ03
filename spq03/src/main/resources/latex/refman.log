@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.18)  22 MAY 2017 16:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.18)  23 MAY 2017 11:00
 entering extended mode
 **./refman.tex
 (refman.tex
@@ -1288,15 +1288,16 @@ ut line 6.
 (pdftex.def)             Requested size: 204.69795pt x 56.9055pt.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 8.99994pt on input line 38.
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 52.
  [11
 
  <./classes_1_1deusto_1_1client_1_1_client.pdf>]
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 52.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 72.
-) (classes_1_1deusto_1_1server_1_1db_1_1dao_1_1_d_a_o.tex
-<classes_1_1deusto_1_1server_1_1db_1_1dao_1_1_d_a_o.pdf, id=1301, 501.875pt x 2
+ [12])
+(classes_1_1deusto_1_1server_1_1db_1_1dao_1_1_d_a_o.tex
+<classes_1_1deusto_1_1server_1_1db_1_1dao_1_1_d_a_o.pdf, id=1312, 501.875pt x 2
 08.78pt>
 File: classes_1_1deusto_1_1server_1_1db_1_1dao_1_1_d_a_o.pdf Graphic file (type
  pdf)
@@ -1304,16 +1305,16 @@ File: classes_1_1deusto_1_1server_1_1db_1_1dao_1_1_d_a_o.pdf Graphic file (type
 Package pdftex.def Info: classes_1_1deusto_1_1server_1_1db_1_1dao_1_1_d_a_o.pdf
  used on input line 6.
 (pdftex.def)             Requested size: 136.78694pt x 56.9055pt.
- [12]
-[13 <./classes_1_1deusto_1_1server_1_1db_1_1dao_1_1_d_a_o.pdf>] [14])
-(classes_1_1deusto_1_1server_1_1db_1_1_d_b.tex [15]
-<classes_1_1deusto_1_1server_1_1db_1_1_d_b.pdf, id=1394, 501.875pt x 255.95625p
+ [13 <./classes_1_1deusto_1_1server_1_1db_1_1dao_1_1_d_a_o.pdf>] [14] [15])
+(classes_1_1deusto_1_1server_1_1db_1_1_d_b.tex
+<classes_1_1deusto_1_1server_1_1db_1_1_d_b.pdf, id=1398, 501.875pt x 255.95625p
 t>
 File: classes_1_1deusto_1_1server_1_1db_1_1_d_b.pdf Graphic file (type pdf)
  <use classes_1_1deusto_1_1server_1_1db_1_1_d_b.pdf>
 Package pdftex.def Info: classes_1_1deusto_1_1server_1_1db_1_1_d_b.pdf used on 
 input line 6.
 (pdftex.def)             Requested size: 111.57684pt x 56.9055pt.
+ [16 <./classes_1_1deusto_1_1server_1_1db_1_1_d_b.pdf>]
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 7.19995pt on input line 43.
 
@@ -1321,9 +1322,8 @@ LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
 (Font)              using `T1/pcr/m/n' instead on input line 43.
 
-[16 <./classes_1_1deusto_1_1server_1_1db_1_1_d_b.pdf>] [17])
-(interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o.tex
-<interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o.pdf, id=1452, 501.875
+[17]) (interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o.tex
+<interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o.pdf, id=1456, 501.875
 pt x 208.78pt>
 File: interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o.pdf Graphic file
  (type pdf)
@@ -1335,7 +1335,7 @@ _o.pdf used on input line 6.
  [18]
 [19 <./interfacees_1_1deusto_1_1server_1_1db_1_1dao_1_1_i_d_a_o.pdf>] [20])
 (interfacees_1_1deusto_1_1server_1_1db_1_1_i_d_b.tex
-<interfacees_1_1deusto_1_1server_1_1db_1_1_i_d_b.pdf, id=1519, 501.875pt x 255.
+<interfacees_1_1deusto_1_1server_1_1db_1_1_i_d_b.pdf, id=1525, 501.875pt x 255.
 95625pt>
 File: interfacees_1_1deusto_1_1server_1_1db_1_1_i_d_b.pdf Graphic file (type pd
 f)
@@ -1343,9 +1343,10 @@ f)
 Package pdftex.def Info: interfacees_1_1deusto_1_1server_1_1db_1_1_i_d_b.pdf us
 ed on input line 6.
 (pdftex.def)             Requested size: 111.57684pt x 56.9055pt.
- [21 <./interfacees_1_1deusto_1_1server_1_1db_1_1_i_d_b.pdf>] [22])
+ [21]
+[22 <./interfacees_1_1deusto_1_1server_1_1db_1_1_i_d_b.pdf>])
 (interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transferer.tex
-<interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transferer.pdf, id=1561, 501.8
+<interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transferer.pdf, id=1567, 501.8
 75pt x 269.005pt>
 File: interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transferer.pdf Graphic fi
 le (type pdf)
@@ -1354,10 +1355,52 @@ le (type pdf)
 Package pdftex.def Info: interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transf
 erer.pdf used on input line 6.
 (pdftex.def)             Requested size: 159.2478pt x 85.35826pt.
- [23 <./interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transferer.pdf>] [24])
-(classes_1_1deusto_1_1server_1_1_j_unit_test.tex [25] [26] [27] [28] [29]
-[30] [31]) (classes_1_1deusto_1_1server_1_1db_1_1data_1_1_money.tex
-<classes_1_1deusto_1_1server_1_1db_1_1data_1_1_money.pdf, id=1724, 501.875pt x 
+ [23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24 <./interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transferer.pdf>]
+Underfull \hbox (badness 10000) detected at line 55
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 73
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 91
+[][][]
+ []
+
+[25]
+Underfull \hbox (badness 10000) detected at line 114
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 137
+[][][]
+ []
+
+[26]
+Underfull \hbox (badness 10000) detected at line 160
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 183
+[][][]
+ []
+
+[27]
+Underfull \hbox (badness 10000) detected at line 210
+[][][]
+ []
+
+) (classes_1_1deusto_1_1server_1_1_j_unit_test.tex [28] [29] [30] [31] [32]
+[33] [34]) (classes_1_1deusto_1_1server_1_1db_1_1data_1_1_money.tex
+<classes_1_1deusto_1_1server_1_1db_1_1data_1_1_money.pdf, id=1757, 501.875pt x 
 197.73875pt>
 File: classes_1_1deusto_1_1server_1_1db_1_1data_1_1_money.pdf Graphic file (typ
 e pdf)
@@ -1366,9 +1409,23 @@ Package pdftex.def Info: classes_1_1deusto_1_1server_1_1db_1_1data_1_1_money.pd
 f used on input line 6.
 (pdftex.def)             Requested size: 144.42961pt x 56.9055pt.
 
-[32 <./classes_1_1deusto_1_1server_1_1db_1_1data_1_1_money.pdf>] [33])
-(classes_1_1deusto_1_1client_1_1_new_prod_window.tex
-<classes_1_1deusto_1_1client_1_1_new_prod_window.pdf, id=1762, 501.875pt x 97.3
+[35 <./classes_1_1deusto_1_1server_1_1db_1_1data_1_1_money.pdf>]
+Underfull \hbox (badness 10000) detected at line 60
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 73
+[][][]
+ []
+
+[36]
+Underfull \hbox (badness 10000) detected at line 86
+[][][]
+ []
+
+[37]) (classes_1_1deusto_1_1client_1_1_new_prod_window.tex
+<classes_1_1deusto_1_1client_1_1_new_prod_window.pdf, id=1804, 501.875pt x 97.3
 6375pt>
 File: classes_1_1deusto_1_1client_1_1_new_prod_window.pdf Graphic file (type pd
 f)
@@ -1376,9 +1433,9 @@ f)
 Package pdftex.def Info: classes_1_1deusto_1_1client_1_1_new_prod_window.pdf us
 ed on input line 6.
 (pdftex.def)             Requested size: 293.32382pt x 56.9055pt.
- [34 <./classes_1_1deusto_1_1client_1_1_new_prod_window.pdf>])
+)
 (classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product.tex
-<classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product.pdf, id=1777, 501.875pt 
+<classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product.pdf, id=1811, 501.875pt 
 x 192.72pt>
 File: classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product.pdf Graphic file (t
 ype pdf)
@@ -1387,10 +1444,30 @@ Package pdftex.def Info: classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product.
 pdf used on input line 6.
 (pdftex.def)             Requested size: 148.18968pt x 56.9055pt.
 
-[35] [36 <./classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product.pdf>])
-(classes_1_1deusto_1_1server_1_1_server.tex [37])
+[38 <./classes_1_1deusto_1_1client_1_1_new_prod_window.pdf>] [39 <./classes_1_1
+deusto_1_1server_1_1db_1_1data_1_1_product.pdf>]
+Underfull \hbox (badness 10000) detected at line 66
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 79
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 92
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 105
+[][][]
+ []
+
+[40] [41]) (classes_1_1deusto_1_1server_1_1_server.tex)
 (classes_1_1deusto_1_1server_1_1remote_1_1_transferer.tex
-<classes_1_1deusto_1_1server_1_1remote_1_1_transferer.pdf, id=1824, 501.875pt x
+<classes_1_1deusto_1_1server_1_1remote_1_1_transferer.pdf, id=1880, 501.875pt x
  134.5025pt>
 File: classes_1_1deusto_1_1server_1_1remote_1_1_transferer.pdf Graphic file (ty
 pe pdf)
@@ -1399,9 +1476,51 @@ Package pdftex.def Info: classes_1_1deusto_1_1server_1_1remote_1_1_transferer.p
 df used on input line 6.
 (pdftex.def)             Requested size: 318.50328pt x 85.35826pt.
 
-[38 <./classes_1_1deusto_1_1server_1_1remote_1_1_transferer.pdf>] [39] [40])
-(classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user.tex
-<classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user.pdf, id=1882, 501.875pt x 2
+[42 <./classes_1_1deusto_1_1server_1_1remote_1_1_transferer.pdf>] [43]
+Underfull \hbox (badness 10000) detected at line 82
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 104
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 126
+[][][]
+ []
+
+[44]
+Underfull \hbox (badness 10000) detected at line 153
+[][][]
+ []
+
+[45]
+Underfull \hbox (badness 10000) detected at line 180
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 207
+[][][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46]
+Underfull \hbox (badness 10000) detected at line 234
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 265
+[][][]
+ []
+
+) (classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user.tex
+<classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user.pdf, id=1957, 501.875pt x 2
 10.7875pt>
 File: classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user.pdf Graphic file (type
  pdf)
@@ -1410,8 +1529,27 @@ Package pdftex.def Info: classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user.pdf
  used on input line 6.
 (pdftex.def)             Requested size: 135.48508pt x 56.9055pt.
 
-[41 <./classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user.pdf>] [42]) [43]
-[44
+[47] [48 <./classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user.pdf>]
+Underfull \hbox (badness 10000) detected at line 85
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 98
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 111
+[][][]
+ []
+
+[49]
+Underfull \hbox (badness 10000) detected at line 124
+[][][]
+ []
+
+[50]) [51] [52
 
 ]
 Chapter 7.
@@ -1427,7 +1565,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 s/deusto/server/db/dao/[]I[]D[]AO.java
  []
 
-[45]) (_money_8java.tex
+[53]) (_money_8java.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
 []\T1/phv/bc/n/14.4 C[]:/[]Users/[]Oihane/git/[]S[]P[]Q03/spq03/src/main/java/e
 s/deusto/server/db/data/[]Money.java
@@ -1445,7 +1583,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 s/deusto/server/db/[]DB.java File
  []
 
-[46]) (_i_d_b_8java.tex
+[54]) (_i_d_b_8java.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
 []\T1/phv/bc/n/14.4 C[]:/[]Users/[]Oihane/git/[]S[]P[]Q03/spq03/src/main/java/e
 s/deusto/server/db/[]I[]DB.java File
@@ -1469,13 +1607,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 s/deusto/server/[]Server.java File
  []
 
-[47]) (_j_unit_test_8java.tex
+[55]) (_j_unit_test_8java.tex
 Underfull \hbox (badness 3058) in paragraph at lines 1--1
 []\T1/phv/bc/n/14.4 C[]:/[]Users/[]Oihane/git/[]S[]P[]Q03/spq03/src/test/java/e
 s/deusto/server/[]J[]Unit[]Test.java File
  []
 
-) [48] (refman.ind
+) [56] (refman.ind
 Overfull \hbox (46.05817pt too wide) in paragraph at lines 23--25
 []\T1/phv/m/n/10 C[]:/[]Users/[]Oihane/git/[]S[]P[]Q03/spq03/src/main/java/es/d
 eusto/client/[]
@@ -1553,11 +1691,11 @@ Overfull \hbox (45.10411pt too wide) in paragraph at lines 47--49
 eusto/server/[]
  []
 
-[49
+[57
 
 
 
-] [50] [51] [52])
+] [58] [59] [60])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 196.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 196.
  (refman.aux)
@@ -1572,13 +1710,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 196.
  ) 
 Here is how much of TeX's memory you used:
- 15790 strings out of 493328
- 246585 string characters out of 3139121
- 339391 words of memory out of 3000000
- 18512 multiletter control sequences out of 15000+200000
- 57168 words of font info for 77 fonts, out of 3000000 for 9000
+ 15905 strings out of 493328
+ 247551 string characters out of 3139121
+ 340562 words of memory out of 3000000
+ 18575 multiletter control sequences out of 15000+200000
+ 61983 words of font info for 80 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,16n,92p,1227b,412s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,16n,92p,1227b,630s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
@@ -1587,10 +1725,11 @@ c/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/uc
 rr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrro8a.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on refman.pdf (62 pages, 529160 bytes).
+ts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/h
+elvetic/uhvro8a.pfb>
+Output written on refman.pdf (70 pages, 561251 bytes).
 PDF statistics:
- 2436 PDF objects out of 2487 (max. 8388607)
- 486 named destinations out of 1000 (max. 500000)
+ 2541 PDF objects out of 2984 (max. 8388607)
+ 536 named destinations out of 1000 (max. 500000)
  1720 words of extra memory for PDF output out of 10000 (max. 10000000)
 

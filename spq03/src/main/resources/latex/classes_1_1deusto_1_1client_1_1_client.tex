@@ -27,7 +27,7 @@ static void \hyperlink{classes_1_1deusto_1_1client_1_1_client_a69a7526d0af9cb234
 \subsection{Detailed Description}
 
 
-Definition at line 28 of file Client.\+java.
+Definition at line 29 of file Client.\+java.
 
 
 
@@ -38,9 +38,9 @@ Definition at line 28 of file Client.\+java.
 \subsubsection{\texorpdfstring{Client()}{Client()}}
 {\footnotesize\ttfamily es.\+deusto.\+client.\+Client.\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Generates a \hyperlink{classes_1_1deusto_1_1client_1_1_client}{Client} Window with all the different attributes it has, begins with a log in and then allows the user to send money, search a product, insert new products, search for all the users (if it has permission), etc. 
 
-
-Definition at line 56 of file Client.\+java.
+Definition at line 64 of file Client.\+java.
 
 
 
@@ -53,7 +53,7 @@ Definition at line 56 of file Client.\+java.
 
 
 
-Definition at line 214 of file Client.\+java.
+Definition at line 225 of file Client.\+java.
 
 \mbox{\Hypertarget{classes_1_1deusto_1_1client_1_1_client_a69a7526d0af9cb2341f4bf341b501152}\label{classes_1_1deusto_1_1client_1_1_client_a69a7526d0af9cb2341f4bf341b501152}} 
 \index{es\+::deusto\+::client\+::\+Client@{es\+::deusto\+::client\+::\+Client}!main@{main}}
@@ -63,7 +63,7 @@ Definition at line 214 of file Client.\+java.
 
 
 
-Definition at line 189 of file Client.\+java.
+Definition at line 201 of file Client.\+java.
 
 \mbox{\Hypertarget{classes_1_1deusto_1_1client_1_1_client_a141b9b15a5ba7dc5b3daf2032529575f}\label{classes_1_1deusto_1_1client_1_1_client_a141b9b15a5ba7dc5b3daf2032529575f}} 
 \index{es\+::deusto\+::client\+::\+Client@{es\+::deusto\+::client\+::\+Client}!rellenar\+Tabla\+Prod@{rellenar\+Tabla\+Prod}}
@@ -71,9 +71,14 @@ Definition at line 189 of file Client.\+java.
 \subsubsection{\texorpdfstring{rellenar\+Tabla\+Prod()}{rellenarTablaProd()}}
 {\footnotesize\ttfamily void es.\+deusto.\+client.\+Client.\+rellenar\+Tabla\+Prod (\begin{DoxyParamCaption}\item[{Array\+List$<$ \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product}{Product} $>$}]{p\+List }\end{DoxyParamCaption})}
 
+Fill the table (this.\+table) with the Array\+List set by parameter after switching the title of the second column to \char`\"{}\+Description\char`\"{} 
+\begin{DoxyParams}{Parameters}
+{\em p\+List} & The list of all the products inside the DB \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 311 of file Client.\+java.
+Definition at line 334 of file Client.\+java.
 
 \mbox{\Hypertarget{classes_1_1deusto_1_1client_1_1_client_a8c6076e43a37a66a27a00f458eeab3de}\label{classes_1_1deusto_1_1client_1_1_client_a8c6076e43a37a66a27a00f458eeab3de}} 
 \index{es\+::deusto\+::client\+::\+Client@{es\+::deusto\+::client\+::\+Client}!rellenar\+Tabla\+User@{rellenar\+Tabla\+User}}
@@ -81,9 +86,14 @@ Definition at line 311 of file Client.\+java.
 \subsubsection{\texorpdfstring{rellenar\+Tabla\+User()}{rellenarTablaUser()}}
 {\footnotesize\ttfamily void es.\+deusto.\+client.\+Client.\+rellenar\+Tabla\+User (\begin{DoxyParamCaption}\item[{Array\+List$<$ \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user}{User} $>$}]{u\+List }\end{DoxyParamCaption})}
 
+Fill the table (this.\+table) with the Array\+List set by parameter after switching the title of the second column to \char`\"{}\+Password\char`\"{} 
+\begin{DoxyParams}{Parameters}
+{\em u\+List} & The list of all the users inside the DB \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 324 of file Client.\+java.
+Definition at line 356 of file Client.\+java.
 
 
 

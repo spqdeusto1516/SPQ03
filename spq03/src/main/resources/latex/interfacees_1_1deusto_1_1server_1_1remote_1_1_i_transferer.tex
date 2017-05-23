@@ -41,6 +41,25 @@ Definition at line 10 of file I\+Transferer.\+java.
 \subsubsection{\texorpdfstring{buy\+Prod()}{buyProd()}}
 {\footnotesize\ttfamily boolean es.\+deusto.\+server.\+remote.\+I\+Transferer.\+buy\+Prod (\begin{DoxyParamCaption}\item[{String}]{loginB,  }\item[{\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product}{Product}}]{p,  }\item[{int}]{amount,  }\item[{String}]{loginS }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+This method allows the user with loginB to buy a product p to the user with loginS for the amount of money specified 
+\begin{DoxyParams}{Parameters}
+{\em loginB} & The PK that identifies the buyer \\
+\hline
+{\em p} & The Product to be bought \\
+\hline
+{\em amount} & The quantity to be spent on the transaction \\
+\hline
+{\em loginS} & The PK that identifies the seller \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the product has been bought or not 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & fails if there is a connection error \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_ad5868dd67ee9a53e7cdf0c30e08a3a1b}{es.\+deusto.\+server.\+remote.\+Transferer}.
@@ -51,6 +70,14 @@ Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a
 \subsubsection{\texorpdfstring{get\+All\+Prod()}{getAllProd()}}
 {\footnotesize\ttfamily Array\+List$<$\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product}{Product}$>$ es.\+deusto.\+server.\+remote.\+I\+Transferer.\+get\+All\+Prod (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+This method retrieves all the products inside the DB \begin{DoxyReturn}{Returns}
+A list of all the products inside the DB 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & fails if there is a connection error \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a29cbb75edeb4e0973780fd379ef2b3fb}{es.\+deusto.\+server.\+remote.\+Transferer}.
@@ -61,6 +88,14 @@ Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a
 \subsubsection{\texorpdfstring{get\+All\+User()}{getAllUser()}}
 {\footnotesize\ttfamily Array\+List$<$\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user}{User}$>$ es.\+deusto.\+server.\+remote.\+I\+Transferer.\+get\+All\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+This method returns the list of all users in the DB \begin{DoxyReturn}{Returns}
+the list of users in the DB 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & fails if there is a connection error \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a613c0c3af149140e58488ce9d0745593}{es.\+deusto.\+server.\+remote.\+Transferer}.
@@ -71,6 +106,19 @@ Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a
 \subsubsection{\texorpdfstring{get\+User()}{getUser()}}
 {\footnotesize\ttfamily \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user}{User} es.\+deusto.\+server.\+remote.\+I\+Transferer.\+get\+User (\begin{DoxyParamCaption}\item[{String}]{login }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+This method returns a user based on their username (login) 
+\begin{DoxyParams}{Parameters}
+{\em login} & The name of the user that wants to be retreived \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The user with the login name \char`\"{}login\char`\"{} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & fails if there is a connection error \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a16976959aeb3080244422aeac061a23b}{es.\+deusto.\+server.\+remote.\+Transferer}.
@@ -81,6 +129,19 @@ Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a
 \subsubsection{\texorpdfstring{register\+Prod()}{registerProd()}}
 {\footnotesize\ttfamily boolean es.\+deusto.\+server.\+remote.\+I\+Transferer.\+register\+Prod (\begin{DoxyParamCaption}\item[{\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product}{Product}}]{p }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+This method registers a product and returns if the transaction was done rightfully 
+\begin{DoxyParams}{Parameters}
+{\em p} & The product to register in the DB \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether the product has been registered or not 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & fails if there is a connection error \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a64c1f3b57b74106df83335b124937afe}{es.\+deusto.\+server.\+remote.\+Transferer}.
@@ -91,6 +152,19 @@ Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a
 \subsubsection{\texorpdfstring{register\+User()}{registerUser()}}
 {\footnotesize\ttfamily boolean es.\+deusto.\+server.\+remote.\+I\+Transferer.\+register\+User (\begin{DoxyParamCaption}\item[{\hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user}{User}}]{u }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+This method registers a user and returns if the transaction was done rightfully 
+\begin{DoxyParams}{Parameters}
+{\em u} & The user to register in the DB \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether the user has been registered or not 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & fails if there is a connection error \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a80e2dd7db595bdd8d39969e5d0e8ae7b}{es.\+deusto.\+server.\+remote.\+Transferer}.
@@ -101,6 +175,19 @@ Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a
 \subsubsection{\texorpdfstring{search\+Prod()}{searchProd()}}
 {\footnotesize\ttfamily \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_product}{Product} es.\+deusto.\+server.\+remote.\+I\+Transferer.\+search\+Prod (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+This method returns a Product based on its name 
+\begin{DoxyParams}{Parameters}
+{\em name} & The PK of the Product and the way to search it inside the DB \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An object Product that meets with the requirements 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & fails if there is a connection error \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_ad6759f696eddd682b750f92ec41d1fcb}{es.\+deusto.\+server.\+remote.\+Transferer}.
@@ -111,6 +198,23 @@ Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_a
 \subsubsection{\texorpdfstring{send\+Money()}{sendMoney()}}
 {\footnotesize\ttfamily boolean es.\+deusto.\+server.\+remote.\+I\+Transferer.\+send\+Money (\begin{DoxyParamCaption}\item[{String}]{loginR,  }\item[{int}]{amount,  }\item[{String}]{loginS }\end{DoxyParamCaption}) throws Remote\+Exception}
 
+This method allows the user with loginS to send an amount to the user with loginR 
+\begin{DoxyParams}{Parameters}
+{\em loginR} & the name of the user that receives the money \\
+\hline
+{\em amount} & the number of money sent \\
+\hline
+{\em loginS} & the name of the user that sends the money \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether the money has been sent or not 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Remote\+Exception} & fails if there is a connection error \\
+\hline
+\end{DoxyExceptions}
 
 
 Implemented in \hyperlink{classes_1_1deusto_1_1server_1_1remote_1_1_transferer_ad1eb84155ba0c457645f2ad53725320d}{es.\+deusto.\+server.\+remote.\+Transferer}.

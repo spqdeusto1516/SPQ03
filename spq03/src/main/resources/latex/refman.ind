@@ -3,10 +3,10 @@
   \item {action\+Performed}
     \subitem {es\+::deusto\+::client\+::\+Client}, \hyperpage{12}
     \subitem {es\+::deusto\+::client\+::\+New\+Prod\+Window}, 
-		\hyperpage{35}
+		\hyperpage{38}
   \item {add\+Money}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+User}, 
-		\hyperpage{42}
+		\hyperpage{48}
 
   \indexspace
 
@@ -16,36 +16,36 @@
     \subitem {es\+::deusto\+::server\+::remote\+::\+I\+Transferer}, 
 		\hyperpage{24}
     \subitem {es\+::deusto\+::server\+::remote\+::\+Transferer}, 
-		\hyperpage{39}
+		\hyperpage{43}
 
   \indexspace
 
   \item {C\+:/\+Users/\+Oihane/git/\+S\+P\+Q03/spq03/src/main/java/es/deusto/client/\+Client.\+java}, 
-		\hyperpage{45}
+		\hyperpage{53}
   \item {C\+:/\+Users/\+Oihane/git/\+S\+P\+Q03/spq03/src/main/java/es/deusto/client/\+New\+Prod\+Window.\+java}, 
-		\hyperpage{45}
+		\hyperpage{53}
   \item {C\+:/\+Users/\+Oihane/git/\+S\+P\+Q03/spq03/src/main/java/es/deusto/server/\+Server.\+java}, 
-		\hyperpage{48}
+		\hyperpage{56}
   \item {C\+:/\+Users/\+Oihane/git/\+S\+P\+Q03/spq03/src/main/java/es/deusto/server/db/\+D\+B.\+java}, 
-		\hyperpage{47}
+		\hyperpage{55}
   \item {C\+:/\+Users/\+Oihane/git/\+S\+P\+Q03/spq03/src/main/java/es/deusto/server/db/\+I\+D\+B.\+java}, 
-		\hyperpage{47}
+		\hyperpage{55}
   \item {C\+:/\+Users/\+Oihane/git/\+S\+P\+Q03/spq03/src/main/java/es/deusto/server/db/dao/\+D\+A\+O.\+java}, 
-		\hyperpage{45}
+		\hyperpage{53}
   \item {C\+:/\+Users/\+Oihane/git/\+S\+P\+Q03/spq03/src/main/java/es/deusto/server/db/dao/\+I\+D\+A\+O.\+java}, 
-		\hyperpage{46}
+		\hyperpage{54}
   \item {C\+:/\+Users/\+Oihane/git/\+S\+P\+Q03/spq03/src/main/java/es/deusto/server/db/data/\+Money.\+java}, 
-		\hyperpage{46}
+		\hyperpage{54}
   \item {C\+:/\+Users/\+Oihane/git/\+S\+P\+Q03/spq03/src/main/java/es/deusto/server/db/data/\+Product.\+java}, 
-		\hyperpage{46}
+		\hyperpage{54}
   \item {C\+:/\+Users/\+Oihane/git/\+S\+P\+Q03/spq03/src/main/java/es/deusto/server/db/data/\+User.\+java}, 
-		\hyperpage{46}
+		\hyperpage{54}
   \item {C\+:/\+Users/\+Oihane/git/\+S\+P\+Q03/spq03/src/main/java/es/deusto/server/remote/\+I\+Transferer.\+java}, 
-		\hyperpage{47}
+		\hyperpage{55}
   \item {C\+:/\+Users/\+Oihane/git/\+S\+P\+Q03/spq03/src/main/java/es/deusto/server/remote/\+Transferer.\+java}, 
-		\hyperpage{47}
+		\hyperpage{55}
   \item {C\+:/\+Users/\+Oihane/git/\+S\+P\+Q03/spq03/src/test/java/es/deusto/server/\+J\+Unit\+Test.\+java}, 
-		\hyperpage{48}
+		\hyperpage{56}
   \item {Client}
     \subitem {es\+::deusto\+::client\+::\+Client}, \hyperpage{11}
 
@@ -53,12 +53,12 @@
 
   \item {D\+AO}
     \subitem {es\+::deusto\+::server\+::db\+::dao\+::\+D\+AO}, 
-		\hyperpage{13}
+		\hyperpage{14}
   \item {DB}
-    \subitem {es\+::deusto\+::server\+::db\+::\+DB}, \hyperpage{16, 17}
+    \subitem {es\+::deusto\+::server\+::db\+::\+DB}, \hyperpage{17}
   \item {dn\+Getuser}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+Product}, 
-		\hyperpage{36}
+		\hyperpage{40}
 
   \indexspace
 
@@ -66,23 +66,23 @@
   \item {es.\+deusto}, \hyperpage{9}
   \item {es.\+deusto.\+client}, \hyperpage{9}
   \item {es.\+deusto.\+client.\+Client}, \hyperpage{11}
-  \item {es.\+deusto.\+client.\+New\+Prod\+Window}, \hyperpage{34}
+  \item {es.\+deusto.\+client.\+New\+Prod\+Window}, \hyperpage{38}
   \item {es.\+deusto.\+server}, \hyperpage{9}
   \item {es.\+deusto.\+server.\+db}, \hyperpage{10}
   \item {es.\+deusto.\+server.\+db.\+dao}, \hyperpage{10}
   \item {es.\+deusto.\+server.\+db.\+dao.\+D\+AO}, \hyperpage{13}
   \item {es.\+deusto.\+server.\+db.\+dao.\+I\+D\+AO}, \hyperpage{19}
   \item {es.\+deusto.\+server.\+db.\+data}, \hyperpage{10}
-  \item {es.\+deusto.\+server.\+db.\+data.\+Money}, \hyperpage{32}
-  \item {es.\+deusto.\+server.\+db.\+data.\+Product}, \hyperpage{36}
-  \item {es.\+deusto.\+server.\+db.\+data.\+User}, \hyperpage{41}
+  \item {es.\+deusto.\+server.\+db.\+data.\+Money}, \hyperpage{35}
+  \item {es.\+deusto.\+server.\+db.\+data.\+Product}, \hyperpage{39}
+  \item {es.\+deusto.\+server.\+db.\+data.\+User}, \hyperpage{47}
   \item {es.\+deusto.\+server.\+db.\+DB}, \hyperpage{16}
-  \item {es.\+deusto.\+server.\+db.\+I\+DB}, \hyperpage{21}
-  \item {es.\+deusto.\+server.\+J\+Unit\+Test}, \hyperpage{26}
+  \item {es.\+deusto.\+server.\+db.\+I\+DB}, \hyperpage{22}
+  \item {es.\+deusto.\+server.\+J\+Unit\+Test}, \hyperpage{28}
   \item {es.\+deusto.\+server.\+remote}, \hyperpage{10}
-  \item {es.\+deusto.\+server.\+remote.\+I\+Transferer}, \hyperpage{23}
-  \item {es.\+deusto.\+server.\+remote.\+Transferer}, \hyperpage{38}
-  \item {es.\+deusto.\+server.\+Server}, \hyperpage{38}
+  \item {es.\+deusto.\+server.\+remote.\+I\+Transferer}, \hyperpage{24}
+  \item {es.\+deusto.\+server.\+remote.\+Transferer}, \hyperpage{42}
+  \item {es.\+deusto.\+server.\+Server}, \hyperpage{42}
   \item {es\+::deusto\+::client\+::\+Client}
     \subitem {action\+Performed}, \hyperpage{12}
     \subitem {Client}, \hyperpage{11}
@@ -90,53 +90,53 @@
     \subitem {rellenar\+Tabla\+Prod}, \hyperpage{12}
     \subitem {rellenar\+Tabla\+User}, \hyperpage{12}
   \item {es\+::deusto\+::client\+::\+New\+Prod\+Window}
-    \subitem {action\+Performed}, \hyperpage{35}
-    \subitem {New\+Prod\+Window}, \hyperpage{35}
-    \subitem {set\+Transferer}, \hyperpage{35}
+    \subitem {action\+Performed}, \hyperpage{38}
+    \subitem {New\+Prod\+Window}, \hyperpage{38}
+    \subitem {set\+Transferer}, \hyperpage{38}
   \item {es\+::deusto\+::server\+::\+J\+Unit\+Test}
-    \subitem {get\+Amount\+Perf\+Test}, \hyperpage{26}
-    \subitem {get\+Characteristics\+Perf\+Test}, \hyperpage{27}
-    \subitem {get\+Login\+Perf\+Test}, \hyperpage{27}
-    \subitem {get\+Money\+Perf\+Test}, \hyperpage{27}
-    \subitem {get\+Name\+Perf\+Test}, \hyperpage{27}
-    \subitem {get\+Password\+Perf\+Test}, \hyperpage{27}
-    \subitem {get\+Prod\+Perf\+Test}, \hyperpage{27}
-    \subitem {get\+Sender\+Perf\+Test}, \hyperpage{28}
-    \subitem {Register\+Product\+Test}, \hyperpage{28}
-    \subitem {set\+Up}, \hyperpage{28}
-    \subitem {set\+Up\+User}, \hyperpage{28}
-    \subitem {stablish\+Connection}, \hyperpage{28}
-    \subitem {suite}, \hyperpage{28}
-    \subitem {tear\+Down}, \hyperpage{29}
-    \subitem {test\+Buy\+Product}, \hyperpage{29}
-    \subitem {test\+Get\+All\+Prod}, \hyperpage{29}
-    \subitem {test\+Get\+Amount}, \hyperpage{29}
-    \subitem {test\+Get\+Characteristics}, \hyperpage{29}
-    \subitem {test\+Get\+Login}, \hyperpage{29}
-    \subitem {test\+Get\+Money}, \hyperpage{30}
-    \subitem {test\+Get\+Name}, \hyperpage{30}
-    \subitem {test\+Get\+Password}, \hyperpage{30}
-    \subitem {test\+Get\+Prod}, \hyperpage{30}
-    \subitem {test\+Get\+Sender}, \hyperpage{30}
-    \subitem {test\+Get\+User}, \hyperpage{30}
-    \subitem {test\+Register\+User}, \hyperpage{31}
-    \subitem {test\+Retrieve\+Money}, \hyperpage{31}
-    \subitem {test\+Retrieve\+User}, \hyperpage{31}
-    \subitem {test\+Search\+Product}, \hyperpage{31}
-    \subitem {test\+Send\+Money}, \hyperpage{31}
-    \subitem {test\+Store\+Money}, \hyperpage{31}
-    \subitem {test\+Store\+Product}, \hyperpage{32}
-    \subitem {test\+Store\+User}, \hyperpage{32}
-    \subitem {test\+Update\+Money}, \hyperpage{32}
-    \subitem {test\+Update\+Product}, \hyperpage{32}
+    \subitem {get\+Amount\+Perf\+Test}, \hyperpage{29}
+    \subitem {get\+Characteristics\+Perf\+Test}, \hyperpage{29}
+    \subitem {get\+Login\+Perf\+Test}, \hyperpage{29}
+    \subitem {get\+Money\+Perf\+Test}, \hyperpage{30}
+    \subitem {get\+Name\+Perf\+Test}, \hyperpage{30}
+    \subitem {get\+Password\+Perf\+Test}, \hyperpage{30}
+    \subitem {get\+Prod\+Perf\+Test}, \hyperpage{30}
+    \subitem {get\+Sender\+Perf\+Test}, \hyperpage{30}
+    \subitem {Register\+Product\+Test}, \hyperpage{30}
+    \subitem {set\+Up}, \hyperpage{31}
+    \subitem {set\+Up\+User}, \hyperpage{31}
+    \subitem {stablish\+Connection}, \hyperpage{31}
+    \subitem {suite}, \hyperpage{31}
+    \subitem {tear\+Down}, \hyperpage{31}
+    \subitem {test\+Buy\+Product}, \hyperpage{31}
+    \subitem {test\+Get\+All\+Prod}, \hyperpage{32}
+    \subitem {test\+Get\+Amount}, \hyperpage{32}
+    \subitem {test\+Get\+Characteristics}, \hyperpage{32}
+    \subitem {test\+Get\+Login}, \hyperpage{32}
+    \subitem {test\+Get\+Money}, \hyperpage{32}
+    \subitem {test\+Get\+Name}, \hyperpage{32}
+    \subitem {test\+Get\+Password}, \hyperpage{33}
+    \subitem {test\+Get\+Prod}, \hyperpage{33}
+    \subitem {test\+Get\+Sender}, \hyperpage{33}
+    \subitem {test\+Get\+User}, \hyperpage{33}
+    \subitem {test\+Register\+User}, \hyperpage{33}
+    \subitem {test\+Retrieve\+Money}, \hyperpage{33}
+    \subitem {test\+Retrieve\+User}, \hyperpage{34}
+    \subitem {test\+Search\+Product}, \hyperpage{34}
+    \subitem {test\+Send\+Money}, \hyperpage{34}
+    \subitem {test\+Store\+Money}, \hyperpage{34}
+    \subitem {test\+Store\+Product}, \hyperpage{34}
+    \subitem {test\+Store\+User}, \hyperpage{34}
+    \subitem {test\+Update\+Money}, \hyperpage{35}
+    \subitem {test\+Update\+Product}, \hyperpage{35}
   \item {es\+::deusto\+::server\+::\+Server}
-    \subitem {main}, \hyperpage{38}
+    \subitem {main}, \hyperpage{42}
   \item {es\+::deusto\+::server\+::db\+::\+DB}
     \subitem {buy\+Prod}, \hyperpage{17}
-    \subitem {DB}, \hyperpage{16, 17}
+    \subitem {DB}, \hyperpage{17}
     \subitem {get\+All\+Prod}, \hyperpage{17}
-    \subitem {insert\+Money}, \hyperpage{17}
-    \subitem {insert\+Prod}, \hyperpage{17}
+    \subitem {insert\+Money}, \hyperpage{18}
+    \subitem {insert\+Prod}, \hyperpage{18}
     \subitem {insert\+User}, \hyperpage{18}
     \subitem {show\+Prod}, \hyperpage{18}
     \subitem {show\+User}, \hyperpage{18}
@@ -144,84 +144,84 @@
     \subitem {buy\+Prod}, \hyperpage{22}
     \subitem {get\+All\+Prod}, \hyperpage{22}
     \subitem {insert\+Money}, \hyperpage{22}
-    \subitem {insert\+Prod}, \hyperpage{22}
-    \subitem {insert\+User}, \hyperpage{22}
+    \subitem {insert\+Prod}, \hyperpage{23}
+    \subitem {insert\+User}, \hyperpage{23}
     \subitem {show\+Prod}, \hyperpage{23}
     \subitem {show\+User}, \hyperpage{23}
   \item {es\+::deusto\+::server\+::db\+::dao\+::\+D\+AO}
-    \subitem {D\+AO}, \hyperpage{13}
-    \subitem {get\+All\+Prod}, \hyperpage{13}
+    \subitem {D\+AO}, \hyperpage{14}
+    \subitem {get\+All\+Prod}, \hyperpage{14}
     \subitem {get\+All\+User}, \hyperpage{14}
     \subitem {retrieve\+Money}, \hyperpage{14}
     \subitem {retrieve\+Prod\+Search}, \hyperpage{14}
-    \subitem {retrieve\+User}, \hyperpage{14}
-    \subitem {store\+Money}, \hyperpage{14}
+    \subitem {retrieve\+User}, \hyperpage{15}
+    \subitem {store\+Money}, \hyperpage{15}
     \subitem {store\+Prod}, \hyperpage{15}
     \subitem {store\+User}, \hyperpage{15}
     \subitem {update\+Money}, \hyperpage{15}
-    \subitem {update\+Prod}, \hyperpage{15}
-    \subitem {update\+User}, \hyperpage{15}
+    \subitem {update\+Prod}, \hyperpage{16}
+    \subitem {update\+User}, \hyperpage{16}
   \item {es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}
     \subitem {get\+All\+Prod}, \hyperpage{19}
-    \subitem {get\+All\+User}, \hyperpage{19}
-    \subitem {retrieve\+Money}, \hyperpage{19}
+    \subitem {get\+All\+User}, \hyperpage{20}
+    \subitem {retrieve\+Money}, \hyperpage{20}
     \subitem {retrieve\+Prod\+Search}, \hyperpage{20}
     \subitem {retrieve\+User}, \hyperpage{20}
     \subitem {store\+Money}, \hyperpage{20}
     \subitem {store\+Prod}, \hyperpage{20}
-    \subitem {store\+User}, \hyperpage{20}
-    \subitem {update\+Money}, \hyperpage{20}
+    \subitem {store\+User}, \hyperpage{21}
+    \subitem {update\+Money}, \hyperpage{21}
     \subitem {update\+Prod}, \hyperpage{21}
     \subitem {update\+User}, \hyperpage{21}
   \item {es\+::deusto\+::server\+::db\+::data\+::\+Money}
-    \subitem {get\+Amount}, \hyperpage{33}
-    \subitem {get\+Prod}, \hyperpage{33}
-    \subitem {get\+Sender}, \hyperpage{33}
-    \subitem {Money}, \hyperpage{33}
-    \subitem {set\+Product}, \hyperpage{34}
-    \subitem {set\+User\+Sending}, \hyperpage{34}
-    \subitem {to\+String}, \hyperpage{34}
-  \item {es\+::deusto\+::server\+::db\+::data\+::\+Product}
-    \subitem {dn\+Getuser}, \hyperpage{36}
-    \subitem {get\+Buyers\+Payment}, \hyperpage{36}
-    \subitem {get\+Characteristics}, \hyperpage{37}
-    \subitem {get\+Name}, \hyperpage{37}
-    \subitem {Product}, \hyperpage{36}
-    \subitem {set\+Name}, \hyperpage{37}
-    \subitem {set\+Owner}, \hyperpage{37}
+    \subitem {get\+Amount}, \hyperpage{36}
+    \subitem {get\+Prod}, \hyperpage{36}
+    \subitem {get\+Sender}, \hyperpage{36}
+    \subitem {Money}, \hyperpage{36}
+    \subitem {set\+Product}, \hyperpage{37}
+    \subitem {set\+User\+Sending}, \hyperpage{37}
     \subitem {to\+String}, \hyperpage{37}
-    \subitem {to\+String\+Short}, \hyperpage{37}
+  \item {es\+::deusto\+::server\+::db\+::data\+::\+Product}
+    \subitem {dn\+Getuser}, \hyperpage{40}
+    \subitem {get\+Buyers\+Payment}, \hyperpage{40}
+    \subitem {get\+Characteristics}, \hyperpage{40}
+    \subitem {get\+Name}, \hyperpage{40}
+    \subitem {Product}, \hyperpage{39}
+    \subitem {set\+Name}, \hyperpage{41}
+    \subitem {set\+Owner}, \hyperpage{41}
+    \subitem {to\+String}, \hyperpage{41}
+    \subitem {to\+String\+Short}, \hyperpage{41}
   \item {es\+::deusto\+::server\+::db\+::data\+::\+User}
-    \subitem {add\+Money}, \hyperpage{42}
-    \subitem {get\+Login}, \hyperpage{42}
-    \subitem {get\+Money}, \hyperpage{42}
-    \subitem {get\+Password}, \hyperpage{42}
-    \subitem {get\+Super}, \hyperpage{43}
-    \subitem {remove\+Money}, \hyperpage{43}
-    \subitem {set\+Amount}, \hyperpage{43}
-    \subitem {set\+Password}, \hyperpage{43}
-    \subitem {set\+Super}, \hyperpage{43}
-    \subitem {to\+String}, \hyperpage{43}
-    \subitem {User}, \hyperpage{42}
+    \subitem {add\+Money}, \hyperpage{48}
+    \subitem {get\+Login}, \hyperpage{49}
+    \subitem {get\+Money}, \hyperpage{49}
+    \subitem {get\+Password}, \hyperpage{49}
+    \subitem {get\+Super}, \hyperpage{49}
+    \subitem {remove\+Money}, \hyperpage{50}
+    \subitem {set\+Amount}, \hyperpage{50}
+    \subitem {set\+Password}, \hyperpage{50}
+    \subitem {set\+Super}, \hyperpage{51}
+    \subitem {to\+String}, \hyperpage{51}
+    \subitem {User}, \hyperpage{48}
   \item {es\+::deusto\+::server\+::remote\+::\+I\+Transferer}
     \subitem {buy\+Prod}, \hyperpage{24}
-    \subitem {get\+All\+Prod}, \hyperpage{24}
-    \subitem {get\+All\+User}, \hyperpage{24}
-    \subitem {get\+User}, \hyperpage{24}
-    \subitem {register\+Prod}, \hyperpage{24}
-    \subitem {register\+User}, \hyperpage{25}
-    \subitem {search\+Prod}, \hyperpage{25}
-    \subitem {send\+Money}, \hyperpage{25}
+    \subitem {get\+All\+Prod}, \hyperpage{25}
+    \subitem {get\+All\+User}, \hyperpage{25}
+    \subitem {get\+User}, \hyperpage{25}
+    \subitem {register\+Prod}, \hyperpage{26}
+    \subitem {register\+User}, \hyperpage{26}
+    \subitem {search\+Prod}, \hyperpage{27}
+    \subitem {send\+Money}, \hyperpage{27}
   \item {es\+::deusto\+::server\+::remote\+::\+Transferer}
-    \subitem {buy\+Prod}, \hyperpage{39}
-    \subitem {get\+All\+Prod}, \hyperpage{39}
-    \subitem {get\+All\+User}, \hyperpage{40}
-    \subitem {get\+User}, \hyperpage{40}
-    \subitem {register\+Prod}, \hyperpage{40}
-    \subitem {register\+User}, \hyperpage{40}
-    \subitem {search\+Prod}, \hyperpage{40}
-    \subitem {send\+Money}, \hyperpage{41}
-    \subitem {Transferer}, \hyperpage{39}
+    \subitem {buy\+Prod}, \hyperpage{43}
+    \subitem {get\+All\+Prod}, \hyperpage{44}
+    \subitem {get\+All\+User}, \hyperpage{44}
+    \subitem {get\+User}, \hyperpage{45}
+    \subitem {register\+Prod}, \hyperpage{45}
+    \subitem {register\+User}, \hyperpage{46}
+    \subitem {search\+Prod}, \hyperpage{46}
+    \subitem {send\+Money}, \hyperpage{47}
+    \subitem {Transferer}, \hyperpage{43}
 
   \indexspace
 
@@ -229,142 +229,142 @@
     \subitem {es\+::deusto\+::server\+::db\+::\+DB}, \hyperpage{17}
     \subitem {es\+::deusto\+::server\+::db\+::\+I\+DB}, \hyperpage{22}
     \subitem {es\+::deusto\+::server\+::db\+::dao\+::\+D\+AO}, 
-		\hyperpage{13}
-    \subitem {es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}, 
-		\hyperpage{19}
-    \subitem {es\+::deusto\+::server\+::remote\+::\+I\+Transferer}, 
-		\hyperpage{24}
-    \subitem {es\+::deusto\+::server\+::remote\+::\+Transferer}, 
-		\hyperpage{39}
-  \item {get\+All\+User}
-    \subitem {es\+::deusto\+::server\+::db\+::dao\+::\+D\+AO}, 
 		\hyperpage{14}
     \subitem {es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}, 
 		\hyperpage{19}
     \subitem {es\+::deusto\+::server\+::remote\+::\+I\+Transferer}, 
-		\hyperpage{24}
+		\hyperpage{25}
     \subitem {es\+::deusto\+::server\+::remote\+::\+Transferer}, 
-		\hyperpage{40}
+		\hyperpage{44}
+  \item {get\+All\+User}
+    \subitem {es\+::deusto\+::server\+::db\+::dao\+::\+D\+AO}, 
+		\hyperpage{14}
+    \subitem {es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}, 
+		\hyperpage{20}
+    \subitem {es\+::deusto\+::server\+::remote\+::\+I\+Transferer}, 
+		\hyperpage{25}
+    \subitem {es\+::deusto\+::server\+::remote\+::\+Transferer}, 
+		\hyperpage{44}
   \item {get\+Amount}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+Money}, 
-		\hyperpage{33}
+		\hyperpage{36}
   \item {get\+Amount\+Perf\+Test}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{26}
+		\hyperpage{29}
   \item {get\+Buyers\+Payment}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+Product}, 
-		\hyperpage{36}
+		\hyperpage{40}
   \item {get\+Characteristics}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+Product}, 
-		\hyperpage{37}
+		\hyperpage{40}
   \item {get\+Characteristics\+Perf\+Test}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{27}
+		\hyperpage{29}
   \item {get\+Login}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+User}, 
-		\hyperpage{42}
+		\hyperpage{49}
   \item {get\+Login\+Perf\+Test}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{27}
+		\hyperpage{29}
   \item {get\+Money}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+User}, 
-		\hyperpage{42}
+		\hyperpage{49}
   \item {get\+Money\+Perf\+Test}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{27}
+		\hyperpage{30}
   \item {get\+Name}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+Product}, 
-		\hyperpage{37}
+		\hyperpage{40}
   \item {get\+Name\+Perf\+Test}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{27}
+		\hyperpage{30}
   \item {get\+Password}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+User}, 
-		\hyperpage{42}
+		\hyperpage{49}
   \item {get\+Password\+Perf\+Test}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{27}
+		\hyperpage{30}
   \item {get\+Prod}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+Money}, 
-		\hyperpage{33}
+		\hyperpage{36}
   \item {get\+Prod\+Perf\+Test}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{27}
+		\hyperpage{30}
   \item {get\+Sender}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+Money}, 
-		\hyperpage{33}
+		\hyperpage{36}
   \item {get\+Sender\+Perf\+Test}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{28}
+		\hyperpage{30}
   \item {get\+Super}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+User}, 
-		\hyperpage{43}
+		\hyperpage{49}
   \item {get\+User}
     \subitem {es\+::deusto\+::server\+::remote\+::\+I\+Transferer}, 
-		\hyperpage{24}
+		\hyperpage{25}
     \subitem {es\+::deusto\+::server\+::remote\+::\+Transferer}, 
-		\hyperpage{40}
+		\hyperpage{45}
 
   \indexspace
 
   \item {insert\+Money}
-    \subitem {es\+::deusto\+::server\+::db\+::\+DB}, \hyperpage{17}
-    \subitem {es\+::deusto\+::server\+::db\+::\+I\+DB}, \hyperpage{22}
-  \item {insert\+Prod}
-    \subitem {es\+::deusto\+::server\+::db\+::\+DB}, \hyperpage{17}
-    \subitem {es\+::deusto\+::server\+::db\+::\+I\+DB}, \hyperpage{22}
-  \item {insert\+User}
     \subitem {es\+::deusto\+::server\+::db\+::\+DB}, \hyperpage{18}
     \subitem {es\+::deusto\+::server\+::db\+::\+I\+DB}, \hyperpage{22}
+  \item {insert\+Prod}
+    \subitem {es\+::deusto\+::server\+::db\+::\+DB}, \hyperpage{18}
+    \subitem {es\+::deusto\+::server\+::db\+::\+I\+DB}, \hyperpage{23}
+  \item {insert\+User}
+    \subitem {es\+::deusto\+::server\+::db\+::\+DB}, \hyperpage{18}
+    \subitem {es\+::deusto\+::server\+::db\+::\+I\+DB}, \hyperpage{23}
 
   \indexspace
 
   \item {main}
     \subitem {es\+::deusto\+::client\+::\+Client}, \hyperpage{12}
-    \subitem {es\+::deusto\+::server\+::\+Server}, \hyperpage{38}
+    \subitem {es\+::deusto\+::server\+::\+Server}, \hyperpage{42}
   \item {Money}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+Money}, 
-		\hyperpage{33}
+		\hyperpage{36}
 
   \indexspace
 
   \item {New\+Prod\+Window}
     \subitem {es\+::deusto\+::client\+::\+New\+Prod\+Window}, 
-		\hyperpage{35}
+		\hyperpage{38}
 
   \indexspace
 
   \item {Product}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+Product}, 
-		\hyperpage{36}
+		\hyperpage{39}
 
   \indexspace
 
   \item {register\+Prod}
     \subitem {es\+::deusto\+::server\+::remote\+::\+I\+Transferer}, 
-		\hyperpage{24}
+		\hyperpage{26}
     \subitem {es\+::deusto\+::server\+::remote\+::\+Transferer}, 
-		\hyperpage{40}
+		\hyperpage{45}
   \item {Register\+Product\+Test}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{28}
+		\hyperpage{30}
   \item {register\+User}
     \subitem {es\+::deusto\+::server\+::remote\+::\+I\+Transferer}, 
-		\hyperpage{25}
+		\hyperpage{26}
     \subitem {es\+::deusto\+::server\+::remote\+::\+Transferer}, 
-		\hyperpage{40}
+		\hyperpage{46}
   \item {rellenar\+Tabla\+Prod}
     \subitem {es\+::deusto\+::client\+::\+Client}, \hyperpage{12}
   \item {rellenar\+Tabla\+User}
     \subitem {es\+::deusto\+::client\+::\+Client}, \hyperpage{12}
   \item {remove\+Money}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+User}, 
-		\hyperpage{43}
+		\hyperpage{50}
   \item {retrieve\+Money}
     \subitem {es\+::deusto\+::server\+::db\+::dao\+::\+D\+AO}, 
 		\hyperpage{14}
     \subitem {es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}, 
-		\hyperpage{19}
+		\hyperpage{20}
   \item {retrieve\+Prod\+Search}
     \subitem {es\+::deusto\+::server\+::db\+::dao\+::\+D\+AO}, 
 		\hyperpage{14}
@@ -372,7 +372,7 @@
 		\hyperpage{20}
   \item {retrieve\+User}
     \subitem {es\+::deusto\+::server\+::db\+::dao\+::\+D\+AO}, 
-		\hyperpage{14}
+		\hyperpage{15}
     \subitem {es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}, 
 		\hyperpage{20}
 
@@ -380,44 +380,44 @@
 
   \item {search\+Prod}
     \subitem {es\+::deusto\+::server\+::remote\+::\+I\+Transferer}, 
-		\hyperpage{25}
+		\hyperpage{27}
     \subitem {es\+::deusto\+::server\+::remote\+::\+Transferer}, 
-		\hyperpage{40}
+		\hyperpage{46}
   \item {send\+Money}
     \subitem {es\+::deusto\+::server\+::remote\+::\+I\+Transferer}, 
-		\hyperpage{25}
+		\hyperpage{27}
     \subitem {es\+::deusto\+::server\+::remote\+::\+Transferer}, 
-		\hyperpage{41}
+		\hyperpage{47}
   \item {set\+Amount}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+User}, 
-		\hyperpage{43}
+		\hyperpage{50}
   \item {set\+Name}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+Product}, 
-		\hyperpage{37}
+		\hyperpage{41}
   \item {set\+Owner}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+Product}, 
-		\hyperpage{37}
+		\hyperpage{41}
   \item {set\+Password}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+User}, 
-		\hyperpage{43}
+		\hyperpage{50}
   \item {set\+Product}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+Money}, 
-		\hyperpage{34}
+		\hyperpage{37}
   \item {set\+Super}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+User}, 
-		\hyperpage{43}
+		\hyperpage{51}
   \item {set\+Transferer}
     \subitem {es\+::deusto\+::client\+::\+New\+Prod\+Window}, 
-		\hyperpage{35}
+		\hyperpage{38}
   \item {set\+Up}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{28}
+		\hyperpage{31}
   \item {set\+Up\+User}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{28}
+		\hyperpage{31}
   \item {set\+User\+Sending}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+Money}, 
-		\hyperpage{34}
+		\hyperpage{37}
   \item {show\+Prod}
     \subitem {es\+::deusto\+::server\+::db\+::\+DB}, \hyperpage{18}
     \subitem {es\+::deusto\+::server\+::db\+::\+I\+DB}, \hyperpage{23}
@@ -426,10 +426,10 @@
     \subitem {es\+::deusto\+::server\+::db\+::\+I\+DB}, \hyperpage{23}
   \item {stablish\+Connection}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{28}
+		\hyperpage{31}
   \item {store\+Money}
     \subitem {es\+::deusto\+::server\+::db\+::dao\+::\+D\+AO}, 
-		\hyperpage{14}
+		\hyperpage{15}
     \subitem {es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}, 
 		\hyperpage{20}
   \item {store\+Prod}
@@ -441,92 +441,92 @@
     \subitem {es\+::deusto\+::server\+::db\+::dao\+::\+D\+AO}, 
 		\hyperpage{15}
     \subitem {es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}, 
-		\hyperpage{20}
+		\hyperpage{21}
   \item {suite}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{28}
+		\hyperpage{31}
 
   \indexspace
 
   \item {tear\+Down}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{29}
+		\hyperpage{31}
   \item {test\+Buy\+Product}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{29}
+		\hyperpage{31}
   \item {test\+Get\+All\+Prod}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{29}
+		\hyperpage{32}
   \item {test\+Get\+Amount}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{29}
+		\hyperpage{32}
   \item {test\+Get\+Characteristics}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{29}
+		\hyperpage{32}
   \item {test\+Get\+Login}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{29}
+		\hyperpage{32}
   \item {test\+Get\+Money}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{30}
+		\hyperpage{32}
   \item {test\+Get\+Name}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{30}
+		\hyperpage{32}
   \item {test\+Get\+Password}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{30}
+		\hyperpage{33}
   \item {test\+Get\+Prod}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{30}
+		\hyperpage{33}
   \item {test\+Get\+Sender}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{30}
+		\hyperpage{33}
   \item {test\+Get\+User}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{30}
+		\hyperpage{33}
   \item {test\+Register\+User}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{31}
+		\hyperpage{33}
   \item {test\+Retrieve\+Money}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{31}
+		\hyperpage{33}
   \item {test\+Retrieve\+User}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{31}
+		\hyperpage{34}
   \item {test\+Search\+Product}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{31}
+		\hyperpage{34}
   \item {test\+Send\+Money}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{31}
+		\hyperpage{34}
   \item {test\+Store\+Money}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{31}
+		\hyperpage{34}
   \item {test\+Store\+Product}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{32}
+		\hyperpage{34}
   \item {test\+Store\+User}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{32}
+		\hyperpage{34}
   \item {test\+Update\+Money}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{32}
+		\hyperpage{35}
   \item {test\+Update\+Product}
     \subitem {es\+::deusto\+::server\+::\+J\+Unit\+Test}, 
-		\hyperpage{32}
+		\hyperpage{35}
   \item {to\+String}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+Money}, 
-		\hyperpage{34}
-    \subitem {es\+::deusto\+::server\+::db\+::data\+::\+Product}, 
 		\hyperpage{37}
+    \subitem {es\+::deusto\+::server\+::db\+::data\+::\+Product}, 
+		\hyperpage{41}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+User}, 
-		\hyperpage{43}
+		\hyperpage{51}
   \item {to\+String\+Short}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+Product}, 
-		\hyperpage{37}
+		\hyperpage{41}
   \item {Transferer}
     \subitem {es\+::deusto\+::server\+::remote\+::\+Transferer}, 
-		\hyperpage{39}
+		\hyperpage{43}
 
   \indexspace
 
@@ -534,19 +534,19 @@
     \subitem {es\+::deusto\+::server\+::db\+::dao\+::\+D\+AO}, 
 		\hyperpage{15}
     \subitem {es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}, 
-		\hyperpage{20}
+		\hyperpage{21}
   \item {update\+Prod}
     \subitem {es\+::deusto\+::server\+::db\+::dao\+::\+D\+AO}, 
-		\hyperpage{15}
+		\hyperpage{16}
     \subitem {es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}, 
 		\hyperpage{21}
   \item {update\+User}
     \subitem {es\+::deusto\+::server\+::db\+::dao\+::\+D\+AO}, 
-		\hyperpage{15}
+		\hyperpage{16}
     \subitem {es\+::deusto\+::server\+::db\+::dao\+::\+I\+D\+AO}, 
 		\hyperpage{21}
   \item {User}
     \subitem {es\+::deusto\+::server\+::db\+::data\+::\+User}, 
-		\hyperpage{42}
+		\hyperpage{48}
 
 \end{theindex}

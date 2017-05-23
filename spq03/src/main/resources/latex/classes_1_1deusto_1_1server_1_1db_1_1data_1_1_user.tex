@@ -47,9 +47,16 @@ Definition at line 17 of file User.\+java.
 \subsubsection{\texorpdfstring{User()}{User()}}
 {\footnotesize\ttfamily es.\+deusto.\+server.\+db.\+data.\+User.\+User (\begin{DoxyParamCaption}\item[{String}]{login,  }\item[{String}]{password }\end{DoxyParamCaption})}
 
+Method to create a new instance of an object \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user}{User} 
+\begin{DoxyParams}{Parameters}
+{\em login} & The value for the PK that will identify a user between all the ones in the \hyperlink{classes_1_1deusto_1_1server_1_1db_1_1_d_b}{DB} \\
+\hline
+{\em password} & The value for the password of the user \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 33 of file User.\+java.
+Definition at line 37 of file User.\+java.
 
 
 
@@ -60,9 +67,14 @@ Definition at line 33 of file User.\+java.
 \subsubsection{\texorpdfstring{add\+Money()}{addMoney()}}
 {\footnotesize\ttfamily void es.\+deusto.\+server.\+db.\+data.\+User.\+add\+Money (\begin{DoxyParamCaption}\item[{int}]{money }\end{DoxyParamCaption})}
 
+This method augments the value of the users amount of money for the parameter that is sent 
+\begin{DoxyParams}{Parameters}
+{\em money} & the amount of money to be added \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 38 of file User.\+java.
+Definition at line 46 of file User.\+java.
 
 \mbox{\Hypertarget{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user_a2bc07e76806b027ef70b5ad8cea5f9fa}\label{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user_a2bc07e76806b027ef70b5ad8cea5f9fa}} 
 \index{es\+::deusto\+::server\+::db\+::data\+::\+User@{es\+::deusto\+::server\+::db\+::data\+::\+User}!get\+Login@{get\+Login}}
@@ -70,9 +82,12 @@ Definition at line 38 of file User.\+java.
 \subsubsection{\texorpdfstring{get\+Login()}{getLogin()}}
 {\footnotesize\ttfamily String es.\+deusto.\+server.\+db.\+data.\+User.\+get\+Login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+This method returns the PK of the user \begin{DoxyReturn}{Returns}
+The username (login) of the user 
+\end{DoxyReturn}
 
 
-Definition at line 42 of file User.\+java.
+Definition at line 58 of file User.\+java.
 
 \mbox{\Hypertarget{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user_a685ffb55326ae540eeb26eff13685a76}\label{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user_a685ffb55326ae540eeb26eff13685a76}} 
 \index{es\+::deusto\+::server\+::db\+::data\+::\+User@{es\+::deusto\+::server\+::db\+::data\+::\+User}!get\+Money@{get\+Money}}
@@ -80,9 +95,12 @@ Definition at line 42 of file User.\+java.
 \subsubsection{\texorpdfstring{get\+Money()}{getMoney()}}
 {\footnotesize\ttfamily int es.\+deusto.\+server.\+db.\+data.\+User.\+get\+Money (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+This method returns the amount of money of the user \begin{DoxyReturn}{Returns}
+The amount value of the user 
+\end{DoxyReturn}
 
 
-Definition at line 59 of file User.\+java.
+Definition at line 96 of file User.\+java.
 
 \mbox{\Hypertarget{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user_ac576607b3eae9e9b8c7002d5cd7c1a62}\label{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user_ac576607b3eae9e9b8c7002d5cd7c1a62}} 
 \index{es\+::deusto\+::server\+::db\+::data\+::\+User@{es\+::deusto\+::server\+::db\+::data\+::\+User}!get\+Password@{get\+Password}}
@@ -90,9 +108,12 @@ Definition at line 59 of file User.\+java.
 \subsubsection{\texorpdfstring{get\+Password()}{getPassword()}}
 {\footnotesize\ttfamily String es.\+deusto.\+server.\+db.\+data.\+User.\+get\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+This method returns the pass of the user \begin{DoxyReturn}{Returns}
+The password of the user 
+\end{DoxyReturn}
 
 
-Definition at line 46 of file User.\+java.
+Definition at line 66 of file User.\+java.
 
 \mbox{\Hypertarget{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user_a9f13d80d62b561e4fc76286cccf3333a}\label{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user_a9f13d80d62b561e4fc76286cccf3333a}} 
 \index{es\+::deusto\+::server\+::db\+::data\+::\+User@{es\+::deusto\+::server\+::db\+::data\+::\+User}!get\+Super@{get\+Super}}
@@ -100,9 +121,12 @@ Definition at line 46 of file User.\+java.
 \subsubsection{\texorpdfstring{get\+Super()}{getSuper()}}
 {\footnotesize\ttfamily boolean es.\+deusto.\+server.\+db.\+data.\+User.\+get\+Super (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+This method returns the superU value of the user \begin{DoxyReturn}{Returns}
+The superU value of the user 
+\end{DoxyReturn}
 
 
-Definition at line 57 of file User.\+java.
+Definition at line 90 of file User.\+java.
 
 \mbox{\Hypertarget{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user_a9de251663e6c2ecfdc5dcdac19224a1e}\label{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user_a9de251663e6c2ecfdc5dcdac19224a1e}} 
 \index{es\+::deusto\+::server\+::db\+::data\+::\+User@{es\+::deusto\+::server\+::db\+::data\+::\+User}!remove\+Money@{remove\+Money}}
@@ -110,9 +134,14 @@ Definition at line 57 of file User.\+java.
 \subsubsection{\texorpdfstring{remove\+Money()}{removeMoney()}}
 {\footnotesize\ttfamily void es.\+deusto.\+server.\+db.\+data.\+User.\+remove\+Money (\begin{DoxyParamCaption}\item[{int}]{money }\end{DoxyParamCaption})}
 
+This method reduces the value of the users amount of money for the parameter that is sent 
+\begin{DoxyParams}{Parameters}
+{\em money} & the amount of money to be removed \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 40 of file User.\+java.
+Definition at line 52 of file User.\+java.
 
 \mbox{\Hypertarget{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user_af4381bf3a6dedebc28c50812cb71599a}\label{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user_af4381bf3a6dedebc28c50812cb71599a}} 
 \index{es\+::deusto\+::server\+::db\+::data\+::\+User@{es\+::deusto\+::server\+::db\+::data\+::\+User}!set\+Amount@{set\+Amount}}
@@ -120,9 +149,14 @@ Definition at line 40 of file User.\+java.
 \subsubsection{\texorpdfstring{set\+Amount()}{setAmount()}}
 {\footnotesize\ttfamily void es.\+deusto.\+server.\+db.\+data.\+User.\+set\+Amount (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})}
 
+Establishes the value for the parameter amount of the user 
+\begin{DoxyParams}{Parameters}
+{\em amount} & The value of the users amount parameter \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 61 of file User.\+java.
+Definition at line 102 of file User.\+java.
 
 \mbox{\Hypertarget{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user_a0098f77da63338c8374ea1e5baab28c9}\label{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user_a0098f77da63338c8374ea1e5baab28c9}} 
 \index{es\+::deusto\+::server\+::db\+::data\+::\+User@{es\+::deusto\+::server\+::db\+::data\+::\+User}!set\+Password@{set\+Password}}
@@ -130,9 +164,14 @@ Definition at line 61 of file User.\+java.
 \subsubsection{\texorpdfstring{set\+Password()}{setPassword()}}
 {\footnotesize\ttfamily void es.\+deusto.\+server.\+db.\+data.\+User.\+set\+Password (\begin{DoxyParamCaption}\item[{String}]{password }\end{DoxyParamCaption})}
 
+Establishes the value for the parameter password of the user 
+\begin{DoxyParams}{Parameters}
+{\em password} & The value for the new password \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 50 of file User.\+java.
+Definition at line 74 of file User.\+java.
 
 \mbox{\Hypertarget{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user_a0e2c3f3fea559e9ab7eaab197fe9e015}\label{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user_a0e2c3f3fea559e9ab7eaab197fe9e015}} 
 \index{es\+::deusto\+::server\+::db\+::data\+::\+User@{es\+::deusto\+::server\+::db\+::data\+::\+User}!set\+Super@{set\+Super}}
@@ -140,9 +179,14 @@ Definition at line 50 of file User.\+java.
 \subsubsection{\texorpdfstring{set\+Super()}{setSuper()}}
 {\footnotesize\ttfamily void es.\+deusto.\+server.\+db.\+data.\+User.\+set\+Super (\begin{DoxyParamCaption}\item[{boolean}]{superU }\end{DoxyParamCaption})}
 
+Establishes the value for the parameter superU of the user 
+\begin{DoxyParams}{Parameters}
+{\em superU} & The value of the users superU parameter \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line 54 of file User.\+java.
+Definition at line 82 of file User.\+java.
 
 \mbox{\Hypertarget{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user_a494980951c4c71c0a793994b7bcd5101}\label{classes_1_1deusto_1_1server_1_1db_1_1data_1_1_user_a494980951c4c71c0a793994b7bcd5101}} 
 \index{es\+::deusto\+::server\+::db\+::data\+::\+User@{es\+::deusto\+::server\+::db\+::data\+::\+User}!to\+String@{to\+String}}
@@ -152,7 +196,7 @@ Definition at line 54 of file User.\+java.
 
 
 
-Definition at line 63 of file User.\+java.
+Definition at line 104 of file User.\+java.
 
 
 

@@ -200,10 +200,26 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This method allows the user with loginB to buy a product p to the user with loginS for the amount of money specified </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loginB</td><td>The PK that identifies the buyer </td></tr>
+    <tr><td class="paramname">p</td><td>The Product to be bought </td></tr>
+    <tr><td class="paramname">amount</td><td>The quantity to be spent on the transaction </td></tr>
+    <tr><td class="paramname">loginS</td><td>The PK that identifies the seller </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether the product has been bought or not </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td>fails if there is a connection error </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transferer.html#a86d92e8a78257551122807ae02259950">es.deusto.server.remote.ITransferer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transferer_8java_source.html#l00135">135</a> of file <a class="el" href="_transferer_8java_source.html">Transferer.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transferer_8java_source.html#l00136">136</a> of file <a class="el" href="_transferer_8java_source.html">Transferer.java</a>.</p>
 
 </div>
 </div>
@@ -221,10 +237,17 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This method retrieves all the products inside the DB </p><dl class="section return"><dt>Returns</dt><dd>A list of all the products inside the DB </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td>fails if there is a connection error </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transferer.html#a71afa6799122b3f09805f86d2e58fc23">es.deusto.server.remote.ITransferer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transferer_8java_source.html#l00082">82</a> of file <a class="el" href="_transferer_8java_source.html">Transferer.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transferer_8java_source.html#l00083">83</a> of file <a class="el" href="_transferer_8java_source.html">Transferer.java</a>.</p>
 
 </div>
 </div>
@@ -242,6 +265,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This method returns the list of all users in the DB </p><dl class="section return"><dt>Returns</dt><dd>the list of users in the DB </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td>fails if there is a connection error </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transferer.html#aec6609427d773f075a78295a97888103">es.deusto.server.remote.ITransferer</a>.</p>
 
@@ -264,10 +294,23 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This method returns a user based on their username (login) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">login</td><td>The name of the user that wants to be retreived </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user with the login name "login" </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td>fails if there is a connection error </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transferer.html#ab767521556fc61bc5a39306080f00cae">es.deusto.server.remote.ITransferer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transferer_8java_source.html#l00065">65</a> of file <a class="el" href="_transferer_8java_source.html">Transferer.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transferer_8java_source.html#l00066">66</a> of file <a class="el" href="_transferer_8java_source.html">Transferer.java</a>.</p>
 
 </div>
 </div>
@@ -286,10 +329,23 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This method registers a product and returns if the transaction was done rightfully </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>The product to register in the DB </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>whether the product has been registered or not </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td>fails if there is a connection error </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transferer.html#a06629c7021aae4d2ce1a449726102ded">es.deusto.server.remote.ITransferer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transferer_8java_source.html#l00113">113</a> of file <a class="el" href="_transferer_8java_source.html">Transferer.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transferer_8java_source.html#l00114">114</a> of file <a class="el" href="_transferer_8java_source.html">Transferer.java</a>.</p>
 
 </div>
 </div>
@@ -308,10 +364,23 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This method registers a user and returns if the transaction was done rightfully </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">u</td><td>The user to register in the DB </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>whether the user has been registered or not </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td>fails if there is a connection error </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transferer.html#ab805207e578865de5bf2e69ca8942344">es.deusto.server.remote.ITransferer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transferer_8java_source.html#l00045">45</a> of file <a class="el" href="_transferer_8java_source.html">Transferer.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transferer_8java_source.html#l00046">46</a> of file <a class="el" href="_transferer_8java_source.html">Transferer.java</a>.</p>
 
 </div>
 </div>
@@ -330,10 +399,23 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This method returns a Product based on its name </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The PK of the Product and the way to search it inside the DB </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An object Product that meets with the requirements </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td>fails if there is a connection error </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transferer.html#a1fb33a5447e1647ffde8a01d180b8d99">es.deusto.server.remote.ITransferer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transferer_8java_source.html#l00094">94</a> of file <a class="el" href="_transferer_8java_source.html">Transferer.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transferer_8java_source.html#l00095">95</a> of file <a class="el" href="_transferer_8java_source.html">Transferer.java</a>.</p>
 
 </div>
 </div>
@@ -368,10 +450,25 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This method allows the user with loginS to send an amount to the user with loginR </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loginR</td><td>the name of the user that receives the money </td></tr>
+    <tr><td class="paramname">amount</td><td>the number of money sent </td></tr>
+    <tr><td class="paramname">loginS</td><td>the name of the user that sends the money </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>whether the money has been sent or not </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td>fails if there is a connection error </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="interfacees_1_1deusto_1_1server_1_1remote_1_1_i_transferer.html#ab43399cfce0d84f6e27032a7c14865f6">es.deusto.server.remote.ITransferer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_transferer_8java_source.html#l00160">160</a> of file <a class="el" href="_transferer_8java_source.html">Transferer.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_transferer_8java_source.html#l00161">161</a> of file <a class="el" href="_transferer_8java_source.html">Transferer.java</a>.</p>
 
 </div>
 </div>
