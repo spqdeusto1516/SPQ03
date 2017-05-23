@@ -1,0 +1,12 @@
+es\deusto\server\remote\ITransferer.class
+es\deusto\server\db\dao\IDAO.class
+es\deusto\server\db\IDB.class
+es\deusto\server\db\data\User.class
+es\deusto\server\db\dao\DAO.class
+es\deusto\server\db\data\Money.class
+es\deusto\client\remote\ITransferer.class
+es\deusto\server\Server.class
+es\deusto\client\Client.class
+es\deusto\server\db\DB.class
+es\deusto\server\remote\Transferer.class
+es\deusto\server\db\data\Product.class
