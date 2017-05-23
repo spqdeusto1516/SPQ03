@@ -160,7 +160,11 @@
 							</regex>
 							-->
 						</regexes>
+						<haltOnFailure>false</haltOnFailure>
 					</check>
+					<formats>
+						<format>xml</format>
+					</formats>
 				</configuration>
 			</plugin>
 			
