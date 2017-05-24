@@ -156,6 +156,22 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This method allows the user with loginB to buy a product p to the user with loginS for the amount of money specified </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loginB</td><td>The PK that identifies the buyer </td></tr>
+    <tr><td class="paramname">p</td><td>The Product to be bought </td></tr>
+    <tr><td class="paramname">amount</td><td>The quantity to be spent on the transaction </td></tr>
+    <tr><td class="paramname">loginS</td><td>The PK that identifies the seller </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether the product has been bought or not </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td>fails if there is a connection error </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classes_1_1deusto_1_1server_1_1remote_1_1_transferer.html#ad5868dd67ee9a53e7cdf0c30e08a3a1b">es.deusto.server.remote.Transferer</a>.</p>
 
@@ -175,6 +191,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This method retrieves all the products inside the DB </p><dl class="section return"><dt>Returns</dt><dd>A list of all the products inside the DB </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td>fails if there is a connection error </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classes_1_1deusto_1_1server_1_1remote_1_1_transferer.html#a29cbb75edeb4e0973780fd379ef2b3fb">es.deusto.server.remote.Transferer</a>.</p>
 
@@ -194,6 +217,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This method returns the list of all users in the DB </p><dl class="section return"><dt>Returns</dt><dd>the list of users in the DB </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td>fails if there is a connection error </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classes_1_1deusto_1_1server_1_1remote_1_1_transferer.html#a613c0c3af149140e58488ce9d0745593">es.deusto.server.remote.Transferer</a>.</p>
 
@@ -214,6 +244,19 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This method returns a user based on their username (login) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">login</td><td>The name of the user that wants to be retreived </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The user with the login name "login" </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td>fails if there is a connection error </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classes_1_1deusto_1_1server_1_1remote_1_1_transferer.html#a16976959aeb3080244422aeac061a23b">es.deusto.server.remote.Transferer</a>.</p>
 
@@ -234,6 +277,19 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This method registers a product and returns if the transaction was done rightfully </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>The product to register in the DB </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>whether the product has been registered or not </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td>fails if there is a connection error </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classes_1_1deusto_1_1server_1_1remote_1_1_transferer.html#a64c1f3b57b74106df83335b124937afe">es.deusto.server.remote.Transferer</a>.</p>
 
@@ -254,6 +310,19 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This method registers a user and returns if the transaction was done rightfully </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">u</td><td>The user to register in the DB </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>whether the user has been registered or not </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td>fails if there is a connection error </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classes_1_1deusto_1_1server_1_1remote_1_1_transferer.html#a80e2dd7db595bdd8d39969e5d0e8ae7b">es.deusto.server.remote.Transferer</a>.</p>
 
@@ -274,6 +343,19 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This method returns a Product based on its name </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The PK of the Product and the way to search it inside the DB </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An object Product that meets with the requirements </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td>fails if there is a connection error </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classes_1_1deusto_1_1server_1_1remote_1_1_transferer.html#ad6759f696eddd682b750f92ec41d1fcb">es.deusto.server.remote.Transferer</a>.</p>
 
@@ -310,6 +392,21 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This method allows the user with loginS to send an amount to the user with loginR </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loginR</td><td>the name of the user that receives the money </td></tr>
+    <tr><td class="paramname">amount</td><td>the number of money sent </td></tr>
+    <tr><td class="paramname">loginS</td><td>the name of the user that sends the money </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>whether the money has been sent or not </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RemoteException</td><td>fails if there is a connection error </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classes_1_1deusto_1_1server_1_1remote_1_1_transferer.html#ad1eb84155ba0c457645f2ad53725320d">es.deusto.server.remote.Transferer</a>.</p>
 
